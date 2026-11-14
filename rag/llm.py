@@ -37,7 +37,7 @@ class GeminiLLM:
         self.max_attempts, self.base_delay = max_attempts, base_delay
 
     def _redact(self, text: str) -> str:
-        return text.replace(self._key, "<key>")[:300]
+        return text.replace(self._key, "<key>")[:1200]
 
     def generate(self, contents: list[types.Content], system: str,
                  declarations: list[types.FunctionDeclaration]) -> dict[str, Any]:

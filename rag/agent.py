@@ -31,6 +31,11 @@ gọi final_answer với enough_evidence=false và nêu ngắn gọn còn thiế
 6. Khi đã đủ bằng chứng, gọi final_answer đúng một lần."""
 
 
+# Experiment A3: appended to SYSTEM only when requested (--cite-rule); A0-A2 use SYSTEM unchanged.
+CITE_RULE = """
+7. Khi trích dẫn, chép NGUYÊN VĂN chunk-id từ trường "id" của các kết quả đã nhận. Tuyệt đối không tự suy ra hoặc đặt id mới (ví dụ đổi số cuối của một id đã có)."""
+
+
 def _function_response(name: str, payload: dict) -> types.Part:
     return types.Part.from_function_response(name=name, response=payload)
 
