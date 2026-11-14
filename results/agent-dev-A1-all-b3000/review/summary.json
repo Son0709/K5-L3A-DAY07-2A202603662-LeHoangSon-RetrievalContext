@@ -1,0 +1,33 @@
+{
+  "split": "dev",
+  "config": "A1-all-tools-b3000",
+  "cases": 28,
+  "provider_errors": 0,
+  "tool_use": {
+    "n": 28,
+    "N": 28
+  },
+  "grounded_answer": {
+    "0": 1,
+    "1": 3,
+    "2": 21,
+    "N": 25,
+    "mean": 1.8
+  },
+  "citation_validity": {
+    "n": 24,
+    "N": 27
+  },
+  "answer_citation_coverage": {
+    "n": 25,
+    "N": 25
+  },
+  "abstention": {
+    "n": 3,
+    "N": 3
+  },
+  "false_abstention": {
+    "n": 0,
+    "N": 25
+  }
+}

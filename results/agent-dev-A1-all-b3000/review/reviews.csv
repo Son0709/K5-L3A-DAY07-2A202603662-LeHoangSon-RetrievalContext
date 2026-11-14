@@ -1,0 +1,29 @@
+﻿query_id,kind,status,citations,answer_grade,citation_support,abstention_correct,context_score,note
+d01,answerable,answered,B:nd-13-2023:Điều11:0,2,1,,,Điều 11 khoản 6 nằm trong chunk; đúng.
+d02,answerable,answered,B:nd-13-2023:Điều16:2,2,1,,,Điều 16 khoản 5: 72 giờ; đúng.
+d03,answerable,answered,B:nd-13-2023:Điều16:1,2,1,,,"Liệt kê đủ a-e, khớp Điều 16 khoản 2."
+d04,answerable,answered,B:nd-13-2023:Điều24:3,2,1,,,"60 ngày, Mẫu số 04 (Điều 24 khoản 4); đúng."
+d05,answerable,answered,B:nd-13-2023:Điều20:0,2,1,,,Ngưỡng 7 tuổi + cha mẹ; không nhắc xác minh tuổi nhưng câu hỏi không hỏi.
+d06,answerable,answered,B:nd-13-2023:Điều23:0,2,1,,,Bộ Công an + 72 giờ + lý do chậm; đủ cả 2 ý gold.
+d07,answerable,answered,B:luat-anm-2018:Điều26:3,2,1,,,Đúng và đủ nhưng tốn 4 lượt tìm không cần thiết.
+d08,answerable,answered,B:luat-anm-2018:Điều26:1,2,1,,,24 giờ (Điều 26 khoản 2 điểm b); đúng.
+d09,answerable,answered,B:luat-gddt-2023:Điều10:0,2,1,,,Đủ 2 điều kiện (Điều 10).
+d10,answerable,answered,B:luat-gddt-2023:Điều9:0,2,1,,,Đúng (Điều 9 khoản 1).
+d11,answerable,answered,B:luat-gddt-2023:Điều38:0,2,1,,,Đúng (Điều 38).
+d12,answerable,answered,B:luat-gddt-2023:Điều6:0,2,1,,,Đúng (Điều 6 khoản 6).
+d13,answerable,answered,B:luat-anm-2018:Điều13:2,1,1,,,chunk gold (Điều 24) bị loại do budget 3 lần; agent dùng Điều 13 (hệ thống thông tin quan trọng): 12 giờ và 30 ngày trùng số nhưng sai phạm vi và thêm 72 giờ không có trong gold. Trích dẫn hỗ trợ điều agent nêu nhưng không phải điều được hỏi.
+d14,answerable,answered,B:nd-13-2023:Điều15:0,1,1,,,"nguồn ghi ""sau 72 giờ"", agent viết ""trong vòng 72 giờ"" (đổi nghĩa)."
+d15,answerable,answered,B:nd-13-2023:Điều9:1,2,1,,,Đúng (Điều 9 khoản 8 điểm b).
+t01,answerable,answered,B:luat-anm-2018:Điều29:0,2,1,,,Liệt kê đủ các quyền (Điều 29 khoản 1).
+t02,answerable,answered,B:nd-13-2023:Điều19:0,2,1,,,"Đủ 2 ý. Agent viết ""con thành niên"" trong khi nguồn in ""con thanh niên"" (lỗi chính tả của nguồn), không ảnh hưởng nội dung."
+t03,answerable,answered,B:luat-gddt-2023:Điều12:1,0,0,,,"câu hỏi về chuyển đổi giấy -> thông điệp dữ liệu (Điều 12 khoản 1); chunk Điều12:0 không bao giờ được truy xuất. Agent trả lời khoản 2 (chiều ngược lại) và khẳng định sai ""không có chiều ngược lại""."
+t04,answerable,answered,B:luat-anm-2018:Điều41:0,2,1,,,Đủ 3 ý (Điều 41 khoản 1 điểm c).
+t05,answerable,answered,B:nd-13-2023:Điều21:0 | B:nd-13-2023:Điều21:1 | B:nd-13-2023:Điều21:2,2,1 0 0,,,"CẦN KIỂM TRA: nội dung đúng và đủ (khoản 1-3 Điều 21 đều trong Điều21:0) nhưng 2 id trích dẫn (Điều21:1, :2) không tồn tại -> 0."
+d16,answerable,answered,B:nd-13-2023:Điều12:0,2,1,,,Đúng (Điều 12 khoản 1).
+d17,answerable,answered,B:nd-13-2023:Điều23:0,1,1,,,chunk Điều41:0 bị loại do budget 3 lần; agent chỉ trả lời nửa Nghị định 13 (72 giờ) và tự nêu thiếu phần thông báo người dùng/báo cáo lực lượng chuyên trách. Trung thực nhưng thiếu 1/2 gold.
+d18,answerable,answered,B:luat-gddt-2023:Điều17:0,2,1,,,Đúng (Điều 17 khoản 1).
+d19,answerable,answered,B:luat-gddt-2023:Điều46:0,2,1,,,Đủ 3 điều kiện (Điều 46 khoản 4).
+d20,answerable,answered,B:nd-13-2023:Điều13:1,2,1,,,Đủ 2 trường hợp (Điều 13 khoản 4).
+u01,unanswerable,abstain,,,,1,,"Từ chối, không khẳng định có Luật 2025 hay mức phạt."
+u02,unanswerable,abstain,,,,1,,"Nêu rõ không có số tháng; phần ""theo quy định của Chính phủ"" có trong Điều 26 khoản 2 điểm b."
+u03,unanswerable,abstain,,,,1,,Chỉ nêu mua bán trái phép là vi phạm (Điều 22); không bịa mức phạt.

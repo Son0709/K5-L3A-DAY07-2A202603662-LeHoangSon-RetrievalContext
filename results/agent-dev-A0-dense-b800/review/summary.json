@@ -1,0 +1,33 @@
+{
+  "split": "dev",
+  "config": "A0-dense-b800",
+  "cases": 28,
+  "provider_errors": 0,
+  "tool_use": {
+    "n": 28,
+    "N": 28
+  },
+  "grounded_answer": {
+    "0": 16,
+    "1": 1,
+    "2": 8,
+    "N": 25,
+    "mean": 0.68
+  },
+  "citation_validity": {
+    "n": 10,
+    "N": 11
+  },
+  "answer_citation_coverage": {
+    "n": 10,
+    "N": 10
+  },
+  "abstention": {
+    "n": 3,
+    "N": 3
+  },
+  "false_abstention": {
+    "n": 15,
+    "N": 25
+  }
+}

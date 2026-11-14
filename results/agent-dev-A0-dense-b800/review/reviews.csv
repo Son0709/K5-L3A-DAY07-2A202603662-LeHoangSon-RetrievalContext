@@ -1,0 +1,29 @@
+﻿query_id,kind,status,citations,answer_grade,citation_support,abstention_correct,context_score,note
+d01,answerable,abstain,,0,,,,bị từ chối nhầm -> 0 theo quy tắc.
+d02,answerable,abstain,,0,,,,bị từ chối nhầm -> 0 theo quy tắc.
+d03,answerable,abstain,,0,,,,bị từ chối nhầm -> 0 theo quy tắc.
+d04,answerable,abstain,,0,,,,bị từ chối nhầm -> 0 theo quy tắc.
+d05,answerable,answered,B:nd-13-2023:Điều20:0,2,1,,,"Đúng, nêu ngưỡng 7 tuổi."
+d06,answerable,answered,B:nd-13-2023:Điều23:0,2,1,,,Đủ 2 ý gold.
+d07,answerable,answered,B:luat-anm-2018:Điều26:3,2,1,,,Đủ: lưu trữ tại Việt Nam + chi nhánh/văn phòng đại diện.
+d08,answerable,abstain,,0,,,,bị từ chối nhầm -> 0 theo quy tắc.
+d09,answerable,answered,B:luat-gddt-2023:Điều10:0,2,1,,,Đủ 2 điều kiện.
+d10,answerable,answered,B:luat-gddt-2023:Điều9:0,2,1,,,Đúng.
+d11,answerable,answered,B:luat-gddt-2023:Điều38:0,2,1,,,Đúng.
+d12,answerable,abstain,,0,,,,bị từ chối nhầm -> 0 theo quy tắc.
+d13,answerable,abstain,,0,,,,bị từ chối nhầm -> 0 theo quy tắc.
+d14,answerable,abstain,,0,,,,bị từ chối nhầm -> 0 theo quy tắc.
+d15,answerable,abstain,,0,,,,bị từ chối nhầm -> 0 theo quy tắc.
+t01,answerable,answered,B:luat-anm-2018:Điều29:1,0,1,,,"NHÁP-AI: CẦN KIỂM TRA: chunk trong context (Điều29:1) chỉ có trách nhiệm bảo đảm quyền trẻ em, không có danh sách quyền (nằm ở Điều29:0); agent không trả lời câu hỏi. Trích dẫn hỗ trợ đúng điều khẳng định (không liên quan câu hỏi)."
+t02,answerable,answered,B:nd-13-2023:Điều19:0 | B:nd-13-2023:Điều19:1,2,1 0,,,"NHÁP-AI: CẦN KIỂM TRA: nội dung đủ và đúng (có cả ý ""không có sự đồng ý"") nhưng id Điều19:1 không tồn tại -> 0."
+t03,answerable,abstain,,0,,,,bị từ chối nhầm -> 0 theo quy tắc.
+t04,answerable,abstain,,0,,,,bị từ chối nhầm -> 0 theo quy tắc.
+t05,answerable,abstain,,0,,,,bị từ chối nhầm -> 0 theo quy tắc.
+d16,answerable,abstain,,0,,,,bị từ chối nhầm -> 0 theo quy tắc.
+d17,answerable,answered,B:nd-13-2023:Điều23:0,1,1,,,"NHÁP-AI: CẦN KIỂM TRA: chỉ trả lời nửa Nghị định 13, tự nêu thiếu phần còn lại."
+d18,answerable,abstain,,0,,,,bị từ chối nhầm -> 0 theo quy tắc.
+d19,answerable,abstain,,0,,,,bị từ chối nhầm -> 0 theo quy tắc.
+d20,answerable,answered,B:nd-13-2023:Điều13:1,2,1,,,NHÁP-AI: Đủ 2 trường hợp.
+u01,unanswerable,abstain,,,,1,,Từ chối đúng.
+u02,unanswerable,abstain,,,,1,,Từ chối đúng.
+u03,unanswerable,abstain,,,,1,,"Từ chối đúng."
