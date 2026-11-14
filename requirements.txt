@@ -1,0 +1,8 @@
+# Day 7 Agentic RAG. Python 3.12. Versions listed are the ones used for the reported runs.
+# Day 6 index (ChromaDB + multilingual-e5-small) must exist, see report "Cách tái lập".
+chromadb>=1.5          # used: 1.5.9
+torch>=2.5             # used: 2.15.0
+transformers>=5        # used: 5.22.2
+numpy                  # used: 2.5.4
+google-genai>=3.0      # used: 3.3.0 (Gemini function calling)
+python-dotenv>=1,<2    # used: 1.2.4 (reads GEMINI_API_KEY from .env)
