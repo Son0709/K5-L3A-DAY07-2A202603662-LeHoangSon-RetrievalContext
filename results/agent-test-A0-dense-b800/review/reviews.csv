@@ -1,0 +1,13 @@
+﻿query_id,kind,status,citations,answer_grade,citation_support,abstention_correct,context_score,note
+t06,answerable,abstain,,0,,,0,bị từ chối nhầm -> 0 theo quy tắc; context cuối (budget 800) không chứa bằng chứng gold -> context 0.
+t07,answerable,abstain,,0,,,0,bị từ chối nhầm -> 0 theo quy tắc; context cuối (budget 800) không chứa bằng chứng gold -> context 0.
+t08,answerable,abstain,,0,,,0,bị từ chối nhầm -> 0 theo quy tắc; context cuối (budget 800) không chứa bằng chứng gold -> context 0.
+t09,answerable,abstain,,0,,,0,bị từ chối nhầm -> 0 theo quy tắc; context cuối (budget 800) không chứa bằng chứng gold -> context 0.
+t10,answerable,abstain,,0,,,0,bị từ chối nhầm -> 0 theo quy tắc; context cuối (budget 800) không chứa bằng chứng gold -> context 0.
+t11,answerable,abstain,,0,,,0,bị từ chối nhầm -> 0 theo quy tắc; context cuối (budget 800) không chứa bằng chứng gold -> context 0.
+t12,answerable,answered,B:nd-13-2023:Điều18:0,2,1,,2,Đủ 2 ý (Điều 18).
+t13,answerable,answered,B:luat-gddt-2023:Điều23:0,2,1,,2,Đúng (Điều 23 khoản 2).
+t14,answerable,abstain,,0,,,0,bị từ chối nhầm -> 0 theo quy tắc; context cuối (budget 800) không chứa bằng chứng gold -> context 0.
+u04,unanswerable,abstain,,,,1,,"Từ chối đúng, nêu rõ không có thông tin về số năm."
+u05,unanswerable,abstain,,,,1,,Từ chối đúng.
+u06,unanswerable,abstain,,,,1,,"Từ chối đúng, nêu rõ không có thông tin cụ thể về chứng chỉ."

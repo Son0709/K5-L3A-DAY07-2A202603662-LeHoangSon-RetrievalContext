@@ -1,0 +1,1622 @@
+[
+ {
+  "query_id": "t06",
+  "method": "dense",
+  "filter": null,
+  "budget_chars": 6000,
+  "results": [
+   {
+    "id": "B:luat-gddt-2023:Điều19:0",
+    "score": 0.8675,
+    "page": 10,
+    "source_id": "luat-gddt-2023"
+   },
+   {
+    "id": "B:luat-gddt-2023:Điều23:0",
+    "score": 0.8661,
+    "page": 12,
+    "source_id": "luat-gddt-2023"
+   },
+   {
+    "id": "B:luat-gddt-2023:Điều13:0",
+    "score": 0.8649,
+    "page": 6,
+    "source_id": "luat-gddt-2023"
+   }
+  ],
+  "hit1": false,
+  "hit3": false,
+  "rr": 0.0,
+  "context_ids": [
+   "B:luat-gddt-2023:Điều19:0",
+   "B:luat-gddt-2023:Điều23:0",
+   "B:luat-gddt-2023:Điều13:0"
+  ],
+  "context_hit": false,
+  "elapsed_ms": 16.9
+ },
+ {
+  "query_id": "t07",
+  "method": "dense",
+  "filter": null,
+  "budget_chars": 6000,
+  "results": [
+   {
+    "id": "B:luat-gddt-2023:Điều20:0",
+    "score": 0.8896,
+    "page": 10,
+    "source_id": "luat-gddt-2023"
+   },
+   {
+    "id": "B:luat-gddt-2023:Điều21:0",
+    "score": 0.8819,
+    "page": 11,
+    "source_id": "luat-gddt-2023"
+   },
+   {
+    "id": "B:luat-gddt-2023:Điều20:1",
+    "score": 0.8812,
+    "page": 11,
+    "source_id": "luat-gddt-2023"
+   }
+  ],
+  "hit1": false,
+  "hit3": false,
+  "rr": 0.0,
+  "context_ids": [
+   "B:luat-gddt-2023:Điều20:0",
+   "B:luat-gddt-2023:Điều21:0",
+   "B:luat-gddt-2023:Điều20:1"
+  ],
+  "context_hit": false,
+  "elapsed_ms": 18.79
+ },
+ {
+  "query_id": "t08",
+  "method": "dense",
+  "filter": null,
+  "budget_chars": 6000,
+  "results": [
+   {
+    "id": "B:nd-13-2023:Điều12:0",
+    "score": 0.9226,
+    "page": 8,
+    "source_id": "nd-13-2023"
+   },
+   {
+    "id": "B:nd-13-2023:Điều11:1",
+    "score": 0.9077,
+    "page": 8,
+    "source_id": "nd-13-2023"
+   },
+   {
+    "id": "B:nd-13-2023:Điều15:0",
+    "score": 0.9048,
+    "page": 11,
+    "source_id": "nd-13-2023"
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_ids": [
+   "B:nd-13-2023:Điều12:0",
+   "B:nd-13-2023:Điều11:1",
+   "B:nd-13-2023:Điều15:0"
+  ],
+  "context_hit": true,
+  "elapsed_ms": 40.92
+ },
+ {
+  "query_id": "t09",
+  "method": "dense",
+  "filter": null,
+  "budget_chars": 6000,
+  "results": [
+   {
+    "id": "B:nd-13-2023:Điều25:3",
+    "score": 0.9369,
+    "page": 18,
+    "source_id": "nd-13-2023"
+   },
+   {
+    "id": "B:nd-13-2023:Điều25:2",
+    "score": 0.9356,
+    "page": 18,
+    "source_id": "nd-13-2023"
+   },
+   {
+    "id": "B:nd-13-2023:Điều25:0",
+    "score": 0.9218,
+    "page": 17,
+    "source_id": "nd-13-2023"
+   }
+  ],
+  "hit1": false,
+  "hit3": true,
+  "rr": 0.0,
+  "context_ids": [
+   "B:nd-13-2023:Điều25:3",
+   "B:nd-13-2023:Điều25:2",
+   "B:nd-13-2023:Điều25:0"
+  ],
+  "context_hit": true,
+  "elapsed_ms": 19.9
+ },
+ {
+  "query_id": "t10",
+  "method": "dense",
+  "filter": null,
+  "budget_chars": 6000,
+  "results": [
+   {
+    "id": "B:luat-gddt-2023:Điều16:2",
+    "score": 0.8778,
+    "page": 9,
+    "source_id": "luat-gddt-2023"
+   },
+   {
+    "id": "B:luat-gddt-2023:Điều16:1",
+    "score": 0.8755,
+    "page": 8,
+    "source_id": "luat-gddt-2023"
+   },
+   {
+    "id": "B:luat-gddt-2023:Điều14:0",
+    "score": 0.8683,
+    "page": 7,
+    "source_id": "luat-gddt-2023"
+   }
+  ],
+  "hit1": false,
+  "hit3": true,
+  "rr": 0.5,
+  "context_ids": [
+   "B:luat-gddt-2023:Điều16:2",
+   "B:luat-gddt-2023:Điều16:1",
+   "B:luat-gddt-2023:Điều14:0"
+  ],
+  "context_hit": true,
+  "elapsed_ms": 15.03
+ },
+ {
+  "query_id": "t11",
+  "method": "dense",
+  "filter": null,
+  "budget_chars": 6000,
+  "results": [
+   {
+    "id": "B:nd-13-2023:Điều11:1",
+    "score": 0.9142,
+    "page": 8,
+    "source_id": "nd-13-2023"
+   },
+   {
+    "id": "B:nd-13-2023:Điều11:0",
+    "score": 0.9009,
+    "page": 7,
+    "source_id": "nd-13-2023"
+   },
+   {
+    "id": "B:nd-13-2023:Điều13:1",
+    "score": 0.8917,
+    "page": 9,
+    "source_id": "nd-13-2023"
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_ids": [
+   "B:nd-13-2023:Điều11:1",
+   "B:nd-13-2023:Điều11:0",
+   "B:nd-13-2023:Điều13:1"
+  ],
+  "context_hit": true,
+  "elapsed_ms": 11.46
+ },
+ {
+  "query_id": "t12",
+  "method": "dense",
+  "filter": null,
+  "budget_chars": 6000,
+  "results": [
+   {
+    "id": "B:nd-13-2023:Điều18:0",
+    "score": 0.8981,
+    "page": 13,
+    "source_id": "nd-13-2023"
+   },
+   {
+    "id": "B:nd-13-2023:Điều17:0",
+    "score": 0.853,
+    "page": 13,
+    "source_id": "nd-13-2023"
+   },
+   {
+    "id": "B:nd-13-2023:Điều14:3",
+    "score": 0.8498,
+    "page": 10,
+    "source_id": "nd-13-2023"
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_ids": [
+   "B:nd-13-2023:Điều18:0",
+   "B:nd-13-2023:Điều17:0",
+   "B:nd-13-2023:Điều14:3"
+  ],
+  "context_hit": true,
+  "elapsed_ms": 11.39
+ },
+ {
+  "query_id": "t13",
+  "method": "dense",
+  "filter": null,
+  "budget_chars": 6000,
+  "results": [
+   {
+    "id": "B:luat-gddt-2023:Điều23:0",
+    "score": 0.8988,
+    "page": 12,
+    "source_id": "luat-gddt-2023"
+   },
+   {
+    "id": "B:luat-gddt-2023:Điều19:0",
+    "score": 0.884,
+    "page": 10,
+    "source_id": "luat-gddt-2023"
+   },
+   {
+    "id": "B:nd-13-2023:Điều2:1",
+    "score": 0.8657,
+    "page": 2,
+    "source_id": "nd-13-2023"
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_ids": [
+   "B:luat-gddt-2023:Điều23:0",
+   "B:luat-gddt-2023:Điều19:0",
+   "B:nd-13-2023:Điều2:1"
+  ],
+  "context_hit": true,
+  "elapsed_ms": 10.64
+ },
+ {
+  "query_id": "t14",
+  "method": "dense",
+  "filter": null,
+  "budget_chars": 6000,
+  "results": [
+   {
+    "id": "B:luat-anm-2018:Điều41:0",
+    "score": 0.9244,
+    "page": 31,
+    "source_id": "luat-anm-2018"
+   },
+   {
+    "id": "B:luat-anm-2018:Điều41:1",
+    "score": 0.9203,
+    "page": 31,
+    "source_id": "luat-anm-2018"
+   },
+   {
+    "id": "B:luat-anm-2018:Điều26:1",
+    "score": 0.9119,
+    "page": 24,
+    "source_id": "luat-anm-2018"
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_ids": [
+   "B:luat-anm-2018:Điều41:0",
+   "B:luat-anm-2018:Điều41:1",
+   "B:luat-anm-2018:Điều26:1"
+  ],
+  "context_hit": true,
+  "elapsed_ms": 10.97
+ },
+ {
+  "query_id": "t06",
+  "method": "bm25-uni",
+  "filter": null,
+  "budget_chars": 6000,
+  "results": [
+   {
+    "id": "B:luat-gddt-2023:Điều13:0",
+    "score": 35.8255,
+    "page": 6,
+    "source_id": "luat-gddt-2023"
+   },
+   {
+    "id": "B:luat-gddt-2023:Điều13:1",
+    "score": 29.8861,
+    "page": 7,
+    "source_id": "luat-gddt-2023"
+   },
+   {
+    "id": "B:luat-gddt-2023:Điều38:0",
+    "score": 28.3094,
+    "page": 19,
+    "source_id": "luat-gddt-2023"
+   }
+  ],
+  "hit1": false,
+  "hit3": true,
+  "rr": 0.5,
+  "context_ids": [
+   "B:luat-gddt-2023:Điều13:0",
+   "B:luat-gddt-2023:Điều13:1",
+   "B:luat-gddt-2023:Điều38:0"
+  ],
+  "context_hit": true,
+  "elapsed_ms": 0.86
+ },
+ {
+  "query_id": "t07",
+  "method": "bm25-uni",
+  "filter": null,
+  "budget_chars": 6000,
+  "results": [
+   {
+    "id": "B:luat-gddt-2023:Điều20:0",
+    "score": 33.3614,
+    "page": 10,
+    "source_id": "luat-gddt-2023"
+   },
+   {
+    "id": "B:luat-gddt-2023:Điều20:1",
+    "score": 33.0161,
+    "page": 11,
+    "source_id": "luat-gddt-2023"
+   },
+   {
+    "id": "B:luat-gddt-2023:Điều19:0",
+    "score": 27.2493,
+    "page": 10,
+    "source_id": "luat-gddt-2023"
+   }
+  ],
+  "hit1": false,
+  "hit3": false,
+  "rr": 0.0,
+  "context_ids": [
+   "B:luat-gddt-2023:Điều20:0",
+   "B:luat-gddt-2023:Điều20:1",
+   "B:luat-gddt-2023:Điều19:0"
+  ],
+  "context_hit": false,
+  "elapsed_ms": 0.82
+ },
+ {
+  "query_id": "t08",
+  "method": "bm25-uni",
+  "filter": null,
+  "budget_chars": 6000,
+  "results": [
+   {
+    "id": "B:nd-13-2023:Điều12:0",
+    "score": 60.0893,
+    "page": 8,
+    "source_id": "nd-13-2023"
+   },
+   {
+    "id": "B:nd-13-2023:Điều16:0",
+    "score": 49.5665,
+    "page": 11,
+    "source_id": "nd-13-2023"
+   },
+   {
+    "id": "B:nd-13-2023:Điều15:0",
+    "score": 40.5814,
+    "page": 11,
+    "source_id": "nd-13-2023"
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_ids": [
+   "B:nd-13-2023:Điều12:0",
+   "B:nd-13-2023:Điều16:0",
+   "B:nd-13-2023:Điều15:0"
+  ],
+  "context_hit": true,
+  "elapsed_ms": 1.33
+ },
+ {
+  "query_id": "t09",
+  "method": "bm25-uni",
+  "filter": null,
+  "budget_chars": 6000,
+  "results": [
+   {
+    "id": "B:nd-13-2023:Điều25:3",
+    "score": 69.5042,
+    "page": 18,
+    "source_id": "nd-13-2023"
+   },
+   {
+    "id": "B:nd-13-2023:Điều25:2",
+    "score": 65.7059,
+    "page": 18,
+    "source_id": "nd-13-2023"
+   },
+   {
+    "id": "B:nd-13-2023:Điều25:0",
+    "score": 56.2336,
+    "page": 17,
+    "source_id": "nd-13-2023"
+   }
+  ],
+  "hit1": false,
+  "hit3": true,
+  "rr": 0.0,
+  "context_ids": [
+   "B:nd-13-2023:Điều25:3",
+   "B:nd-13-2023:Điều25:2",
+   "B:nd-13-2023:Điều25:0"
+  ],
+  "context_hit": true,
+  "elapsed_ms": 1.5
+ },
+ {
+  "query_id": "t10",
+  "method": "bm25-uni",
+  "filter": null,
+  "budget_chars": 6000,
+  "results": [
+   {
+    "id": "B:luat-gddt-2023:Điều16:1",
+    "score": 64.6074,
+    "page": 8,
+    "source_id": "luat-gddt-2023"
+   },
+   {
+    "id": "B:luat-gddt-2023:Điều16:2",
+    "score": 63.2918,
+    "page": 9,
+    "source_id": "luat-gddt-2023"
+   },
+   {
+    "id": "B:luat-gddt-2023:Điều17:0",
+    "score": 51.9475,
+    "page": 9,
+    "source_id": "luat-gddt-2023"
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_ids": [
+   "B:luat-gddt-2023:Điều16:1",
+   "B:luat-gddt-2023:Điều16:2",
+   "B:luat-gddt-2023:Điều17:0"
+  ],
+  "context_hit": true,
+  "elapsed_ms": 0.97
+ },
+ {
+  "query_id": "t11",
+  "method": "bm25-uni",
+  "filter": null,
+  "budget_chars": 6000,
+  "results": [
+   {
+    "id": "B:nd-13-2023:Điều11:1",
+    "score": 44.526,
+    "page": 8,
+    "source_id": "nd-13-2023"
+   },
+   {
+    "id": "B:nd-13-2023:Điều11:0",
+    "score": 38.1191,
+    "page": 7,
+    "source_id": "nd-13-2023"
+   },
+   {
+    "id": "B:nd-13-2023:Điều12:0",
+    "score": 37.6281,
+    "page": 8,
+    "source_id": "nd-13-2023"
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_ids": [
+   "B:nd-13-2023:Điều11:1",
+   "B:nd-13-2023:Điều11:0",
+   "B:nd-13-2023:Điều12:0"
+  ],
+  "context_hit": true,
+  "elapsed_ms": 1.01
+ },
+ {
+  "query_id": "t12",
+  "method": "bm25-uni",
+  "filter": null,
+  "budget_chars": 6000,
+  "results": [
+   {
+    "id": "B:nd-13-2023:Điều18:0",
+    "score": 47.5606,
+    "page": 13,
+    "source_id": "nd-13-2023"
+   },
+   {
+    "id": "B:nd-13-2023:Điều2:1",
+    "score": 21.672,
+    "page": 2,
+    "source_id": "nd-13-2023"
+   },
+   {
+    "id": "B:luat-anm-2018:Điều17:1",
+    "score": 21.0917,
+    "page": 16,
+    "source_id": "luat-anm-2018"
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_ids": [
+   "B:nd-13-2023:Điều18:0",
+   "B:nd-13-2023:Điều2:1",
+   "B:luat-anm-2018:Điều17:1"
+  ],
+  "context_hit": true,
+  "elapsed_ms": 0.88
+ },
+ {
+  "query_id": "t13",
+  "method": "bm25-uni",
+  "filter": null,
+  "budget_chars": 6000,
+  "results": [
+   {
+    "id": "B:luat-gddt-2023:Điều23:0",
+    "score": 33.2478,
+    "page": 12,
+    "source_id": "luat-gddt-2023"
+   },
+   {
+    "id": "B:luat-gddt-2023:Điều51:0",
+    "score": 23.697,
+    "page": 28,
+    "source_id": "luat-gddt-2023"
+   },
+   {
+    "id": "B:luat-gddt-2023:Điều53:1",
+    "score": 23.2532,
+    "page": 29,
+    "source_id": "luat-gddt-2023"
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_ids": [
+   "B:luat-gddt-2023:Điều23:0",
+   "B:luat-gddt-2023:Điều51:0",
+   "B:luat-gddt-2023:Điều53:1"
+  ],
+  "context_hit": true,
+  "elapsed_ms": 0.74
+ },
+ {
+  "query_id": "t14",
+  "method": "bm25-uni",
+  "filter": null,
+  "budget_chars": 6000,
+  "results": [
+   {
+    "id": "B:luat-anm-2018:Điều41:0",
+    "score": 42.2032,
+    "page": 31,
+    "source_id": "luat-anm-2018"
+   },
+   {
+    "id": "B:luat-anm-2018:Điều26:3",
+    "score": 29.9187,
+    "page": 25,
+    "source_id": "luat-anm-2018"
+   },
+   {
+    "id": "B:luat-anm-2018:Điều2:4",
+    "score": 28.0765,
+    "page": 3,
+    "source_id": "luat-anm-2018"
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_ids": [
+   "B:luat-anm-2018:Điều41:0",
+   "B:luat-anm-2018:Điều26:3",
+   "B:luat-anm-2018:Điều2:4"
+  ],
+  "context_hit": true,
+  "elapsed_ms": 0.82
+ },
+ {
+  "query_id": "t06",
+  "method": "bm25-unibi",
+  "filter": null,
+  "budget_chars": 6000,
+  "results": [
+   {
+    "id": "B:luat-gddt-2023:Điều13:1",
+    "score": 62.1253,
+    "page": 7,
+    "source_id": "luat-gddt-2023"
+   },
+   {
+    "id": "B:luat-gddt-2023:Điều13:0",
+    "score": 53.7111,
+    "page": 6,
+    "source_id": "luat-gddt-2023"
+   },
+   {
+    "id": "B:luat-gddt-2023:Điều10:0",
+    "score": 50.7154,
+    "page": 5,
+    "source_id": "luat-gddt-2023"
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_ids": [
+   "B:luat-gddt-2023:Điều13:1",
+   "B:luat-gddt-2023:Điều13:0",
+   "B:luat-gddt-2023:Điều10:0"
+  ],
+  "context_hit": true,
+  "elapsed_ms": 1.24
+ },
+ {
+  "query_id": "t07",
+  "method": "bm25-unibi",
+  "filter": null,
+  "budget_chars": 6000,
+  "results": [
+   {
+    "id": "B:luat-gddt-2023:Điều20:0",
+    "score": 55.2669,
+    "page": 10,
+    "source_id": "luat-gddt-2023"
+   },
+   {
+    "id": "B:luat-gddt-2023:Điều20:1",
+    "score": 52.1889,
+    "page": 11,
+    "source_id": "luat-gddt-2023"
+   },
+   {
+    "id": "B:luat-gddt-2023:Điều19:0",
+    "score": 49.9777,
+    "page": 10,
+    "source_id": "luat-gddt-2023"
+   }
+  ],
+  "hit1": false,
+  "hit3": false,
+  "rr": 0.0,
+  "context_ids": [
+   "B:luat-gddt-2023:Điều20:0",
+   "B:luat-gddt-2023:Điều20:1",
+   "B:luat-gddt-2023:Điều19:0"
+  ],
+  "context_hit": false,
+  "elapsed_ms": 1.08
+ },
+ {
+  "query_id": "t08",
+  "method": "bm25-unibi",
+  "filter": null,
+  "budget_chars": 6000,
+  "results": [
+   {
+    "id": "B:nd-13-2023:Điều12:0",
+    "score": 124.4175,
+    "page": 8,
+    "source_id": "nd-13-2023"
+   },
+   {
+    "id": "B:nd-13-2023:Điều16:0",
+    "score": 91.2001,
+    "page": 11,
+    "source_id": "nd-13-2023"
+   },
+   {
+    "id": "B:nd-13-2023:Điều15:0",
+    "score": 72.5657,
+    "page": 11,
+    "source_id": "nd-13-2023"
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_ids": [
+   "B:nd-13-2023:Điều12:0",
+   "B:nd-13-2023:Điều16:0",
+   "B:nd-13-2023:Điều15:0"
+  ],
+  "context_hit": true,
+  "elapsed_ms": 1.93
+ },
+ {
+  "query_id": "t09",
+  "method": "bm25-unibi",
+  "filter": null,
+  "budget_chars": 6000,
+  "results": [
+   {
+    "id": "B:nd-13-2023:Điều25:3",
+    "score": 150.841,
+    "page": 18,
+    "source_id": "nd-13-2023"
+   },
+   {
+    "id": "B:nd-13-2023:Điều25:2",
+    "score": 133.697,
+    "page": 18,
+    "source_id": "nd-13-2023"
+   },
+   {
+    "id": "B:nd-13-2023:Điều25:0",
+    "score": 124.5227,
+    "page": 17,
+    "source_id": "nd-13-2023"
+   }
+  ],
+  "hit1": false,
+  "hit3": true,
+  "rr": 0.0,
+  "context_ids": [
+   "B:nd-13-2023:Điều25:3",
+   "B:nd-13-2023:Điều25:2",
+   "B:nd-13-2023:Điều25:0"
+  ],
+  "context_hit": true,
+  "elapsed_ms": 3.45
+ },
+ {
+  "query_id": "t10",
+  "method": "bm25-unibi",
+  "filter": null,
+  "budget_chars": 6000,
+  "results": [
+   {
+    "id": "B:luat-gddt-2023:Điều16:1",
+    "score": 113.7139,
+    "page": 8,
+    "source_id": "luat-gddt-2023"
+   },
+   {
+    "id": "B:luat-gddt-2023:Điều16:2",
+    "score": 94.9494,
+    "page": 9,
+    "source_id": "luat-gddt-2023"
+   },
+   {
+    "id": "B:luat-gddt-2023:Điều17:0",
+    "score": 87.5325,
+    "page": 9,
+    "source_id": "luat-gddt-2023"
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_ids": [
+   "B:luat-gddt-2023:Điều16:1",
+   "B:luat-gddt-2023:Điều16:2",
+   "B:luat-gddt-2023:Điều17:0"
+  ],
+  "context_hit": true,
+  "elapsed_ms": 2.08
+ },
+ {
+  "query_id": "t11",
+  "method": "bm25-unibi",
+  "filter": null,
+  "budget_chars": 6000,
+  "results": [
+   {
+    "id": "B:nd-13-2023:Điều11:1",
+    "score": 84.8774,
+    "page": 8,
+    "source_id": "nd-13-2023"
+   },
+   {
+    "id": "B:nd-13-2023:Điều12:0",
+    "score": 70.1786,
+    "page": 8,
+    "source_id": "nd-13-2023"
+   },
+   {
+    "id": "B:nd-13-2023:Điều11:0",
+    "score": 67.7446,
+    "page": 7,
+    "source_id": "nd-13-2023"
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_ids": [
+   "B:nd-13-2023:Điều11:1",
+   "B:nd-13-2023:Điều12:0",
+   "B:nd-13-2023:Điều11:0"
+  ],
+  "context_hit": true,
+  "elapsed_ms": 2.25
+ },
+ {
+  "query_id": "t12",
+  "method": "bm25-unibi",
+  "filter": null,
+  "budget_chars": 6000,
+  "results": [
+   {
+    "id": "B:nd-13-2023:Điều18:0",
+    "score": 84.4903,
+    "page": 13,
+    "source_id": "nd-13-2023"
+   },
+   {
+    "id": "B:luat-anm-2018:Điều17:1",
+    "score": 30.1952,
+    "page": 16,
+    "source_id": "luat-anm-2018"
+   },
+   {
+    "id": "B:nd-13-2023:Điều2:1",
+    "score": 21.6685,
+    "page": 2,
+    "source_id": "nd-13-2023"
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_ids": [
+   "B:nd-13-2023:Điều18:0",
+   "B:luat-anm-2018:Điều17:1",
+   "B:nd-13-2023:Điều2:1"
+  ],
+  "context_hit": true,
+  "elapsed_ms": 1.73
+ },
+ {
+  "query_id": "t13",
+  "method": "bm25-unibi",
+  "filter": null,
+  "budget_chars": 6000,
+  "results": [
+   {
+    "id": "B:luat-gddt-2023:Điều23:0",
+    "score": 73.891,
+    "page": 12,
+    "source_id": "luat-gddt-2023"
+   },
+   {
+    "id": "B:luat-gddt-2023:Điều38:0",
+    "score": 42.7734,
+    "page": 19,
+    "source_id": "luat-gddt-2023"
+   },
+   {
+    "id": "B:luat-gddt-2023:Điều24:1",
+    "score": 41.995,
+    "page": 13,
+    "source_id": "luat-gddt-2023"
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_ids": [
+   "B:luat-gddt-2023:Điều23:0",
+   "B:luat-gddt-2023:Điều38:0",
+   "B:luat-gddt-2023:Điều24:1"
+  ],
+  "context_hit": true,
+  "elapsed_ms": 1.57
+ },
+ {
+  "query_id": "t14",
+  "method": "bm25-unibi",
+  "filter": null,
+  "budget_chars": 6000,
+  "results": [
+   {
+    "id": "B:luat-anm-2018:Điều41:0",
+    "score": 89.3429,
+    "page": 31,
+    "source_id": "luat-anm-2018"
+   },
+   {
+    "id": "B:luat-anm-2018:Điều41:1",
+    "score": 65.29,
+    "page": 31,
+    "source_id": "luat-anm-2018"
+   },
+   {
+    "id": "B:luat-anm-2018:Điều41:2",
+    "score": 58.7611,
+    "page": 31,
+    "source_id": "luat-anm-2018"
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_ids": [
+   "B:luat-anm-2018:Điều41:0",
+   "B:luat-anm-2018:Điều41:1",
+   "B:luat-anm-2018:Điều41:2"
+  ],
+  "context_hit": true,
+  "elapsed_ms": 1.92
+ },
+ {
+  "query_id": "t06",
+  "method": "hybrid-rrf(dense+bm25-uni)",
+  "filter": null,
+  "budget_chars": 6000,
+  "results": [
+   {
+    "id": "B:luat-gddt-2023:Điều13:0",
+    "score": 0.0323,
+    "page": 6,
+    "source_id": "luat-gddt-2023"
+   },
+   {
+    "id": "B:luat-gddt-2023:Điều23:0",
+    "score": 0.0313,
+    "page": 12,
+    "source_id": "luat-gddt-2023"
+   },
+   {
+    "id": "B:luat-gddt-2023:Điều3:0",
+    "score": 0.031,
+    "page": 1,
+    "source_id": "luat-gddt-2023"
+   }
+  ],
+  "hit1": false,
+  "hit3": false,
+  "rr": 0.0,
+  "context_ids": [
+   "B:luat-gddt-2023:Điều13:0",
+   "B:luat-gddt-2023:Điều23:0",
+   "B:luat-gddt-2023:Điều3:0"
+  ],
+  "context_hit": false,
+  "elapsed_ms": 17.51
+ },
+ {
+  "query_id": "t07",
+  "method": "hybrid-rrf(dense+bm25-uni)",
+  "filter": null,
+  "budget_chars": 6000,
+  "results": [
+   {
+    "id": "B:luat-gddt-2023:Điều20:0",
+    "score": 0.0328,
+    "page": 10,
+    "source_id": "luat-gddt-2023"
+   },
+   {
+    "id": "B:luat-gddt-2023:Điều20:1",
+    "score": 0.032,
+    "page": 11,
+    "source_id": "luat-gddt-2023"
+   },
+   {
+    "id": "B:luat-gddt-2023:Điều19:0",
+    "score": 0.0315,
+    "page": 10,
+    "source_id": "luat-gddt-2023"
+   }
+  ],
+  "hit1": false,
+  "hit3": false,
+  "rr": 0.0,
+  "context_ids": [
+   "B:luat-gddt-2023:Điều20:0",
+   "B:luat-gddt-2023:Điều20:1",
+   "B:luat-gddt-2023:Điều19:0"
+  ],
+  "context_hit": false,
+  "elapsed_ms": 16.67
+ },
+ {
+  "query_id": "t08",
+  "method": "hybrid-rrf(dense+bm25-uni)",
+  "filter": null,
+  "budget_chars": 6000,
+  "results": [
+   {
+    "id": "B:nd-13-2023:Điều12:0",
+    "score": 0.0328,
+    "page": 8,
+    "source_id": "nd-13-2023"
+   },
+   {
+    "id": "B:nd-13-2023:Điều11:1",
+    "score": 0.0318,
+    "page": 8,
+    "source_id": "nd-13-2023"
+   },
+   {
+    "id": "B:nd-13-2023:Điều15:0",
+    "score": 0.0317,
+    "page": 11,
+    "source_id": "nd-13-2023"
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_ids": [
+   "B:nd-13-2023:Điều12:0",
+   "B:nd-13-2023:Điều11:1",
+   "B:nd-13-2023:Điều15:0"
+  ],
+  "context_hit": true,
+  "elapsed_ms": 18.72
+ },
+ {
+  "query_id": "t09",
+  "method": "hybrid-rrf(dense+bm25-uni)",
+  "filter": null,
+  "budget_chars": 6000,
+  "results": [
+   {
+    "id": "B:nd-13-2023:Điều25:3",
+    "score": 0.0328,
+    "page": 18,
+    "source_id": "nd-13-2023"
+   },
+   {
+    "id": "B:nd-13-2023:Điều25:2",
+    "score": 0.0323,
+    "page": 18,
+    "source_id": "nd-13-2023"
+   },
+   {
+    "id": "B:nd-13-2023:Điều25:0",
+    "score": 0.0317,
+    "page": 17,
+    "source_id": "nd-13-2023"
+   }
+  ],
+  "hit1": false,
+  "hit3": true,
+  "rr": 0.0,
+  "context_ids": [
+   "B:nd-13-2023:Điều25:3",
+   "B:nd-13-2023:Điều25:2",
+   "B:nd-13-2023:Điều25:0"
+  ],
+  "context_hit": true,
+  "elapsed_ms": 19.31
+ },
+ {
+  "query_id": "t10",
+  "method": "hybrid-rrf(dense+bm25-uni)",
+  "filter": null,
+  "budget_chars": 6000,
+  "results": [
+   {
+    "id": "B:luat-gddt-2023:Điều16:1",
+    "score": 0.0325,
+    "page": 8,
+    "source_id": "luat-gddt-2023"
+   },
+   {
+    "id": "B:luat-gddt-2023:Điều16:2",
+    "score": 0.0325,
+    "page": 9,
+    "source_id": "luat-gddt-2023"
+   },
+   {
+    "id": "B:luat-gddt-2023:Điều14:0",
+    "score": 0.0315,
+    "page": 7,
+    "source_id": "luat-gddt-2023"
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_ids": [
+   "B:luat-gddt-2023:Điều16:1",
+   "B:luat-gddt-2023:Điều16:2",
+   "B:luat-gddt-2023:Điều14:0"
+  ],
+  "context_hit": true,
+  "elapsed_ms": 17.7
+ },
+ {
+  "query_id": "t11",
+  "method": "hybrid-rrf(dense+bm25-uni)",
+  "filter": null,
+  "budget_chars": 6000,
+  "results": [
+   {
+    "id": "B:nd-13-2023:Điều11:1",
+    "score": 0.0328,
+    "page": 8,
+    "source_id": "nd-13-2023"
+   },
+   {
+    "id": "B:nd-13-2023:Điều11:0",
+    "score": 0.0323,
+    "page": 7,
+    "source_id": "nd-13-2023"
+   },
+   {
+    "id": "B:nd-13-2023:Điều19:0",
+    "score": 0.0312,
+    "page": 13,
+    "source_id": "nd-13-2023"
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_ids": [
+   "B:nd-13-2023:Điều11:1",
+   "B:nd-13-2023:Điều11:0",
+   "B:nd-13-2023:Điều19:0"
+  ],
+  "context_hit": true,
+  "elapsed_ms": 16.44
+ },
+ {
+  "query_id": "t12",
+  "method": "hybrid-rrf(dense+bm25-uni)",
+  "filter": null,
+  "budget_chars": 6000,
+  "results": [
+   {
+    "id": "B:nd-13-2023:Điều18:0",
+    "score": 0.0328,
+    "page": 13,
+    "source_id": "nd-13-2023"
+   },
+   {
+    "id": "B:nd-13-2023:Điều17:0",
+    "score": 0.0306,
+    "page": 13,
+    "source_id": "nd-13-2023"
+   },
+   {
+    "id": "B:nd-13-2023:Điều2:2",
+    "score": 0.0299,
+    "page": 2,
+    "source_id": "nd-13-2023"
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_ids": [
+   "B:nd-13-2023:Điều18:0",
+   "B:nd-13-2023:Điều17:0",
+   "B:nd-13-2023:Điều2:2"
+  ],
+  "context_hit": true,
+  "elapsed_ms": 15.67
+ },
+ {
+  "query_id": "t13",
+  "method": "hybrid-rrf(dense+bm25-uni)",
+  "filter": null,
+  "budget_chars": 6000,
+  "results": [
+   {
+    "id": "B:luat-gddt-2023:Điều23:0",
+    "score": 0.0328,
+    "page": 12,
+    "source_id": "luat-gddt-2023"
+   },
+   {
+    "id": "B:luat-gddt-2023:Điều22:1",
+    "score": 0.031,
+    "page": 12,
+    "source_id": "luat-gddt-2023"
+   },
+   {
+    "id": "B:luat-gddt-2023:Điều22:0",
+    "score": 0.0301,
+    "page": 11,
+    "source_id": "luat-gddt-2023"
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_ids": [
+   "B:luat-gddt-2023:Điều23:0",
+   "B:luat-gddt-2023:Điều22:1",
+   "B:luat-gddt-2023:Điều22:0"
+  ],
+  "context_hit": true,
+  "elapsed_ms": 16.89
+ },
+ {
+  "query_id": "t14",
+  "method": "hybrid-rrf(dense+bm25-uni)",
+  "filter": null,
+  "budget_chars": 6000,
+  "results": [
+   {
+    "id": "B:luat-anm-2018:Điều41:0",
+    "score": 0.0328,
+    "page": 31,
+    "source_id": "luat-anm-2018"
+   },
+   {
+    "id": "B:luat-anm-2018:Điều41:1",
+    "score": 0.0318,
+    "page": 31,
+    "source_id": "luat-anm-2018"
+   },
+   {
+    "id": "B:luat-anm-2018:Điều26:3",
+    "score": 0.0313,
+    "page": 25,
+    "source_id": "luat-anm-2018"
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_ids": [
+   "B:luat-anm-2018:Điều41:0",
+   "B:luat-anm-2018:Điều41:1",
+   "B:luat-anm-2018:Điều26:3"
+  ],
+  "context_hit": true,
+  "elapsed_ms": 16.93
+ },
+ {
+  "query_id": "t06",
+  "method": "hybrid-rrf(dense+bm25-unibi)",
+  "filter": null,
+  "budget_chars": 6000,
+  "results": [
+   {
+    "id": "B:luat-gddt-2023:Điều13:0",
+    "score": 0.032,
+    "page": 6,
+    "source_id": "luat-gddt-2023"
+   },
+   {
+    "id": "B:luat-gddt-2023:Điều23:0",
+    "score": 0.0315,
+    "page": 12,
+    "source_id": "luat-gddt-2023"
+   },
+   {
+    "id": "B:luat-gddt-2023:Điều13:1",
+    "score": 0.0311,
+    "page": 7,
+    "source_id": "luat-gddt-2023"
+   }
+  ],
+  "hit1": false,
+  "hit3": true,
+  "rr": 0.3333333333333333,
+  "context_ids": [
+   "B:luat-gddt-2023:Điều13:0",
+   "B:luat-gddt-2023:Điều23:0",
+   "B:luat-gddt-2023:Điều13:1"
+  ],
+  "context_hit": true,
+  "elapsed_ms": 17.61
+ },
+ {
+  "query_id": "t07",
+  "method": "hybrid-rrf(dense+bm25-unibi)",
+  "filter": null,
+  "budget_chars": 6000,
+  "results": [
+   {
+    "id": "B:luat-gddt-2023:Điều20:0",
+    "score": 0.0328,
+    "page": 10,
+    "source_id": "luat-gddt-2023"
+   },
+   {
+    "id": "B:luat-gddt-2023:Điều20:1",
+    "score": 0.032,
+    "page": 11,
+    "source_id": "luat-gddt-2023"
+   },
+   {
+    "id": "B:luat-gddt-2023:Điều19:0",
+    "score": 0.0315,
+    "page": 10,
+    "source_id": "luat-gddt-2023"
+   }
+  ],
+  "hit1": false,
+  "hit3": false,
+  "rr": 0.0,
+  "context_ids": [
+   "B:luat-gddt-2023:Điều20:0",
+   "B:luat-gddt-2023:Điều20:1",
+   "B:luat-gddt-2023:Điều19:0"
+  ],
+  "context_hit": false,
+  "elapsed_ms": 15.28
+ },
+ {
+  "query_id": "t08",
+  "method": "hybrid-rrf(dense+bm25-unibi)",
+  "filter": null,
+  "budget_chars": 6000,
+  "results": [
+   {
+    "id": "B:nd-13-2023:Điều12:0",
+    "score": 0.0328,
+    "page": 8,
+    "source_id": "nd-13-2023"
+   },
+   {
+    "id": "B:nd-13-2023:Điều11:1",
+    "score": 0.0318,
+    "page": 8,
+    "source_id": "nd-13-2023"
+   },
+   {
+    "id": "B:nd-13-2023:Điều15:0",
+    "score": 0.0317,
+    "page": 11,
+    "source_id": "nd-13-2023"
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_ids": [
+   "B:nd-13-2023:Điều12:0",
+   "B:nd-13-2023:Điều11:1",
+   "B:nd-13-2023:Điều15:0"
+  ],
+  "context_hit": true,
+  "elapsed_ms": 19.15
+ },
+ {
+  "query_id": "t09",
+  "method": "hybrid-rrf(dense+bm25-unibi)",
+  "filter": null,
+  "budget_chars": 6000,
+  "results": [
+   {
+    "id": "B:nd-13-2023:Điều25:3",
+    "score": 0.0328,
+    "page": 18,
+    "source_id": "nd-13-2023"
+   },
+   {
+    "id": "B:nd-13-2023:Điều25:2",
+    "score": 0.0323,
+    "page": 18,
+    "source_id": "nd-13-2023"
+   },
+   {
+    "id": "B:nd-13-2023:Điều25:0",
+    "score": 0.0317,
+    "page": 17,
+    "source_id": "nd-13-2023"
+   }
+  ],
+  "hit1": false,
+  "hit3": true,
+  "rr": 0.0,
+  "context_ids": [
+   "B:nd-13-2023:Điều25:3",
+   "B:nd-13-2023:Điều25:2",
+   "B:nd-13-2023:Điều25:0"
+  ],
+  "context_hit": true,
+  "elapsed_ms": 20.52
+ },
+ {
+  "query_id": "t10",
+  "method": "hybrid-rrf(dense+bm25-unibi)",
+  "filter": null,
+  "budget_chars": 6000,
+  "results": [
+   {
+    "id": "B:luat-gddt-2023:Điều16:1",
+    "score": 0.0325,
+    "page": 8,
+    "source_id": "luat-gddt-2023"
+   },
+   {
+    "id": "B:luat-gddt-2023:Điều16:2",
+    "score": 0.0325,
+    "page": 9,
+    "source_id": "luat-gddt-2023"
+   },
+   {
+    "id": "B:luat-gddt-2023:Điều14:0",
+    "score": 0.0315,
+    "page": 7,
+    "source_id": "luat-gddt-2023"
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_ids": [
+   "B:luat-gddt-2023:Điều16:1",
+   "B:luat-gddt-2023:Điều16:2",
+   "B:luat-gddt-2023:Điều14:0"
+  ],
+  "context_hit": true,
+  "elapsed_ms": 17.36
+ },
+ {
+  "query_id": "t11",
+  "method": "hybrid-rrf(dense+bm25-unibi)",
+  "filter": null,
+  "budget_chars": 6000,
+  "results": [
+   {
+    "id": "B:nd-13-2023:Điều11:1",
+    "score": 0.0328,
+    "page": 8,
+    "source_id": "nd-13-2023"
+   },
+   {
+    "id": "B:nd-13-2023:Điều11:0",
+    "score": 0.032,
+    "page": 7,
+    "source_id": "nd-13-2023"
+   },
+   {
+    "id": "B:nd-13-2023:Điều19:0",
+    "score": 0.0312,
+    "page": 13,
+    "source_id": "nd-13-2023"
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_ids": [
+   "B:nd-13-2023:Điều11:1",
+   "B:nd-13-2023:Điều11:0",
+   "B:nd-13-2023:Điều19:0"
+  ],
+  "context_hit": true,
+  "elapsed_ms": 15.6
+ },
+ {
+  "query_id": "t12",
+  "method": "hybrid-rrf(dense+bm25-unibi)",
+  "filter": null,
+  "budget_chars": 6000,
+  "results": [
+   {
+    "id": "B:nd-13-2023:Điều18:0",
+    "score": 0.0328,
+    "page": 13,
+    "source_id": "nd-13-2023"
+   },
+   {
+    "id": "B:luat-anm-2018:Điều16:2",
+    "score": 0.031,
+    "page": 15,
+    "source_id": "luat-anm-2018"
+   },
+   {
+    "id": "B:nd-13-2023:Điều17:0",
+    "score": 0.0302,
+    "page": 13,
+    "source_id": "nd-13-2023"
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_ids": [
+   "B:nd-13-2023:Điều18:0",
+   "B:luat-anm-2018:Điều16:2",
+   "B:nd-13-2023:Điều17:0"
+  ],
+  "context_hit": true,
+  "elapsed_ms": 19.13
+ },
+ {
+  "query_id": "t13",
+  "method": "hybrid-rrf(dense+bm25-unibi)",
+  "filter": null,
+  "budget_chars": 6000,
+  "results": [
+   {
+    "id": "B:luat-gddt-2023:Điều23:0",
+    "score": 0.0328,
+    "page": 12,
+    "source_id": "luat-gddt-2023"
+   },
+   {
+    "id": "B:luat-gddt-2023:Điều19:0",
+    "score": 0.0318,
+    "page": 10,
+    "source_id": "luat-gddt-2023"
+   },
+   {
+    "id": "B:luat-gddt-2023:Điều38:0",
+    "score": 0.0311,
+    "page": 19,
+    "source_id": "luat-gddt-2023"
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_ids": [
+   "B:luat-gddt-2023:Điều23:0",
+   "B:luat-gddt-2023:Điều19:0",
+   "B:luat-gddt-2023:Điều38:0"
+  ],
+  "context_hit": true,
+  "elapsed_ms": 17.62
+ },
+ {
+  "query_id": "t14",
+  "method": "hybrid-rrf(dense+bm25-unibi)",
+  "filter": null,
+  "budget_chars": 6000,
+  "results": [
+   {
+    "id": "B:luat-anm-2018:Điều41:0",
+    "score": 0.0328,
+    "page": 31,
+    "source_id": "luat-anm-2018"
+   },
+   {
+    "id": "B:luat-anm-2018:Điều41:1",
+    "score": 0.0323,
+    "page": 31,
+    "source_id": "luat-anm-2018"
+   },
+   {
+    "id": "B:luat-anm-2018:Điều41:2",
+    "score": 0.0315,
+    "page": 31,
+    "source_id": "luat-anm-2018"
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_ids": [
+   "B:luat-anm-2018:Điều41:0",
+   "B:luat-anm-2018:Điều41:1",
+   "B:luat-anm-2018:Điều41:2"
+  ],
+  "context_hit": true,
+  "elapsed_ms": 19.61
+ }
+]

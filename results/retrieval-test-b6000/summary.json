@@ -1,0 +1,62 @@
+[
+  {
+    "method": "dense",
+    "n": 9,
+    "use_filter": false,
+    "budget_chars": 6000,
+    "hit1": "5/9",
+    "hit3": "7/9",
+    "context_evidence_rate": "7/9",
+    "mrr@3": 0.611,
+    "median_ms": 15.03,
+    "cost_usd": 0
+  },
+  {
+    "method": "bm25-uni",
+    "n": 9,
+    "use_filter": false,
+    "budget_chars": 6000,
+    "hit1": "6/9",
+    "hit3": "8/9",
+    "context_evidence_rate": "8/9",
+    "mrr@3": 0.722,
+    "median_ms": 0.88,
+    "cost_usd": 0
+  },
+  {
+    "method": "bm25-unibi",
+    "n": 9,
+    "use_filter": false,
+    "budget_chars": 6000,
+    "hit1": "7/9",
+    "hit3": "8/9",
+    "context_evidence_rate": "8/9",
+    "mrr@3": 0.778,
+    "median_ms": 1.92,
+    "cost_usd": 0
+  },
+  {
+    "method": "hybrid-rrf(dense+bm25-uni)",
+    "n": 9,
+    "use_filter": false,
+    "budget_chars": 6000,
+    "hit1": "6/9",
+    "hit3": "7/9",
+    "context_evidence_rate": "7/9",
+    "mrr@3": 0.667,
+    "median_ms": 16.93,
+    "cost_usd": 0
+  },
+  {
+    "method": "hybrid-rrf(dense+bm25-unibi)",
+    "n": 9,
+    "use_filter": false,
+    "budget_chars": 6000,
+    "hit1": "6/9",
+    "hit3": "8/9",
+    "context_evidence_rate": "8/9",
+    "mrr@3": 0.704,
+    "median_ms": 17.62,
+    "cost_usd": 0
+  }
+]

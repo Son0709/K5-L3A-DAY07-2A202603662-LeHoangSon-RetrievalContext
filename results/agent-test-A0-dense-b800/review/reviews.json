@@ -1,0 +1,75 @@
+[
+ {
+  "query_id": "t06",
+  "citation_support": [],
+  "answer_grade": 0,
+  "context_score": 0
+ },
+ {
+  "query_id": "t07",
+  "citation_support": [],
+  "answer_grade": 0,
+  "context_score": 0
+ },
+ {
+  "query_id": "t08",
+  "citation_support": [],
+  "answer_grade": 0,
+  "context_score": 0
+ },
+ {
+  "query_id": "t09",
+  "citation_support": [],
+  "answer_grade": 0,
+  "context_score": 0
+ },
+ {
+  "query_id": "t10",
+  "citation_support": [],
+  "answer_grade": 0,
+  "context_score": 0
+ },
+ {
+  "query_id": "t11",
+  "citation_support": [],
+  "answer_grade": 0,
+  "context_score": 0
+ },
+ {
+  "query_id": "t12",
+  "citation_support": [
+   true
+  ],
+  "answer_grade": 2,
+  "context_score": 2
+ },
+ {
+  "query_id": "t13",
+  "citation_support": [
+   true
+  ],
+  "answer_grade": 2,
+  "context_score": 2
+ },
+ {
+  "query_id": "t14",
+  "citation_support": [],
+  "answer_grade": 0,
+  "context_score": 0
+ },
+ {
+  "query_id": "u04",
+  "citation_support": [],
+  "abstention_correct": true
+ },
+ {
+  "query_id": "u05",
+  "citation_support": [],
+  "abstention_correct": true
+ },
+ {
+  "query_id": "u06",
+  "citation_support": [],
+  "abstention_correct": true
+ }
+]

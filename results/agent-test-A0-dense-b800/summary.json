@@ -1,0 +1,37 @@
+{
+  "config": {
+    "name": "T-A0-dense-b800",
+    "model": "gemini-3.5-flash-lite",
+    "temperature": 0.0,
+    "tools": [
+      "dense"
+    ],
+    "top_k": 3,
+    "budget_chars": 800,
+    "max_searches": 4,
+    "max_steps": 8,
+    "cite_rule": false,
+    "retrieval_index": "day6 lab_B (multilingual-e5-small)"
+  },
+  "n": 12,
+  "planned": 12,
+  "aborted": false,
+  "not_run": [],
+  "status": {
+    "answered": 2,
+    "abstain": 10,
+    "error": 0
+  },
+  "tool_use": "12/12",
+  "searches_distribution": {
+    "2": 2,
+    "4": 10
+  },
+  "prompt_tokens": 69018,
+  "output_tokens": 2951,
+  "thought_tokens": 0,
+  "elapsed_s": 163.0,
+  "retries": 14,
+  "cost_usd": null,
+  "cost_note": "price per token not recorded; fill from the provider's pricing page"
+}

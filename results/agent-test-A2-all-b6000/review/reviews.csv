@@ -1,0 +1,13 @@
+﻿query_id,kind,status,citations,answer_grade,citation_support,abstention_correct,context_score,note
+t06,answerable,answered,B:luat-gddt-2023:Điều13:0 | B:luat-gddt-2023:Điều13:1,2,1 1,,2,"trả lời ""có"" và nêu đủ điều kiện (Điều 13 khoản 1) nhưng diễn đạt ""có giá trị như bản giấy KHI đáp ứng điều kiện""; nguồn (Điều 13 khoản 3) nói giá trị tương đương không kèm điều kiện đó. Id Điều13:1 có trong danh sách trích dẫn nhưng không có dấu [..] trong văn bản."
+t07,answerable,answered,B:luat-gddt-2023:Điều12:1,2,1,,2,"Đúng: ngoài yêu cầu chung phải có chữ ký, con dấu (nếu có) của cơ quan thực hiện chuyển đổi. 4 lượt tìm."
+t08,answerable,answered,B:nd-13-2023:Điều12:0,2,1,,2,"Đủ 2 ý: thông báo hậu quả + ngừng xử lý (Điều 12 khoản 3, 4)."
+t09,answerable,answered,B:nd-13-2023:Điều25:2 | B:nd-13-2023:Điều25:3,2,1 1,,2,"Đủ: 60 ngày (Điều25:2) + 3 trường hợp ngừng chuyển (Điều25:3), diễn đạt lại khoản 5, 6 đúng nghĩa."
+t10,answerable,answered,B:luat-gddt-2023:Điều16:1,2,1,,2,Đúng (Điều 16 khoản 2 điểm d).
+t11,answerable,answered,B:nd-13-2023:Điều11:1,2,1,,2,"Đủ 2 ý (Điều 11 khoản 9, 10)."
+t12,answerable,answered,B:nd-13-2023:Điều18:0,2,1,,2,"Đủ: không cần đồng ý + phải thông báo, trừ khi luật có quy định khác (Điều 18)."
+t13,answerable,answered,B:luat-gddt-2023:Điều23:0,2,1,,2,Đúng (Điều 23 khoản 2).
+t14,answerable,answered,B:luat-anm-2018:Điều41:0,2,1,,2,Đúng; thêm ý về sự cố lộ dữ liệu cũng nằm trong Điều 41:0.
+u04,unanswerable,answered,B:luat-gddt-2023:Điều3:2 | B:luat-gddt-2023:Điều13:1,,1 1,0,,"status=answered (enough_evidence=true) nên không tính là từ chối. Câu trả lời trung thực, không bịa số năm: nêu hợp đồng điện tử là thông điệp dữ liệu (Điều3:2) và thời hạn lưu trữ theo pháp luật về lưu trữ (Điều13:1), nhưng không nói rõ rằng corpus không nêu số năm. Theo tiêu chí của lab (từ chối hoặc nêu rõ không đủ bằng chứng) -> 0."
+u05,unanswerable,abstain,,,,1,,"Từ chối đúng, nêu rõ không có quy định về xếp hạng."
+u06,unanswerable,abstain,,,,1,,"status abstain do không có trích dẫn (enough_evidence=true, citations rỗng). Nội dung khẳng định ""các văn bản không quy định bắt buộc DPO có chứng chỉ quốc tế"" là đúng với corpus (đã kiểm tra regex), không bịa yêu cầu."

@@ -1,0 +1,37 @@
+{
+  "split": "test",
+  "config": "T-A0-dense-b800",
+  "cases": 12,
+  "provider_errors": 0,
+  "tool_use": {
+    "n": 12,
+    "N": 12
+  },
+  "grounded_answer": {
+    "0": 7,
+    "1": 0,
+    "2": 2,
+    "N": 9,
+    "mean": 0.4444444444444444
+  },
+  "citation_validity": {
+    "n": 2,
+    "N": 2
+  },
+  "answer_citation_coverage": {
+    "n": 2,
+    "N": 2
+  },
+  "abstention": {
+    "n": 3,
+    "N": 3
+  },
+  "false_abstention": {
+    "n": 7,
+    "N": 9
+  },
+  "context_score_distribution": {
+    "0": 7,
+    "2": 2
+  }
+}
