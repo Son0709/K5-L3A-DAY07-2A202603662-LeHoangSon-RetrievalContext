@@ -1,0 +1,29 @@
+﻿query_id,kind,status,citations,answer_grade,citation_support,abstention_correct,context_score,note
+d01,answerable,answered,B:nd-13-2023:Điều11:0,2,1,,,"kế thừa nhãn A1 (cùng câu trả lời về nội dung, cùng trích dẫn, đoạn trích dẫn chứa gold)."
+d02,answerable,answered,B:nd-13-2023:Điều16:2,2,1,,,"kế thừa nhãn A1 (cùng câu trả lời về nội dung, cùng trích dẫn, đoạn trích dẫn chứa gold)."
+d03,answerable,answered,B:nd-13-2023:Điều16:1,2,1,,,"kế thừa nhãn A1 (cùng câu trả lời về nội dung, cùng trích dẫn, đoạn trích dẫn chứa gold)."
+d04,answerable,answered,B:nd-13-2023:Điều24:3,2,1,,,"kế thừa nhãn A1 (cùng câu trả lời về nội dung, cùng trích dẫn, đoạn trích dẫn chứa gold)."
+d05,answerable,answered,B:nd-13-2023:Điều20:0,2,1,,,"kế thừa nhãn A1 (cùng câu trả lời về nội dung, cùng trích dẫn, đoạn trích dẫn chứa gold)."
+d06,answerable,answered,B:nd-13-2023:Điều23:0,2,1,,,"kế thừa nhãn A1 (cùng câu trả lời về nội dung, cùng trích dẫn, đoạn trích dẫn chứa gold)."
+d07,answerable,answered,B:luat-anm-2018:Điều26:3,2,1,,,"kế thừa nhãn A1 (cùng câu trả lời về nội dung, cùng trích dẫn, đoạn trích dẫn chứa gold)."
+d08,answerable,answered,B:luat-anm-2018:Điều26:1,2,1,,,"kế thừa nhãn A1 (cùng câu trả lời về nội dung, cùng trích dẫn, đoạn trích dẫn chứa gold)."
+d09,answerable,answered,B:luat-gddt-2023:Điều10:0,2,1,,,"kế thừa nhãn A1 (cùng câu trả lời về nội dung, cùng trích dẫn, đoạn trích dẫn chứa gold)."
+d10,answerable,answered,B:luat-gddt-2023:Điều9:0,2,1,,,"kế thừa nhãn A1 (cùng câu trả lời về nội dung, cùng trích dẫn, đoạn trích dẫn chứa gold)."
+d11,answerable,answered,B:luat-gddt-2023:Điều38:0,2,1,,,"kế thừa nhãn A1 (cùng câu trả lời về nội dung, cùng trích dẫn, đoạn trích dẫn chứa gold)."
+d12,answerable,answered,B:luat-gddt-2023:Điều6:0,2,1,,,"kế thừa nhãn A1 (cùng câu trả lời về nội dung, cùng trích dẫn, đoạn trích dẫn chứa gold)."
+d13,answerable,answered,B:luat-anm-2018:Điều24:1,2,1,,,"kế thừa nhãn A1 (cùng câu trả lời về nội dung, cùng trích dẫn, đoạn trích dẫn chứa gold)."
+d14,answerable,answered,B:nd-13-2023:Điều15:0,1,1,,,"kế thừa nhãn A1 (cùng câu trả lời về nội dung, cùng trích dẫn, đoạn trích dẫn chứa gold)."
+d15,answerable,answered,B:nd-13-2023:Điều9:1,2,1,,,"kế thừa nhãn A1 (cùng câu trả lời về nội dung, cùng trích dẫn, đoạn trích dẫn chứa gold)."
+t01,answerable,answered,B:luat-anm-2018:Điều29:0,2,1,,,"kế thừa nhãn A1 (cùng câu trả lời về nội dung, cùng trích dẫn, đoạn trích dẫn chứa gold)."
+t02,answerable,answered,B:nd-13-2023:Điều19:0 | B:nd-13-2023:Điều19:1,2,1 0,,,Nội dung đủ; id Điều19:1 không tồn tại -> 0 (A1 lần chạy lại không bịa id này: dao động giữa các lần chạy).
+t03,answerable,answered,B:luat-gddt-2023:Điều12:0,2,1,,,"Lấy đúng Điều 12:0 chỉ trong 1 lượt tìm; nêu đủ 2 ý của điểm c khoản 1. (A1 chấm 0; lỗi A1 là do dao động giữa các lần chạy, không phải do budget)"
+t04,answerable,answered,B:luat-anm-2018:Điều41:0,2,1,,,Đủ 3 ý.
+t05,answerable,answered,B:nd-13-2023:Điều21:0,2,1,,,"Nội dung đủ (có cả trách nhiệm chứng minh), chỉ trích dẫn Điều21:0, không còn id bịa. (A1: 2 id bịa)"
+d16,answerable,answered,B:nd-13-2023:Điều12:0,2,1,,," kế thừa nhãn A1 (cùng câu trả lời về nội dung, cùng trích dẫn, đoạn trích dẫn chứa gold)."
+d17,answerable,answered,B:luat-anm-2018:Điều41:0 | B:nd-13-2023:Điều23:0,2,1 1,,,Đủ cả 2 nửa: thông báo người sử dụng + báo cáo lực lượng chuyên trách (Điều 41:0) và Bộ Công an 72 giờ (Điều 23:0). (A1 chấm 1)
+d18,answerable,answered,B:luat-gddt-2023:Điều17:0,2,1,,,"kế thừa nhãn A1 (cùng câu trả lời về nội dung, cùng trích dẫn, đoạn trích dẫn chứa gold)."
+d19,answerable,answered,B:luat-gddt-2023:Điều46:0,2,1,,,"kế thừa nhãn A1 (cùng câu trả lời về nội dung, cùng trích dẫn, đoạn trích dẫn chứa gold)."
+d20,answerable,answered,B:nd-13-2023:Điều13:1,2,1,,,Đủ 2 trường hợp.
+u01,unanswerable,abstain,,,,1,,"Từ chối đúng, không bịa."
+u02,unanswerable,abstain,,,,1,,"Nêu ""theo quy định của Chính phủ"" (Điều 26.2.b) và nói rõ chưa có số tháng."
+u03,unanswerable,abstain,,,,1,,"từ chối mức phạt đúng nhưng khẳng định hành vi ""bị nghiêm cấm"" kèm trích dẫn Điều3:0 và Điều22:0, hai đoạn này không có chữ ""cấm"" (Điều 8 cũng không nêu mua/bán). Khẳng định thêm ít căn cứ; nếu bạn xem là vô căn cứ thì chấm 0."

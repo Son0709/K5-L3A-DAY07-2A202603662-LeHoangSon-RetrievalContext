@@ -1,0 +1,5011 @@
+[
+ {
+  "query_id": "d01",
+  "split": "dev",
+  "answerable": true,
+  "qtype": "direct",
+  "question": "Nếu chủ thể dữ liệu im lặng hoặc không phản hồi thì có được coi là đã đồng ý cho xử lý dữ liệu cá nhân không?",
+  "config": {
+   "name": "A3-all-tools-b3000-citerule",
+   "model": "gemini-3.5-flash-lite",
+   "temperature": 0.0,
+   "tools": [
+    "dense",
+    "bm25",
+    "hybrid"
+   ],
+   "top_k": 3,
+   "budget_chars": 3000,
+   "max_searches": 4,
+   "max_steps": 8,
+   "cite_rule": true,
+   "retrieval_index": "day6 lab_B (multilingual-e5-small)"
+  },
+  "status": "answered",
+  "answer": "Theo quy định, sự im lặng hoặc không phản hồi của chủ thể dữ liệu không được coi là sự đồng ý cho xử lý dữ liệu cá nhân [B:nd-13-2023:Điều11:0].",
+  "citations": [
+   "B:nd-13-2023:Điều11:0"
+  ],
+  "events": [
+   {
+    "event": "llm",
+    "step": 1,
+    "calls": [
+     "search_hybrid"
+    ],
+    "usage": {
+     "prompt_tokens": 919,
+     "output_tokens": 34,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1410,
+    "retries": []
+   },
+   {
+    "event": "search",
+    "tool": "search_hybrid",
+    "method": "hybrid",
+    "query": "chủ thể dữ liệu im lặng hoặc không phản hồi đồng ý xử lý dữ liệu cá nhân",
+    "filter": null,
+    "results": [
+     {
+      "rank": 1,
+      "id": "B:nd-13-2023:Điều11:0",
+      "score": 0.0328,
+      "page": 7,
+      "source_id": "nd-13-2023"
+     },
+     {
+      "rank": 2,
+      "id": "B:nd-13-2023:Điều2:4",
+      "score": 0.0315,
+      "page": 3,
+      "source_id": "nd-13-2023"
+     },
+     {
+      "rank": 3,
+      "id": "B:nd-13-2023:Điều15:0",
+      "score": 0.0313,
+      "page": 11,
+      "source_id": "nd-13-2023"
+     }
+    ],
+    "new_context_ids": [
+     "B:nd-13-2023:Điều11:0",
+     "B:nd-13-2023:Điều2:4"
+    ],
+    "dropped_ids": [
+     "B:nd-13-2023:Điều15:0"
+    ],
+    "context_ids": [
+     "B:nd-13-2023:Điều11:0",
+     "B:nd-13-2023:Điều2:4"
+    ],
+    "elapsed_ms": 23.16
+   },
+   {
+    "event": "llm",
+    "step": 2,
+    "calls": [
+     "final_answer"
+    ],
+    "usage": {
+     "prompt_tokens": 1819,
+     "output_tokens": 92,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1304,
+    "retries": []
+   },
+   {
+    "event": "answer",
+    "enough_evidence": true,
+    "citations": [
+     "B:nd-13-2023:Điều11:0"
+    ],
+    "citations_in_context": [
+     true
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "context_ids": [
+   "B:nd-13-2023:Điều11:0",
+   "B:nd-13-2023:Điều2:4"
+  ],
+  "usage": {
+   "prompt_tokens": 2738,
+   "output_tokens": 126,
+   "thought_tokens": 0
+  },
+  "elapsed_s": 2.75,
+  "inline_markers_ok": true,
+  "invalid_citation_ids": [],
+  "resumed_after_error": true
+ },
+ {
+  "query_id": "d02",
+  "split": "dev",
+  "answerable": true,
+  "qtype": "direct",
+  "question": "Sau khi chủ thể dữ liệu yêu cầu xóa dữ liệu cá nhân, bên kiểm soát phải thực hiện việc xóa trong thời hạn bao lâu?",
+  "config": {
+   "name": "A3-all-tools-b3000-citerule",
+   "model": "gemini-3.5-flash-lite",
+   "temperature": 0.0,
+   "tools": [
+    "dense",
+    "bm25",
+    "hybrid"
+   ],
+   "top_k": 3,
+   "budget_chars": 3000,
+   "max_searches": 4,
+   "max_steps": 8,
+   "cite_rule": true,
+   "retrieval_index": "day6 lab_B (multilingual-e5-small)"
+  },
+  "status": "answered",
+  "answer": "Việc xóa dữ liệu cá nhân phải được thực hiện trong **72 giờ** sau khi có yêu cầu của chủ thể dữ liệu với toàn bộ dữ liệu cá nhân mà Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân thu thập được, trừ trường hợp pháp luật có quy định khác [B:nd-13-2023:Điều16:2].",
+  "citations": [
+   "B:nd-13-2023:Điều16:2"
+  ],
+  "events": [
+   {
+    "event": "llm",
+    "step": 1,
+    "calls": [
+     "search_hybrid"
+    ],
+    "usage": {
+     "prompt_tokens": 919,
+     "output_tokens": 31,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1196,
+    "retries": []
+   },
+   {
+    "event": "search",
+    "tool": "search_hybrid",
+    "method": "hybrid",
+    "query": "chủ thể dữ liệu yêu cầu xóa dữ liệu cá nhân thời hạn bao lâu",
+    "filter": null,
+    "results": [
+     {
+      "rank": 1,
+      "id": "B:nd-13-2023:Điều16:0",
+      "score": 0.0323,
+      "page": 11,
+      "source_id": "nd-13-2023"
+     },
+     {
+      "rank": 2,
+      "id": "B:nd-13-2023:Điều16:2",
+      "score": 0.0315,
+      "page": 12,
+      "source_id": "nd-13-2023"
+     },
+     {
+      "rank": 3,
+      "id": "B:nd-13-2023:Điều9:0",
+      "score": 0.0315,
+      "page": 6,
+      "source_id": "nd-13-2023"
+     }
+    ],
+    "new_context_ids": [
+     "B:nd-13-2023:Điều16:0",
+     "B:nd-13-2023:Điều16:2",
+     "B:nd-13-2023:Điều9:0"
+    ],
+    "dropped_ids": [],
+    "context_ids": [
+     "B:nd-13-2023:Điều16:0",
+     "B:nd-13-2023:Điều16:2",
+     "B:nd-13-2023:Điều9:0"
+    ],
+    "elapsed_ms": 30.03
+   },
+   {
+    "event": "llm",
+    "step": 2,
+    "calls": [
+     "final_answer"
+    ],
+    "usage": {
+     "prompt_tokens": 1920,
+     "output_tokens": 128,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1417,
+    "retries": []
+   },
+   {
+    "event": "answer",
+    "enough_evidence": true,
+    "citations": [
+     "B:nd-13-2023:Điều16:2"
+    ],
+    "citations_in_context": [
+     true
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "context_ids": [
+   "B:nd-13-2023:Điều16:0",
+   "B:nd-13-2023:Điều16:2",
+   "B:nd-13-2023:Điều9:0"
+  ],
+  "usage": {
+   "prompt_tokens": 2839,
+   "output_tokens": 159,
+   "thought_tokens": 0
+  },
+  "elapsed_s": 2.64,
+  "inline_markers_ok": true,
+  "invalid_citation_ids": [],
+  "resumed_after_error": true
+ },
+ {
+  "query_id": "d03",
+  "split": "dev",
+  "answerable": true,
+  "qtype": "exception",
+  "question": "Trong những trường hợp nào thì yêu cầu xóa dữ liệu cá nhân của chủ thể dữ liệu không được áp dụng?",
+  "config": {
+   "name": "A3-all-tools-b3000-citerule",
+   "model": "gemini-3.5-flash-lite",
+   "temperature": 0.0,
+   "tools": [
+    "dense",
+    "bm25",
+    "hybrid"
+   ],
+   "top_k": 3,
+   "budget_chars": 3000,
+   "max_searches": 4,
+   "max_steps": 8,
+   "cite_rule": true,
+   "retrieval_index": "day6 lab_B (multilingual-e5-small)"
+  },
+  "status": "answered",
+  "answer": "Theo quy định tại Nghị định 13/2023/NĐ-CP, việc xóa dữ liệu sẽ không áp dụng khi có đề nghị của chủ thể dữ liệu trong các trường hợp sau:\na) Pháp luật quy định không cho phép xóa dữ liệu [B:nd-13-2023:Điều16:1].\nb) Dữ liệu cá nhân được xử lý bởi cơ quan nhà nước có thẩm quyền với mục đích phục vụ hoạt động của cơ quan nhà nước theo quy định của pháp luật [B:nd-13-2023:Điều16:1].\nc) Dữ liệu cá nhân đã được công khai theo quy định của pháp luật [B:nd-13-2023:Điều16:1].\nd) Dữ liệu cá nhân được xử lý nhằm phục vụ yêu cầu pháp lý, nghiên cứu khoa học, thống kê theo quy định của pháp luật [B:nd-13-2023:Điều16:1].\nđ) Trong trường hợp tình trạng khẩn cấp về quốc phòng, an ninh quốc gia, trật tự an toàn xã hội, thảm họa lớn, dịch bệnh nguy hiểm; khi có nguy cơ đe dọa an ninh, quốc phòng nhưng chưa đến mức ban bố tình trạng khẩn cấp; phòng, chống bạo loạn, khủng bố, phòng, chống tội phạm và vi phạm pháp luật [B:nd-13-2023:Điều16:1].\ne) Ứng phó với tình huống khẩn cấp đe dọa đến tính mạng, sức khỏe hoặc sự an toàn của chủ thể dữ liệu hoặc cá nhân khác [B:nd-13-2023:Điều16:1].",
+  "citations": [
+   "B:nd-13-2023:Điều16:1"
+  ],
+  "events": [
+   {
+    "event": "llm",
+    "step": 1,
+    "calls": [
+     "search_hybrid"
+    ],
+    "usage": {
+     "prompt_tokens": 914,
+     "output_tokens": 34,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1679,
+    "retries": []
+   },
+   {
+    "event": "search",
+    "tool": "search_hybrid",
+    "method": "hybrid",
+    "query": "xóa dữ liệu cá nhân của chủ thể dữ liệu không được áp dụng trong trường hợp nào",
+    "filter": null,
+    "results": [
+     {
+      "rank": 1,
+      "id": "B:nd-13-2023:Điều16:1",
+      "score": 0.0328,
+      "page": 12,
+      "source_id": "nd-13-2023"
+     },
+     {
+      "rank": 2,
+      "id": "B:nd-13-2023:Điều16:0",
+      "score": 0.032,
+      "page": 11,
+      "source_id": "nd-13-2023"
+     },
+     {
+      "rank": 3,
+      "id": "B:nd-13-2023:Điều9:0",
+      "score": 0.0308,
+      "page": 6,
+      "source_id": "nd-13-2023"
+     }
+    ],
+    "new_context_ids": [
+     "B:nd-13-2023:Điều16:1",
+     "B:nd-13-2023:Điều16:0",
+     "B:nd-13-2023:Điều9:0"
+    ],
+    "dropped_ids": [],
+    "context_ids": [
+     "B:nd-13-2023:Điều16:1",
+     "B:nd-13-2023:Điều16:0",
+     "B:nd-13-2023:Điều9:0"
+    ],
+    "elapsed_ms": 19.08
+   },
+   {
+    "event": "llm",
+    "step": 2,
+    "calls": [
+     "final_answer"
+    ],
+    "usage": {
+     "prompt_tokens": 2020,
+     "output_tokens": 420,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 2349,
+    "retries": [
+     {
+      "attempt": 1,
+      "code": 429,
+      "message": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite, description: Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 1.282858558s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'lo",
+      "elapsed_ms": 479
+     },
+     {
+      "attempt": 2,
+      "code": 429,
+      "message": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite, description: Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 58.294337884s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'m",
+      "elapsed_ms": 385
+     },
+     {
+      "attempt": 3,
+      "code": 429,
+      "message": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite, description: Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 53.715561883s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'l",
+      "elapsed_ms": 287
+     }
+    ]
+   },
+   {
+    "event": "answer",
+    "enough_evidence": true,
+    "citations": [
+     "B:nd-13-2023:Điều16:1"
+    ],
+    "citations_in_context": [
+     true
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "context_ids": [
+   "B:nd-13-2023:Điều16:1",
+   "B:nd-13-2023:Điều16:0",
+   "B:nd-13-2023:Điều9:0"
+  ],
+  "usage": {
+   "prompt_tokens": 2934,
+   "output_tokens": 454,
+   "thought_tokens": 0
+  },
+  "elapsed_s": 20.67,
+  "inline_markers_ok": true,
+  "invalid_citation_ids": [],
+  "resumed_after_error": true
+ },
+ {
+  "query_id": "d04",
+  "split": "dev",
+  "answerable": true,
+  "qtype": "paraphrase",
+  "question": "Hồ sơ đánh giá tác động xử lý dữ liệu cá nhân (không phải hồ sơ chuyển dữ liệu ra nước ngoài) phải được gửi cho Bộ Công an trong thời gian bao lâu kể từ khi bắt đầu xử lý?",
+  "config": {
+   "name": "A3-all-tools-b3000-citerule",
+   "model": "gemini-3.5-flash-lite",
+   "temperature": 0.0,
+   "tools": [
+    "dense",
+    "bm25",
+    "hybrid"
+   ],
+   "top_k": 3,
+   "budget_chars": 3000,
+   "max_searches": 4,
+   "max_steps": 8,
+   "cite_rule": true,
+   "retrieval_index": "day6 lab_B (multilingual-e5-small)"
+  },
+  "status": "answered",
+  "answer": "Hồ sơ đánh giá tác động xử lý dữ liệu cá nhân phải được gửi cho Bộ Công an (Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao) 01 bản chính trong thời gian **60 ngày** kể từ ngày tiến hành xử lý dữ liệu cá nhân [B:nd-13-2023:Điều24:3].",
+  "citations": [
+   "B:nd-13-2023:Điều24:3"
+  ],
+  "events": [
+   {
+    "event": "llm",
+    "step": 1,
+    "calls": [
+     "search_hybrid"
+    ],
+    "usage": {
+     "prompt_tokens": 936,
+     "output_tokens": 43,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1157,
+    "retries": []
+   },
+   {
+    "event": "search",
+    "tool": "search_hybrid",
+    "method": "hybrid",
+    "query": "hồ sơ đánh giá tác động xử lý dữ liệu cá nhân gửi Bộ Công an thời gian bao lâu kể từ khi bắt đầu xử lý",
+    "filter": null,
+    "results": [
+     {
+      "rank": 1,
+      "id": "B:nd-13-2023:Điều24:3",
+      "score": 0.0328,
+      "page": 17,
+      "source_id": "nd-13-2023"
+     },
+     {
+      "rank": 2,
+      "id": "B:nd-13-2023:Điều24:1",
+      "score": 0.0323,
+      "page": 16,
+      "source_id": "nd-13-2023"
+     },
+     {
+      "rank": 3,
+      "id": "B:nd-13-2023:Điều25:2",
+      "score": 0.0315,
+      "page": 18,
+      "source_id": "nd-13-2023"
+     }
+    ],
+    "new_context_ids": [
+     "B:nd-13-2023:Điều24:3",
+     "B:nd-13-2023:Điều24:1",
+     "B:nd-13-2023:Điều25:2"
+    ],
+    "dropped_ids": [],
+    "context_ids": [
+     "B:nd-13-2023:Điều24:3",
+     "B:nd-13-2023:Điều24:1",
+     "B:nd-13-2023:Điều25:2"
+    ],
+    "elapsed_ms": 18.59
+   },
+   {
+    "event": "llm",
+    "step": 2,
+    "calls": [
+     "final_answer"
+    ],
+    "usage": {
+     "prompt_tokens": 1926,
+     "output_tokens": 124,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1972,
+    "retries": []
+   },
+   {
+    "event": "answer",
+    "enough_evidence": true,
+    "citations": [
+     "B:nd-13-2023:Điều24:3"
+    ],
+    "citations_in_context": [
+     true
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "context_ids": [
+   "B:nd-13-2023:Điều24:3",
+   "B:nd-13-2023:Điều24:1",
+   "B:nd-13-2023:Điều25:2"
+  ],
+  "usage": {
+   "prompt_tokens": 2862,
+   "output_tokens": 167,
+   "thought_tokens": 0
+  },
+  "elapsed_s": 3.15,
+  "inline_markers_ok": true,
+  "invalid_citation_ids": [],
+  "resumed_after_error": true
+ },
+ {
+  "query_id": "d05",
+  "split": "dev",
+  "answerable": true,
+  "qtype": "filter",
+  "question": "Việc xử lý dữ liệu cá nhân của trẻ em từ độ tuổi nào thì phải có sự đồng ý của chính trẻ em, bên cạnh sự đồng ý của cha, mẹ hoặc người giám hộ?",
+  "config": {
+   "name": "A3-all-tools-b3000-citerule",
+   "model": "gemini-3.5-flash-lite",
+   "temperature": 0.0,
+   "tools": [
+    "dense",
+    "bm25",
+    "hybrid"
+   ],
+   "top_k": 3,
+   "budget_chars": 3000,
+   "max_searches": 4,
+   "max_steps": 8,
+   "cite_rule": true,
+   "retrieval_index": "day6 lab_B (multilingual-e5-small)"
+  },
+  "status": "answered",
+  "answer": "Theo quy định, việc xử lý dữ liệu cá nhân của trẻ em phải có sự đồng ý của chính trẻ em trong trường hợp trẻ em từ đủ 7 tuổi trở lên, bên cạnh sự đồng ý của cha, mẹ hoặc người giám hộ (trừ trường hợp quy định tại Điều 17 Nghị định 13/2023/NĐ-CP) [B:nd-13-2023:Điều20:0].",
+  "citations": [
+   "B:nd-13-2023:Điều20:0"
+  ],
+  "events": [
+   {
+    "event": "llm",
+    "step": 1,
+    "calls": [
+     "search_hybrid"
+    ],
+    "usage": {
+     "prompt_tokens": 931,
+     "output_tokens": 34,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1048,
+    "retries": []
+   },
+   {
+    "event": "search",
+    "tool": "search_hybrid",
+    "method": "hybrid",
+    "query": "xử lý dữ liệu cá nhân của trẻ em đồng ý cha mẹ người giám hộ độ tuổi",
+    "filter": null,
+    "results": [
+     {
+      "rank": 1,
+      "id": "B:nd-13-2023:Điều20:0",
+      "score": 0.0328,
+      "page": 14,
+      "source_id": "nd-13-2023"
+     },
+     {
+      "rank": 2,
+      "id": "B:nd-13-2023:Điều20:1",
+      "score": 0.0323,
+      "page": 14,
+      "source_id": "nd-13-2023"
+     },
+     {
+      "rank": 3,
+      "id": "B:nd-13-2023:Điều19:0",
+      "score": 0.0315,
+      "page": 13,
+      "source_id": "nd-13-2023"
+     }
+    ],
+    "new_context_ids": [
+     "B:nd-13-2023:Điều20:0",
+     "B:nd-13-2023:Điều20:1",
+     "B:nd-13-2023:Điều19:0"
+    ],
+    "dropped_ids": [],
+    "context_ids": [
+     "B:nd-13-2023:Điều20:0",
+     "B:nd-13-2023:Điều20:1",
+     "B:nd-13-2023:Điều19:0"
+    ],
+    "elapsed_ms": 36.07
+   },
+   {
+    "event": "llm",
+    "step": 2,
+    "calls": [
+     "final_answer"
+    ],
+    "usage": {
+     "prompt_tokens": 1742,
+     "output_tokens": 139,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1333,
+    "retries": []
+   },
+   {
+    "event": "answer",
+    "enough_evidence": true,
+    "citations": [
+     "B:nd-13-2023:Điều20:0"
+    ],
+    "citations_in_context": [
+     true
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "context_ids": [
+   "B:nd-13-2023:Điều20:0",
+   "B:nd-13-2023:Điều20:1",
+   "B:nd-13-2023:Điều19:0"
+  ],
+  "usage": {
+   "prompt_tokens": 2673,
+   "output_tokens": 173,
+   "thought_tokens": 0
+  },
+  "elapsed_s": 2.42,
+  "inline_markers_ok": true,
+  "invalid_citation_ids": [],
+  "resumed_after_error": true
+ },
+ {
+  "query_id": "d06",
+  "split": "dev",
+  "answerable": true,
+  "qtype": "filter",
+  "question": "Khi phát hiện vi phạm quy định bảo vệ dữ liệu cá nhân, bên kiểm soát phải thông báo cho cơ quan nào và chậm nhất sau bao lâu?",
+  "config": {
+   "name": "A3-all-tools-b3000-citerule",
+   "model": "gemini-3.5-flash-lite",
+   "temperature": 0.0,
+   "tools": [
+    "dense",
+    "bm25",
+    "hybrid"
+   ],
+   "top_k": 3,
+   "budget_chars": 3000,
+   "max_searches": 4,
+   "max_steps": 8,
+   "cite_rule": true,
+   "retrieval_index": "day6 lab_B (multilingual-e5-small)"
+  },
+  "status": "answered",
+  "answer": "Khi phát hiện xảy ra vi phạm quy định bảo vệ dữ liệu cá nhân, Bên Kiểm soát dữ liệu cá nhân (hoặc Bên Kiểm soát và xử lý dữ liệu cá nhân) phải thông báo cho **Bộ Công an (Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao)** chậm nhất **72 giờ** sau khi xảy ra hành vi vi phạm (trường hợp thông báo sau 72 giờ thì phải kèm theo lý do thông báo chậm, muộn) [B:nd-13-2023:Điều23:0].",
+  "citations": [
+   "B:nd-13-2023:Điều23:0"
+  ],
+  "events": [
+   {
+    "event": "llm",
+    "step": 1,
+    "calls": [
+     "search_hybrid"
+    ],
+    "usage": {
+     "prompt_tokens": 922,
+     "output_tokens": 40,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1240,
+    "retries": []
+   },
+   {
+    "event": "search",
+    "tool": "search_hybrid",
+    "method": "hybrid",
+    "query": "bên kiểm soát thông báo vi phạm quy định bảo vệ dữ liệu cá nhân cho cơ quan nào chậm nhất sau bao lâu",
+    "filter": null,
+    "results": [
+     {
+      "rank": 1,
+      "id": "B:nd-13-2023:Điều23:0",
+      "score": 0.0328,
+      "page": 15,
+      "source_id": "nd-13-2023"
+     },
+     {
+      "rank": 2,
+      "id": "B:nd-13-2023:Điều23:1",
+      "score": 0.032,
+      "page": 15,
+      "source_id": "nd-13-2023"
+     },
+     {
+      "rank": 3,
+      "id": "B:nd-13-2023:Điều23:2",
+      "score": 0.032,
+      "page": 15,
+      "source_id": "nd-13-2023"
+     }
+    ],
+    "new_context_ids": [
+     "B:nd-13-2023:Điều23:0",
+     "B:nd-13-2023:Điều23:1",
+     "B:nd-13-2023:Điều23:2"
+    ],
+    "dropped_ids": [],
+    "context_ids": [
+     "B:nd-13-2023:Điều23:0",
+     "B:nd-13-2023:Điều23:1",
+     "B:nd-13-2023:Điều23:2"
+    ],
+    "elapsed_ms": 29.01
+   },
+   {
+    "event": "llm",
+    "step": 2,
+    "calls": [
+     "final_answer"
+    ],
+    "usage": {
+     "prompt_tokens": 1889,
+     "output_tokens": 164,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1487,
+    "retries": []
+   },
+   {
+    "event": "answer",
+    "enough_evidence": true,
+    "citations": [
+     "B:nd-13-2023:Điều23:0"
+    ],
+    "citations_in_context": [
+     true
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "context_ids": [
+   "B:nd-13-2023:Điều23:0",
+   "B:nd-13-2023:Điều23:1",
+   "B:nd-13-2023:Điều23:2"
+  ],
+  "usage": {
+   "prompt_tokens": 2811,
+   "output_tokens": 204,
+   "thought_tokens": 0
+  },
+  "elapsed_s": 2.76,
+  "inline_markers_ok": true,
+  "invalid_citation_ids": [],
+  "resumed_after_error": true
+ },
+ {
+  "query_id": "d07",
+  "split": "dev",
+  "answerable": true,
+  "qtype": "filter",
+  "question": "Doanh nghiệp cung cấp dịch vụ trên mạng viễn thông, Internet tại Việt Nam có thu thập, xử lý dữ liệu người dùng thì phải lưu trữ dữ liệu ở đâu, và doanh nghiệp nước ngoài còn phải làm gì?",
+  "config": {
+   "name": "A3-all-tools-b3000-citerule",
+   "model": "gemini-3.5-flash-lite",
+   "temperature": 0.0,
+   "tools": [
+    "dense",
+    "bm25",
+    "hybrid"
+   ],
+   "top_k": 3,
+   "budget_chars": 3000,
+   "max_searches": 4,
+   "max_steps": 8,
+   "cite_rule": true,
+   "retrieval_index": "day6 lab_B (multilingual-e5-small)"
+  },
+  "status": "answered",
+  "answer": "Theo quy định của pháp luật:\n- Doanh nghiệp trong nước và ngoài nước cung cấp dịch vụ trên mạng viễn thông, mạng Internet, các dịch vụ gia tăng trên không gian mạng tại Việt Nam có hoạt động thu thập, khai thác, phân tích, xử lý dữ liệu về thông tin cá nhân, dữ liệu về mối quan hệ của người sử dụng dịch vụ, dữ liệu do người sử dụng dịch vụ tại Việt Nam tạo ra **phải lưu trữ dữ liệu này tại Việt Nam** trong thời gian theo quy định của Chính phủ [B:luat-anm-2018:Điều26:3].\n- Đối với doanh nghiệp nước ngoài thuộc trường hợp này, ngoài việc phải lưu trữ dữ liệu tại Việt Nam, còn **phải đặt chi nhánh hoặc văn phòng đại diện tại Việt Nam** [B:luat-anm-2018:Điều26:3].",
+  "citations": [
+   "B:luat-anm-2018:Điều26:3"
+  ],
+  "events": [
+   {
+    "event": "llm",
+    "step": 1,
+    "calls": [
+     "search_hybrid"
+    ],
+    "usage": {
+     "prompt_tokens": 937,
+     "output_tokens": 38,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1313,
+    "retries": []
+   },
+   {
+    "event": "search",
+    "tool": "search_hybrid",
+    "method": "hybrid",
+    "query": "doanh nghiệp cung cấp dịch vụ trên mạng viễn thông Internet lưu trữ dữ liệu ở đâu doanh nghiệp nước ngoài",
+    "filter": null,
+    "results": [
+     {
+      "rank": 1,
+      "id": "B:luat-anm-2018:Điều26:3",
+      "score": 0.0328,
+      "page": 25,
+      "source_id": "luat-anm-2018"
+     },
+     {
+      "rank": 2,
+      "id": "B:luat-anm-2018:Điều41:2",
+      "score": 0.0323,
+      "page": 31,
+      "source_id": "luat-anm-2018"
+     },
+     {
+      "rank": 3,
+      "id": "B:luat-anm-2018:Điều26:2",
+      "score": 0.0313,
+      "page": 25,
+      "source_id": "luat-anm-2018"
+     }
+    ],
+    "new_context_ids": [
+     "B:luat-anm-2018:Điều26:3",
+     "B:luat-anm-2018:Điều41:2",
+     "B:luat-anm-2018:Điều26:2"
+    ],
+    "dropped_ids": [],
+    "context_ids": [
+     "B:luat-anm-2018:Điều26:3",
+     "B:luat-anm-2018:Điều41:2",
+     "B:luat-anm-2018:Điều26:2"
+    ],
+    "elapsed_ms": 28.91
+   },
+   {
+    "event": "llm",
+    "step": 2,
+    "calls": [
+     "search_hybrid"
+    ],
+    "usage": {
+     "prompt_tokens": 1639,
+     "output_tokens": 41,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1411,
+    "retries": []
+   },
+   {
+    "event": "search",
+    "tool": "search_hybrid",
+    "method": "hybrid",
+    "query": "lưu trữ dữ liệu tại Việt Nam thời gian theo quy định của Chính phủ Nghị định 53 2022",
+    "filter": null,
+    "results": [
+     {
+      "rank": 1,
+      "id": "B:luat-gddt-2023:Điều53:3",
+      "score": 0.0323,
+      "page": 30,
+      "source_id": "luat-gddt-2023"
+     },
+     {
+      "rank": 2,
+      "id": "B:luat-anm-2018:Điều26:3",
+      "score": 0.032,
+      "page": 25,
+      "source_id": "luat-anm-2018"
+     },
+     {
+      "rank": 3,
+      "id": "B:nd-13-2023:Điều25:3",
+      "score": 0.0315,
+      "page": 18,
+      "source_id": "nd-13-2023"
+     }
+    ],
+    "new_context_ids": [
+     "B:luat-gddt-2023:Điều53:3"
+    ],
+    "dropped_ids": [
+     "B:nd-13-2023:Điều25:3"
+    ],
+    "context_ids": [
+     "B:luat-anm-2018:Điều26:3",
+     "B:luat-anm-2018:Điều41:2",
+     "B:luat-anm-2018:Điều26:2",
+     "B:luat-gddt-2023:Điều53:3"
+    ],
+    "elapsed_ms": 22.91
+   },
+   {
+    "event": "llm",
+    "step": 3,
+    "calls": [
+     "search_keyword"
+    ],
+    "usage": {
+     "prompt_tokens": 1905,
+     "output_tokens": 27,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 2068,
+    "retries": []
+   },
+   {
+    "event": "search",
+    "tool": "search_keyword",
+    "method": "bm25",
+    "query": "đặt chi nhánh hoặc văn phòng đại diện tại Việt Nam",
+    "filter": null,
+    "results": [
+     {
+      "rank": 1,
+      "id": "B:luat-anm-2018:Điều26:3",
+      "score": 31.8732,
+      "page": 25,
+      "source_id": "luat-anm-2018"
+     },
+     {
+      "rank": 2,
+      "id": "B:luat-gddt-2023:Điều26:1",
+      "score": 18.6612,
+      "page": 14,
+      "source_id": "luat-gddt-2023"
+     },
+     {
+      "rank": 3,
+      "id": "B:luat-gddt-2023:Điều47:2",
+      "score": 13.585,
+      "page": 26,
+      "source_id": "luat-gddt-2023"
+     }
+    ],
+    "new_context_ids": [
+     "B:luat-gddt-2023:Điều26:1"
+    ],
+    "dropped_ids": [
+     "B:luat-gddt-2023:Điều47:2"
+    ],
+    "context_ids": [
+     "B:luat-anm-2018:Điều26:3",
+     "B:luat-anm-2018:Điều41:2",
+     "B:luat-anm-2018:Điều26:2",
+     "B:luat-gddt-2023:Điều53:3",
+     "B:luat-gddt-2023:Điều26:1"
+    ],
+    "elapsed_ms": 2.44
+   },
+   {
+    "event": "llm",
+    "step": 4,
+    "calls": [
+     "search_hybrid"
+    ],
+    "usage": {
+     "prompt_tokens": 2218,
+     "output_tokens": 41,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1448,
+    "retries": []
+   },
+   {
+    "event": "search",
+    "tool": "search_hybrid",
+    "method": "hybrid",
+    "query": "doanh nghiệp trong nước và ngoài nước cung cấp dịch vụ trên mạng viễn thông mạng Internet lưu trữ dữ liệu tại Việt Nam",
+    "filter": null,
+    "results": [
+     {
+      "rank": 1,
+      "id": "B:luat-anm-2018:Điều26:3",
+      "score": 0.0328,
+      "page": 25,
+      "source_id": "luat-anm-2018"
+     },
+     {
+      "rank": 2,
+      "id": "B:luat-anm-2018:Điều26:2",
+      "score": 0.0318,
+      "page": 25,
+      "source_id": "luat-anm-2018"
+     },
+     {
+      "rank": 3,
+      "id": "B:luat-anm-2018:Điều41:2",
+      "score": 0.0317,
+      "page": 31,
+      "source_id": "luat-anm-2018"
+     }
+    ],
+    "new_context_ids": [],
+    "dropped_ids": [],
+    "context_ids": [
+     "B:luat-anm-2018:Điều26:3",
+     "B:luat-anm-2018:Điều41:2",
+     "B:luat-anm-2018:Điều26:2",
+     "B:luat-gddt-2023:Điều53:3",
+     "B:luat-gddt-2023:Điều26:1"
+    ],
+    "elapsed_ms": 19.9
+   },
+   {
+    "event": "llm",
+    "step": 5,
+    "calls": [
+     "search_hybrid"
+    ],
+    "usage": {
+     "prompt_tokens": 2359,
+     "output_tokens": 37,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1752,
+    "retries": []
+   },
+   {
+    "event": "search_limit",
+    "tool": "search_hybrid",
+    "args": {
+     "query": "doanh nghiệp ngoài nước quy định tại khoản này phải đặt chi nhánh hoặc văn phòng đại diện tại Việt Nam"
+    }
+   },
+   {
+    "event": "llm",
+    "step": 6,
+    "calls": [
+     "final_answer"
+    ],
+    "usage": {
+     "prompt_tokens": 2424,
+     "output_tokens": 235,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 2523,
+    "retries": []
+   },
+   {
+    "event": "answer",
+    "enough_evidence": true,
+    "citations": [
+     "B:luat-anm-2018:Điều26:3"
+    ],
+    "citations_in_context": [
+     true
+    ]
+   }
+  ],
+  "n_searches": 4,
+  "context_ids": [
+   "B:luat-anm-2018:Điều26:3",
+   "B:luat-anm-2018:Điều41:2",
+   "B:luat-anm-2018:Điều26:2",
+   "B:luat-gddt-2023:Điều53:3",
+   "B:luat-gddt-2023:Điều26:1"
+  ],
+  "usage": {
+   "prompt_tokens": 11482,
+   "output_tokens": 419,
+   "thought_tokens": 0
+  },
+  "elapsed_s": 10.59,
+  "inline_markers_ok": true,
+  "invalid_citation_ids": [],
+  "resumed_after_error": true
+ },
+ {
+  "query_id": "d08",
+  "split": "dev",
+  "answerable": true,
+  "qtype": "paraphrase",
+  "question": "Doanh nghiệp dịch vụ trên không gian mạng phải xóa hoặc ngăn chặn chia sẻ thông tin vi phạm chậm nhất bao lâu kể từ khi có yêu cầu của cơ quan có thẩm quyền?",
+  "config": {
+   "name": "A3-all-tools-b3000-citerule",
+   "model": "gemini-3.5-flash-lite",
+   "temperature": 0.0,
+   "tools": [
+    "dense",
+    "bm25",
+    "hybrid"
+   ],
+   "top_k": 3,
+   "budget_chars": 3000,
+   "max_searches": 4,
+   "max_steps": 8,
+   "cite_rule": true,
+   "retrieval_index": "day6 lab_B (multilingual-e5-small)"
+  },
+  "status": "answered",
+  "answer": "Chậm nhất là 24 giờ kể từ thời điểm có yêu cầu của lực lượng chuyên trách bảo vệ an ninh mạng thuộc Bộ Công an hoặc cơ quan có thẩm quyền của Bộ Thông tin và Truyền thông, doanh nghiệp cung cấp dịch vụ trên mạng viễn thông, mạng Internet, các dịch vụ gia tăng trên không gian mạng phải ngăn chặn việc chia sẻ thông tin, xóa bỏ thông tin có nội dung vi phạm [B:luat-anm-2018:Điều26:1].",
+  "citations": [
+   "B:luat-anm-2018:Điều26:1"
+  ],
+  "events": [
+   {
+    "event": "llm",
+    "step": 1,
+    "calls": [
+     "search_hybrid"
+    ],
+    "usage": {
+     "prompt_tokens": 928,
+     "output_tokens": 44,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1525,
+    "retries": []
+   },
+   {
+    "event": "search",
+    "tool": "search_hybrid",
+    "method": "hybrid",
+    "query": "doanh nghiệp dịch vụ trên không gian mạng xóa hoặc ngăn chặn chia sẻ thông tin vi phạm chậm nhất bao lâu kể từ khi có yêu cầu",
+    "filter": null,
+    "results": [
+     {
+      "rank": 1,
+      "id": "B:luat-anm-2018:Điều26:1",
+      "score": 0.0328,
+      "page": 24,
+      "source_id": "luat-anm-2018"
+     },
+     {
+      "rank": 2,
+      "id": "B:luat-anm-2018:Điều16:2",
+      "score": 0.0318,
+      "page": 15,
+      "source_id": "luat-anm-2018"
+     },
+     {
+      "rank": 3,
+      "id": "B:luat-anm-2018:Điều26:2",
+      "score": 0.0313,
+      "page": 25,
+      "source_id": "luat-anm-2018"
+     }
+    ],
+    "new_context_ids": [
+     "B:luat-anm-2018:Điều26:1",
+     "B:luat-anm-2018:Điều16:2"
+    ],
+    "dropped_ids": [
+     "B:luat-anm-2018:Điều26:2"
+    ],
+    "context_ids": [
+     "B:luat-anm-2018:Điều26:1",
+     "B:luat-anm-2018:Điều16:2"
+    ],
+    "elapsed_ms": 27.78
+   },
+   {
+    "event": "llm",
+    "step": 2,
+    "calls": [
+     "final_answer"
+    ],
+    "usage": {
+     "prompt_tokens": 1839,
+     "output_tokens": 150,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 2951,
+    "retries": []
+   },
+   {
+    "event": "answer",
+    "enough_evidence": true,
+    "citations": [
+     "B:luat-anm-2018:Điều26:1"
+    ],
+    "citations_in_context": [
+     true
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "context_ids": [
+   "B:luat-anm-2018:Điều26:1",
+   "B:luat-anm-2018:Điều16:2"
+  ],
+  "usage": {
+   "prompt_tokens": 2767,
+   "output_tokens": 194,
+   "thought_tokens": 0
+  },
+  "elapsed_s": 4.5,
+  "inline_markers_ok": true,
+  "invalid_citation_ids": [],
+  "resumed_after_error": true
+ },
+ {
+  "query_id": "d09",
+  "split": "dev",
+  "answerable": true,
+  "qtype": "condition",
+  "question": "Thông điệp dữ liệu được sử dụng và có giá trị như bản gốc khi đáp ứng những yêu cầu nào?",
+  "config": {
+   "name": "A3-all-tools-b3000-citerule",
+   "model": "gemini-3.5-flash-lite",
+   "temperature": 0.0,
+   "tools": [
+    "dense",
+    "bm25",
+    "hybrid"
+   ],
+   "top_k": 3,
+   "budget_chars": 3000,
+   "max_searches": 4,
+   "max_steps": 8,
+   "cite_rule": true,
+   "retrieval_index": "day6 lab_B (multilingual-e5-small)"
+  },
+  "status": "answered",
+  "answer": "Theo Luật Giao dịch điện tử 2023, thông điệp dữ liệu được sử dụng và có giá trị như bản gốc khi đáp ứng đủ các yêu cầu sau đây:\n1. Thông tin trong thông điệp dữ liệu được bảo đảm toàn vẹn kể từ khi được khởi tạo lần đầu tiên dưới dạng một thông điệp dữ liệu hoàn chỉnh. Thông tin được xem là toàn vẹn khi chưa bị thay đổi, trừ những thay đổi về hình thức phát sinh trong quá trình gửi, lưu trữ hoặc hiển thị thông điệp dữ liệu [B:luat-gddt-2023:Điều10:0].\n2. Thông tin trong thông điệp dữ liệu có thể truy cập và sử dụng được dưới dạng hoàn chỉnh [B:luat-gddt-2023:Điều10:0].",
+  "citations": [
+   "B:luat-gddt-2023:Điều10:0"
+  ],
+  "events": [
+   {
+    "event": "llm",
+    "step": 1,
+    "calls": [
+     "search_hybrid"
+    ],
+    "usage": {
+     "prompt_tokens": 914,
+     "output_tokens": 38,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1247,
+    "retries": []
+   },
+   {
+    "event": "search",
+    "tool": "search_hybrid",
+    "method": "hybrid",
+    "query": "thông điệp dữ liệu được sử dụng và có giá trị như bản gốc khi đáp ứng những yêu cầu nào",
+    "filter": null,
+    "results": [
+     {
+      "rank": 1,
+      "id": "B:luat-gddt-2023:Điều10:0",
+      "score": 0.0328,
+      "page": 5,
+      "source_id": "luat-gddt-2023"
+     },
+     {
+      "rank": 2,
+      "id": "B:luat-gddt-2023:Điều9:0",
+      "score": 0.032,
+      "page": 4,
+      "source_id": "luat-gddt-2023"
+     },
+     {
+      "rank": 3,
+      "id": "B:luat-gddt-2023:Điều13:0",
+      "score": 0.0312,
+      "page": 6,
+      "source_id": "luat-gddt-2023"
+     }
+    ],
+    "new_context_ids": [
+     "B:luat-gddt-2023:Điều10:0",
+     "B:luat-gddt-2023:Điều9:0",
+     "B:luat-gddt-2023:Điều13:0"
+    ],
+    "dropped_ids": [],
+    "context_ids": [
+     "B:luat-gddt-2023:Điều10:0",
+     "B:luat-gddt-2023:Điều9:0",
+     "B:luat-gddt-2023:Điều13:0"
+    ],
+    "elapsed_ms": 22.56
+   },
+   {
+    "event": "llm",
+    "step": 2,
+    "calls": [
+     "final_answer"
+    ],
+    "usage": {
+     "prompt_tokens": 1767,
+     "output_tokens": 223,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1990,
+    "retries": []
+   },
+   {
+    "event": "answer",
+    "enough_evidence": true,
+    "citations": [
+     "B:luat-gddt-2023:Điều10:0"
+    ],
+    "citations_in_context": [
+     true
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "context_ids": [
+   "B:luat-gddt-2023:Điều10:0",
+   "B:luat-gddt-2023:Điều9:0",
+   "B:luat-gddt-2023:Điều13:0"
+  ],
+  "usage": {
+   "prompt_tokens": 2681,
+   "output_tokens": 261,
+   "thought_tokens": 0
+  },
+  "elapsed_s": 3.26,
+  "inline_markers_ok": true,
+  "invalid_citation_ids": [],
+  "resumed_after_error": true
+ },
+ {
+  "query_id": "d10",
+  "split": "dev",
+  "answerable": true,
+  "qtype": "condition",
+  "question": "Khi pháp luật yêu cầu thông tin phải được thể hiện bằng văn bản, thông điệp dữ liệu có đáp ứng yêu cầu đó không và với điều kiện gì?",
+  "config": {
+   "name": "A3-all-tools-b3000-citerule",
+   "model": "gemini-3.5-flash-lite",
+   "temperature": 0.0,
+   "tools": [
+    "dense",
+    "bm25",
+    "hybrid"
+   ],
+   "top_k": 3,
+   "budget_chars": 3000,
+   "max_searches": 4,
+   "max_steps": 8,
+   "cite_rule": true,
+   "retrieval_index": "day6 lab_B (multilingual-e5-small)"
+  },
+  "status": "answered",
+  "answer": "Khi pháp luật yêu cầu thông tin phải được thể hiện bằng văn bản, thông điệp dữ liệu được xem là đáp ứng yêu cầu đó với điều kiện thông tin trong thông điệp dữ liệu đó có thể truy cập và sử dụng được để tham chiếu [B:luat-gddt-2023:Điều9:0].",
+  "citations": [
+   "B:luat-gddt-2023:Điều9:0"
+  ],
+  "events": [
+   {
+    "event": "llm",
+    "step": 1,
+    "calls": [
+     "search_hybrid"
+    ],
+    "usage": {
+     "prompt_tokens": 924,
+     "output_tokens": 30,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1348,
+    "retries": [
+     {
+      "attempt": 1,
+      "code": 429,
+      "message": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite, description: Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 15.692174945s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'l",
+      "elapsed_ms": 321
+     },
+     {
+      "attempt": 2,
+      "code": 429,
+      "message": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite, description: Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 12.47627023s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'lo",
+      "elapsed_ms": 257
+     },
+     {
+      "attempt": 3,
+      "code": 429,
+      "message": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite, description: Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 7.280057673s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'lo",
+      "elapsed_ms": 322
+     }
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_hybrid",
+    "method": "hybrid",
+    "query": "thông điệp dữ liệu đáp ứng yêu cầu bằng văn bản điều kiện",
+    "filter": null,
+    "results": [
+     {
+      "rank": 1,
+      "id": "B:luat-gddt-2023:Điều9:0",
+      "score": 0.0328,
+      "page": 4,
+      "source_id": "luat-gddt-2023"
+     },
+     {
+      "rank": 2,
+      "id": "B:luat-gddt-2023:Điều13:0",
+      "score": 0.032,
+      "page": 6,
+      "source_id": "luat-gddt-2023"
+     },
+     {
+      "rank": 3,
+      "id": "B:luat-gddt-2023:Điều12:0",
+      "score": 0.0318,
+      "page": 5,
+      "source_id": "luat-gddt-2023"
+     }
+    ],
+    "new_context_ids": [
+     "B:luat-gddt-2023:Điều9:0",
+     "B:luat-gddt-2023:Điều13:0",
+     "B:luat-gddt-2023:Điều12:0"
+    ],
+    "dropped_ids": [],
+    "context_ids": [
+     "B:luat-gddt-2023:Điều9:0",
+     "B:luat-gddt-2023:Điều13:0",
+     "B:luat-gddt-2023:Điều12:0"
+    ],
+    "elapsed_ms": 32.74
+   },
+   {
+    "event": "llm",
+    "step": 2,
+    "calls": [
+     "final_answer"
+    ],
+    "usage": {
+     "prompt_tokens": 1861,
+     "output_tokens": 115,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1484,
+    "retries": []
+   },
+   {
+    "event": "answer",
+    "enough_evidence": true,
+    "citations": [
+     "B:luat-gddt-2023:Điều9:0"
+    ],
+    "citations_in_context": [
+     true
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "context_ids": [
+   "B:luat-gddt-2023:Điều9:0",
+   "B:luat-gddt-2023:Điều13:0",
+   "B:luat-gddt-2023:Điều12:0"
+  ],
+  "usage": {
+   "prompt_tokens": 2785,
+   "output_tokens": 145,
+   "thought_tokens": 0
+  },
+  "elapsed_s": 19.92,
+  "inline_markers_ok": true,
+  "invalid_citation_ids": [],
+  "resumed_after_error": true
+ },
+ {
+  "query_id": "d11",
+  "split": "dev",
+  "answerable": true,
+  "qtype": "paraphrase",
+  "question": "Trong giao kết và thực hiện hợp đồng điện tử, thông báo gửi dưới dạng thông điệp dữ liệu có giá trị pháp lý như thế nào?",
+  "config": {
+   "name": "A3-all-tools-b3000-citerule",
+   "model": "gemini-3.5-flash-lite",
+   "temperature": 0.0,
+   "tools": [
+    "dense",
+    "bm25",
+    "hybrid"
+   ],
+   "top_k": 3,
+   "budget_chars": 3000,
+   "max_searches": 4,
+   "max_steps": 8,
+   "cite_rule": true,
+   "retrieval_index": "day6 lab_B (multilingual-e5-small)"
+  },
+  "status": "answered",
+  "answer": "Trong giao kết và thực hiện hợp đồng điện tử, thông báo dưới dạng thông điệp dữ liệu có giá trị pháp lý như thông báo bằng văn bản giấy [B:luat-gddt-2023:Điều38:0].",
+  "citations": [
+   "B:luat-gddt-2023:Điều38:0"
+  ],
+  "events": [
+   {
+    "event": "llm",
+    "step": 1,
+    "calls": [
+     "search_hybrid"
+    ],
+    "usage": {
+     "prompt_tokens": 921,
+     "output_tokens": 39,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1519,
+    "retries": [
+     {
+      "attempt": 1,
+      "code": 429,
+      "message": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite, description: Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 55.730307056s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'l",
+      "elapsed_ms": 354
+     },
+     {
+      "attempt": 2,
+      "code": 429,
+      "message": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite, description: Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 53.025728731s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'m",
+      "elapsed_ms": 247
+     },
+     {
+      "attempt": 3,
+      "code": 429,
+      "message": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite, description: Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 47.971777957s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'l",
+      "elapsed_ms": 285
+     }
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_hybrid",
+    "method": "hybrid",
+    "query": "thông báo gửi dưới dạng thông điệp dữ liệu giá trị pháp lý giao kết và thực hiện hợp đồng điện tử",
+    "filter": null,
+    "results": [
+     {
+      "rank": 1,
+      "id": "B:luat-gddt-2023:Điều38:0",
+      "score": 0.0328,
+      "page": 19,
+      "source_id": "luat-gddt-2023"
+     },
+     {
+      "rank": 2,
+      "id": "B:luat-gddt-2023:Điều37:0",
+      "score": 0.0323,
+      "page": 19,
+      "source_id": "luat-gddt-2023"
+     },
+     {
+      "rank": 3,
+      "id": "B:luat-gddt-2023:Điều35:0",
+      "score": 0.0313,
+      "page": 19,
+      "source_id": "luat-gddt-2023"
+     }
+    ],
+    "new_context_ids": [
+     "B:luat-gddt-2023:Điều38:0",
+     "B:luat-gddt-2023:Điều37:0",
+     "B:luat-gddt-2023:Điều35:0"
+    ],
+    "dropped_ids": [],
+    "context_ids": [
+     "B:luat-gddt-2023:Điều38:0",
+     "B:luat-gddt-2023:Điều37:0",
+     "B:luat-gddt-2023:Điều35:0"
+    ],
+    "elapsed_ms": 18.08
+   },
+   {
+    "event": "llm",
+    "step": 2,
+    "calls": [
+     "final_answer"
+    ],
+    "usage": {
+     "prompt_tokens": 1474,
+     "output_tokens": 98,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1390,
+    "retries": []
+   },
+   {
+    "event": "answer",
+    "enough_evidence": true,
+    "citations": [
+     "B:luat-gddt-2023:Điều38:0"
+    ],
+    "citations_in_context": [
+     true
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "context_ids": [
+   "B:luat-gddt-2023:Điều38:0",
+   "B:luat-gddt-2023:Điều37:0",
+   "B:luat-gddt-2023:Điều35:0"
+  ],
+  "usage": {
+   "prompt_tokens": 2395,
+   "output_tokens": 137,
+   "thought_tokens": 0
+  },
+  "elapsed_s": 19.35,
+  "inline_markers_ok": true,
+  "invalid_citation_ids": [],
+  "resumed_after_error": true
+ },
+ {
+  "query_id": "d12",
+  "split": "dev",
+  "answerable": true,
+  "qtype": "direct",
+  "question": "Hành vi giả mạo hoặc chiếm đoạt trái pháp luật tài khoản giao dịch điện tử có bị nghiêm cấm trong giao dịch điện tử không?",
+  "config": {
+   "name": "A3-all-tools-b3000-citerule",
+   "model": "gemini-3.5-flash-lite",
+   "temperature": 0.0,
+   "tools": [
+    "dense",
+    "bm25",
+    "hybrid"
+   ],
+   "top_k": 3,
+   "budget_chars": 3000,
+   "max_searches": 4,
+   "max_steps": 8,
+   "cite_rule": true,
+   "retrieval_index": "day6 lab_B (multilingual-e5-small)"
+  },
+  "status": "answered",
+  "answer": "Có. Theo quy định tại khoản 6 Điều 6 Luật Giao dịch điện tử năm 2023, hành vi gian lận, giả mạo, chiếm đoạt hoặc sử dụng trái pháp luật tài khoản giao dịch điện tử là một trong những hành vi bị nghiêm cấm trong giao dịch điện tử [B:luat-gddt-2023:Điều6:0].",
+  "citations": [
+   "B:luat-gddt-2023:Điều6:0"
+  ],
+  "events": [
+   {
+    "event": "llm",
+    "step": 1,
+    "calls": [
+     "search_keyword"
+    ],
+    "usage": {
+     "prompt_tokens": 922,
+     "output_tokens": 36,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1291,
+    "retries": []
+   },
+   {
+    "event": "search",
+    "tool": "search_keyword",
+    "method": "bm25",
+    "query": "giả mạo hoặc chiếm đoạt trái pháp luật tài khoản giao dịch điện tử giao dịch điện tử",
+    "filter": null,
+    "results": [
+     {
+      "rank": 1,
+      "id": "B:luat-gddt-2023:Điều6:0",
+      "score": 48.2004,
+      "page": 3,
+      "source_id": "luat-gddt-2023"
+     },
+     {
+      "rank": 2,
+      "id": "B:luat-anm-2018:Điều18:0",
+      "score": 34.3068,
+      "page": 17,
+      "source_id": "luat-anm-2018"
+     },
+     {
+      "rank": 3,
+      "id": "B:luat-gddt-2023:Điều46:0",
+      "score": 29.9068,
+      "page": 25,
+      "source_id": "luat-gddt-2023"
+     }
+    ],
+    "new_context_ids": [
+     "B:luat-gddt-2023:Điều6:0",
+     "B:luat-anm-2018:Điều18:0"
+    ],
+    "dropped_ids": [
+     "B:luat-gddt-2023:Điều46:0"
+    ],
+    "context_ids": [
+     "B:luat-gddt-2023:Điều6:0",
+     "B:luat-anm-2018:Điều18:0"
+    ],
+    "elapsed_ms": 1.73
+   },
+   {
+    "event": "llm",
+    "step": 2,
+    "calls": [
+     "final_answer"
+    ],
+    "usage": {
+     "prompt_tokens": 1768,
+     "output_tokens": 129,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1594,
+    "retries": []
+   },
+   {
+    "event": "answer",
+    "enough_evidence": true,
+    "citations": [
+     "B:luat-gddt-2023:Điều6:0"
+    ],
+    "citations_in_context": [
+     true
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "context_ids": [
+   "B:luat-gddt-2023:Điều6:0",
+   "B:luat-anm-2018:Điều18:0"
+  ],
+  "usage": {
+   "prompt_tokens": 2690,
+   "output_tokens": 165,
+   "thought_tokens": 0
+  },
+  "elapsed_s": 2.89,
+  "inline_markers_ok": true,
+  "invalid_citation_ids": [],
+  "resumed_after_error": true
+ },
+ {
+  "query_id": "d13",
+  "split": "dev",
+  "answerable": true,
+  "qtype": "condition",
+  "question": "Trước khi tiến hành kiểm tra an ninh mạng hệ thống thông tin của cơ quan, tổ chức, lực lượng chuyên trách phải thông báo trước ít nhất bao lâu và bao lâu sau khi kiểm tra phải thông báo kết quả?",
+  "config": {
+   "name": "A3-all-tools-b3000-citerule",
+   "model": "gemini-3.5-flash-lite",
+   "temperature": 0.0,
+   "tools": [
+    "dense",
+    "bm25",
+    "hybrid"
+   ],
+   "top_k": 3,
+   "budget_chars": 3000,
+   "max_searches": 4,
+   "max_steps": 8,
+   "cite_rule": true,
+   "retrieval_index": "day6 lab_B (multilingual-e5-small)"
+  },
+  "status": "answered",
+  "answer": "Đối với hệ thống thông tin của cơ quan, tổ chức (không thuộc Danh mục hệ thống thông tin quan trọng về an ninh quốc gia):\n- Trước thời điểm tiến hành kiểm tra, lực lượng chuyên trách bảo vệ an ninh mạng thông báo bằng văn bản cho chủ quản hệ thống thông tin **ít nhất là 12 giờ** [B:luat-anm-2018:Điều24:1].\n- Trong thời hạn **30 ngày** kể từ ngày kết thúc kiểm tra, lực lượng chuyên trách bảo vệ an ninh mạng thông báo kết quả kiểm tra và đưa ra yêu cầu đối với chủ quản hệ thống thông tin trong trường hợp phát hiện điểm yếu, lỗ hổng bảo mật; hướng dẫn hoặc tham gia khắc phục khi có đề nghị của chủ quản hệ thống thông tin [B:luat-anm-2018:Điều24:1].\n\n*(Lưu ý: Đối với hệ thống thông tin quan trọng về an ninh quốc gia, trường hợp kiểm tra đột xuất thì thời gian thông báo trước tùy thuộc vào từng hoàn cảnh: ít nhất là 12 giờ nếu xảy ra sự cố an ninh mạng, hành vi xâm phạm an ninh mạng; hoặc ít nhất là 72 giờ khi có yêu cầu quản lý nhà nước về an ninh mạng hoặc hết thời hạn khắc phục điểm yếu, lỗ hổng bảo mật [B:luat-anm-2018:Điều13:2]. Thời hạn thông báo kết quả là trong vòng 30 ngày kể từ ngày kết thúc kiểm tra [B:luat-anm-2018:Điều13:2]).*",
+  "citations": [
+   "B:luat-anm-2018:Điều13:2",
+   "B:luat-anm-2018:Điều24:1"
+  ],
+  "events": [
+   {
+    "event": "llm",
+    "step": 1,
+    "calls": [
+     "search_hybrid"
+    ],
+    "usage": {
+     "prompt_tokens": 936,
+     "output_tokens": 32,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1332,
+    "retries": []
+   },
+   {
+    "event": "search",
+    "tool": "search_hybrid",
+    "method": "hybrid",
+    "query": "kiểm tra an ninh mạng hệ thống thông tin thông báo trước bao lâu kết quả",
+    "filter": null,
+    "results": [
+     {
+      "rank": 1,
+      "id": "B:luat-anm-2018:Điều13:2",
+      "score": 0.0325,
+      "page": 11,
+      "source_id": "luat-anm-2018"
+     },
+     {
+      "rank": 2,
+      "id": "B:luat-anm-2018:Điều24:1",
+      "score": 0.0325,
+      "page": 23,
+      "source_id": "luat-anm-2018"
+     },
+     {
+      "rank": 3,
+      "id": "B:luat-anm-2018:Điều13:4",
+      "score": 0.0315,
+      "page": 12,
+      "source_id": "luat-anm-2018"
+     }
+    ],
+    "new_context_ids": [
+     "B:luat-anm-2018:Điều13:2",
+     "B:luat-anm-2018:Điều24:1",
+     "B:luat-anm-2018:Điều13:4"
+    ],
+    "dropped_ids": [],
+    "context_ids": [
+     "B:luat-anm-2018:Điều13:2",
+     "B:luat-anm-2018:Điều24:1",
+     "B:luat-anm-2018:Điều13:4"
+    ],
+    "elapsed_ms": 25.38
+   },
+   {
+    "event": "llm",
+    "step": 2,
+    "calls": [
+     "search_hybrid"
+    ],
+    "usage": {
+     "prompt_tokens": 1767,
+     "output_tokens": 36,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1387,
+    "retries": []
+   },
+   {
+    "event": "search",
+    "tool": "search_hybrid",
+    "method": "hybrid",
+    "query": "kiểm tra định kỳ hệ thống thông tin quan trọng về an ninh quốc gia thông báo trước bao lâu",
+    "filter": null,
+    "results": [
+     {
+      "rank": 1,
+      "id": "B:luat-anm-2018:Điều13:1",
+      "score": 0.0325,
+      "page": 10,
+      "source_id": "luat-anm-2018"
+     },
+     {
+      "rank": 2,
+      "id": "B:luat-anm-2018:Điều13:2",
+      "score": 0.0325,
+      "page": 11,
+      "source_id": "luat-anm-2018"
+     },
+     {
+      "rank": 3,
+      "id": "B:luat-anm-2018:Điều13:0",
+      "score": 0.0315,
+      "page": 10,
+      "source_id": "luat-anm-2018"
+     }
+    ],
+    "new_context_ids": [],
+    "dropped_ids": [
+     "B:luat-anm-2018:Điều13:1",
+     "B:luat-anm-2018:Điều13:0"
+    ],
+    "context_ids": [
+     "B:luat-anm-2018:Điều13:2",
+     "B:luat-anm-2018:Điều24:1",
+     "B:luat-anm-2018:Điều13:4"
+    ],
+    "elapsed_ms": 20.34
+   },
+   {
+    "event": "llm",
+    "step": 3,
+    "calls": [
+     "search_keyword"
+    ],
+    "usage": {
+     "prompt_tokens": 1902,
+     "output_tokens": 27,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1503,
+    "retries": []
+   },
+   {
+    "event": "search",
+    "tool": "search_keyword",
+    "method": "bm25",
+    "query": "Điều 13 Luật An ninh mạng thông báo ít nhất",
+    "filter": null,
+    "results": [
+     {
+      "rank": 1,
+      "id": "B:luat-anm-2018:Điều13:2",
+      "score": 19.0947,
+      "page": 11,
+      "source_id": "luat-anm-2018"
+     },
+     {
+      "rank": 2,
+      "id": "B:luat-anm-2018:Điều24:1",
+      "score": 14.1249,
+      "page": 23,
+      "source_id": "luat-anm-2018"
+     },
+     {
+      "rank": 3,
+      "id": "B:luat-anm-2018:Điều13:4",
+      "score": 10.4186,
+      "page": 12,
+      "source_id": "luat-anm-2018"
+     }
+    ],
+    "new_context_ids": [],
+    "dropped_ids": [],
+    "context_ids": [
+     "B:luat-anm-2018:Điều13:2",
+     "B:luat-anm-2018:Điều24:1",
+     "B:luat-anm-2018:Điều13:4"
+    ],
+    "elapsed_ms": 1.52
+   },
+   {
+    "event": "llm",
+    "step": 4,
+    "calls": [
+     "search_dense"
+    ],
+    "usage": {
+     "prompt_tokens": 2029,
+     "output_tokens": 37,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1282,
+    "retries": []
+   },
+   {
+    "event": "search",
+    "tool": "search_dense",
+    "method": "dense",
+    "query": "trình tự thủ tục kiểm tra an ninh mạng hệ thống thông tin của cơ quan tổ chức thông báo trước",
+    "filter": null,
+    "results": [
+     {
+      "rank": 1,
+      "id": "B:luat-anm-2018:Điều24:1",
+      "score": 0.9181,
+      "page": 23,
+      "source_id": "luat-anm-2018"
+     },
+     {
+      "rank": 2,
+      "id": "B:luat-anm-2018:Điều24:0",
+      "score": 0.9134,
+      "page": 23,
+      "source_id": "luat-anm-2018"
+     },
+     {
+      "rank": 3,
+      "id": "B:luat-anm-2018:Điều13:0",
+      "score": 0.9076,
+      "page": 10,
+      "source_id": "luat-anm-2018"
+     }
+    ],
+    "new_context_ids": [],
+    "dropped_ids": [
+     "B:luat-anm-2018:Điều24:0",
+     "B:luat-anm-2018:Điều13:0"
+    ],
+    "context_ids": [
+     "B:luat-anm-2018:Điều13:2",
+     "B:luat-anm-2018:Điều24:1",
+     "B:luat-anm-2018:Điều13:4"
+    ],
+    "elapsed_ms": 19.27
+   },
+   {
+    "event": "llm",
+    "step": 5,
+    "calls": [
+     "search_hybrid"
+    ],
+    "usage": {
+     "prompt_tokens": 2165,
+     "output_tokens": 48,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1327,
+    "retries": []
+   },
+   {
+    "event": "search_limit",
+    "tool": "search_hybrid",
+    "args": {
+     "query": "kiểm tra an ninh mạng hệ thống thông tin của cơ quan tổ chức không thuộc Danh mục hệ thống thông tin quan trọng về an ninh quốc gia thông báo trước"
+    }
+   },
+   {
+    "event": "llm",
+    "step": 6,
+    "calls": [
+     "final_answer"
+    ],
+    "usage": {
+     "prompt_tokens": 2241,
+     "output_tokens": 410,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 2623,
+    "retries": []
+   },
+   {
+    "event": "answer",
+    "enough_evidence": true,
+    "citations": [
+     "B:luat-anm-2018:Điều13:2",
+     "B:luat-anm-2018:Điều24:1"
+    ],
+    "citations_in_context": [
+     true,
+     true
+    ]
+   }
+  ],
+  "n_searches": 4,
+  "context_ids": [
+   "B:luat-anm-2018:Điều13:2",
+   "B:luat-anm-2018:Điều24:1",
+   "B:luat-anm-2018:Điều13:4"
+  ],
+  "usage": {
+   "prompt_tokens": 11040,
+   "output_tokens": 590,
+   "thought_tokens": 0
+  },
+  "elapsed_s": 9.52,
+  "inline_markers_ok": true,
+  "invalid_citation_ids": [],
+  "resumed_after_error": true
+ },
+ {
+  "query_id": "d14",
+  "split": "dev",
+  "answerable": true,
+  "qtype": "condition",
+  "question": "Nếu bên kiểm soát không thể chỉnh sửa dữ liệu cá nhân theo yêu cầu của chủ thể dữ liệu thì phải làm gì?",
+  "config": {
+   "name": "A3-all-tools-b3000-citerule",
+   "model": "gemini-3.5-flash-lite",
+   "temperature": 0.0,
+   "tools": [
+    "dense",
+    "bm25",
+    "hybrid"
+   ],
+   "top_k": 3,
+   "budget_chars": 3000,
+   "max_searches": 4,
+   "max_steps": 8,
+   "cite_rule": true,
+   "retrieval_index": "day6 lab_B (multilingual-e5-small)"
+  },
+  "status": "answered",
+  "answer": "Trường hợp Bên Kiểm soát dữ liệu cá nhân (hoặc Bên Kiểm soát và xử lý dữ liệu cá nhân) không thể thực hiện chỉnh sửa dữ liệu cá nhân theo yêu cầu của chủ thể dữ liệu, thì phải thông báo tới chủ thể dữ liệu trong thời hạn 72 giờ kể từ khi nhận được yêu cầu chỉnh sửa dữ liệu cá nhân [B:nd-13-2023:Điều15:0].",
+  "citations": [
+   "B:nd-13-2023:Điều15:0"
+  ],
+  "events": [
+   {
+    "event": "llm",
+    "step": 1,
+    "calls": [
+     "search_hybrid"
+    ],
+    "usage": {
+     "prompt_tokens": 916,
+     "output_tokens": 37,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1001,
+    "retries": []
+   },
+   {
+    "event": "search",
+    "tool": "search_hybrid",
+    "method": "hybrid",
+    "query": "Bên kiểm soát dữ liệu cá nhân không thể chỉnh sửa dữ liệu theo yêu cầu của chủ thể dữ liệu",
+    "filter": null,
+    "results": [
+     {
+      "rank": 1,
+      "id": "B:nd-13-2023:Điều15:0",
+      "score": 0.0328,
+      "page": 11,
+      "source_id": "nd-13-2023"
+     },
+     {
+      "rank": 2,
+      "id": "B:nd-13-2023:Điều16:0",
+      "score": 0.0311,
+      "page": 11,
+      "source_id": "nd-13-2023"
+     },
+     {
+      "rank": 3,
+      "id": "B:nd-13-2023:Điều14:0",
+      "score": 0.0308,
+      "page": 9,
+      "source_id": "nd-13-2023"
+     }
+    ],
+    "new_context_ids": [
+     "B:nd-13-2023:Điều15:0",
+     "B:nd-13-2023:Điều16:0",
+     "B:nd-13-2023:Điều14:0"
+    ],
+    "dropped_ids": [],
+    "context_ids": [
+     "B:nd-13-2023:Điều15:0",
+     "B:nd-13-2023:Điều16:0",
+     "B:nd-13-2023:Điều14:0"
+    ],
+    "elapsed_ms": 22.08
+   },
+   {
+    "event": "llm",
+    "step": 2,
+    "calls": [
+     "final_answer"
+    ],
+    "usage": {
+     "prompt_tokens": 1959,
+     "output_tokens": 134,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1454,
+    "retries": []
+   },
+   {
+    "event": "answer",
+    "enough_evidence": true,
+    "citations": [
+     "B:nd-13-2023:Điều15:0"
+    ],
+    "citations_in_context": [
+     true
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "context_ids": [
+   "B:nd-13-2023:Điều15:0",
+   "B:nd-13-2023:Điều16:0",
+   "B:nd-13-2023:Điều14:0"
+  ],
+  "usage": {
+   "prompt_tokens": 2875,
+   "output_tokens": 171,
+   "thought_tokens": 0
+  },
+  "elapsed_s": 2.48,
+  "inline_markers_ok": true,
+  "invalid_citation_ids": [],
+  "resumed_after_error": true
+ },
+ {
+  "query_id": "d15",
+  "split": "dev",
+  "answerable": true,
+  "qtype": "paraphrase",
+  "question": "Khi chủ thể dữ liệu phản đối việc xử lý dữ liệu của mình cho mục đích quảng cáo, tiếp thị, bên kiểm soát phải thực hiện yêu cầu trong bao lâu?",
+  "config": {
+   "name": "A3-all-tools-b3000-citerule",
+   "model": "gemini-3.5-flash-lite",
+   "temperature": 0.0,
+   "tools": [
+    "dense",
+    "bm25",
+    "hybrid"
+   ],
+   "top_k": 3,
+   "budget_chars": 3000,
+   "max_searches": 4,
+   "max_steps": 8,
+   "cite_rule": true,
+   "retrieval_index": "day6 lab_B (multilingual-e5-small)"
+  },
+  "status": "answered",
+  "answer": "Khi chủ thể dữ liệu phản đối việc xử lý dữ liệu cá nhân của mình nhằm sử dụng cho mục đích quảng cáo, tiếp thị, Bên Kiểm soát dữ liệu cá nhân (hoặc Bên Kiểm soát và xử lý dữ liệu cá nhân) phải thực hiện yêu cầu trong thời hạn **72 giờ** sau khi nhận được yêu cầu, trừ trường hợp luật có quy định khác [B:nd-13-2023:Điều9:1].",
+  "citations": [
+   "B:nd-13-2023:Điều9:1"
+  ],
+  "events": [
+   {
+    "event": "llm",
+    "step": 1,
+    "calls": [
+     "search_hybrid"
+    ],
+    "usage": {
+     "prompt_tokens": 926,
+     "output_tokens": 37,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1191,
+    "retries": []
+   },
+   {
+    "event": "search",
+    "tool": "search_hybrid",
+    "method": "hybrid",
+    "query": "chủ thể dữ liệu phản đối xử lý dữ liệu cho mục đích quảng cáo tiếp thị thời hạn bao lâu",
+    "filter": null,
+    "results": [
+     {
+      "rank": 1,
+      "id": "B:nd-13-2023:Điều21:0",
+      "score": 0.0325,
+      "page": 14,
+      "source_id": "nd-13-2023"
+     },
+     {
+      "rank": 2,
+      "id": "B:nd-13-2023:Điều9:1",
+      "score": 0.0325,
+      "page": 6,
+      "source_id": "nd-13-2023"
+     },
+     {
+      "rank": 3,
+      "id": "B:nd-13-2023:Điều11:0",
+      "score": 0.029,
+      "page": 7,
+      "source_id": "nd-13-2023"
+     }
+    ],
+    "new_context_ids": [
+     "B:nd-13-2023:Điều21:0",
+     "B:nd-13-2023:Điều9:1"
+    ],
+    "dropped_ids": [
+     "B:nd-13-2023:Điều11:0"
+    ],
+    "context_ids": [
+     "B:nd-13-2023:Điều21:0",
+     "B:nd-13-2023:Điều9:1"
+    ],
+    "elapsed_ms": 20.69
+   },
+   {
+    "event": "llm",
+    "step": 2,
+    "calls": [
+     "final_answer"
+    ],
+    "usage": {
+     "prompt_tokens": 1690,
+     "output_tokens": 137,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1350,
+    "retries": []
+   },
+   {
+    "event": "answer",
+    "enough_evidence": true,
+    "citations": [
+     "B:nd-13-2023:Điều9:1"
+    ],
+    "citations_in_context": [
+     true
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "context_ids": [
+   "B:nd-13-2023:Điều21:0",
+   "B:nd-13-2023:Điều9:1"
+  ],
+  "usage": {
+   "prompt_tokens": 2616,
+   "output_tokens": 174,
+   "thought_tokens": 0
+  },
+  "elapsed_s": 2.56,
+  "inline_markers_ok": true,
+  "invalid_citation_ids": [],
+  "resumed_after_error": true
+ },
+ {
+  "query_id": "t01",
+  "split": "dev",
+  "answerable": true,
+  "qtype": "filter",
+  "question": "Trẻ em khi tham gia trên không gian mạng có những quyền gì?",
+  "config": {
+   "name": "A3-all-tools-b3000-citerule",
+   "model": "gemini-3.5-flash-lite",
+   "temperature": 0.0,
+   "tools": [
+    "dense",
+    "bm25",
+    "hybrid"
+   ],
+   "top_k": 3,
+   "budget_chars": 3000,
+   "max_searches": 4,
+   "max_steps": 8,
+   "cite_rule": true,
+   "retrieval_index": "day6 lab_B (multilingual-e5-small)"
+  },
+  "status": "answered",
+  "answer": "Theo khoản 1 Điều 29 Luật An ninh mạng 2018, khi tham gia trên không gian mạng, trẻ em có các quyền sau đây:\n- Quyền được bảo vệ [B:luat-anm-2018:Điều29:0].\n- Quyền tiếp cận thông tin [B:luat-anm-2018:Điều29:0].\n- Quyền tham gia hoạt động xã hội [B:luat-anm-2018:Điều29:0].\n- Quyền vui chơi, giải trí [B:luat-anm-2018:Điều29:0].\n- Quyền giữ bí mật cá nhân, đời sống riêng tư [B:luat-anm-2018:Điều29:0].\n- Các quyền khác khi tham gia trên không gian mạng [B:luat-anm-2018:Điều29:0].",
+  "citations": [
+   "B:luat-anm-2018:Điều29:0"
+  ],
+  "events": [
+   {
+    "event": "llm",
+    "step": 1,
+    "calls": [
+     "search_hybrid"
+    ],
+    "usage": {
+     "prompt_tokens": 906,
+     "output_tokens": 28,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1129,
+    "retries": []
+   },
+   {
+    "event": "search",
+    "tool": "search_hybrid",
+    "method": "hybrid",
+    "query": "trẻ em tham gia trên không gian mạng có những quyền gì",
+    "filter": null,
+    "results": [
+     {
+      "rank": 1,
+      "id": "B:luat-anm-2018:Điều29:0",
+      "score": 0.0328,
+      "page": 26,
+      "source_id": "luat-anm-2018"
+     },
+     {
+      "rank": 2,
+      "id": "B:luat-anm-2018:Điều29:1",
+      "score": 0.0323,
+      "page": 27,
+      "source_id": "luat-anm-2018"
+     },
+     {
+      "rank": 3,
+      "id": "B:luat-anm-2018:Điều26:2",
+      "score": 0.0294,
+      "page": 25,
+      "source_id": "luat-anm-2018"
+     }
+    ],
+    "new_context_ids": [
+     "B:luat-anm-2018:Điều29:0",
+     "B:luat-anm-2018:Điều29:1",
+     "B:luat-anm-2018:Điều26:2"
+    ],
+    "dropped_ids": [],
+    "context_ids": [
+     "B:luat-anm-2018:Điều29:0",
+     "B:luat-anm-2018:Điều29:1",
+     "B:luat-anm-2018:Điều26:2"
+    ],
+    "elapsed_ms": 23.16
+   },
+   {
+    "event": "llm",
+    "step": 2,
+    "calls": [
+     "final_answer"
+    ],
+    "usage": {
+     "prompt_tokens": 1758,
+     "output_tokens": 258,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 2008,
+    "retries": []
+   },
+   {
+    "event": "answer",
+    "enough_evidence": true,
+    "citations": [
+     "B:luat-anm-2018:Điều29:0"
+    ],
+    "citations_in_context": [
+     true
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "context_ids": [
+   "B:luat-anm-2018:Điều29:0",
+   "B:luat-anm-2018:Điều29:1",
+   "B:luat-anm-2018:Điều26:2"
+  ],
+  "usage": {
+   "prompt_tokens": 2664,
+   "output_tokens": 286,
+   "thought_tokens": 0
+  },
+  "elapsed_s": 3.16,
+  "inline_markers_ok": true,
+  "invalid_citation_ids": [],
+  "resumed_after_error": true
+ },
+ {
+  "query_id": "t02",
+  "split": "dev",
+  "answerable": true,
+  "qtype": "condition",
+  "question": "Việc xử lý dữ liệu cá nhân của người đã chết hoặc bị tuyên bố mất tích cần có sự đồng ý của ai, và nếu không còn những người đó thì sao?",
+  "config": {
+   "name": "A3-all-tools-b3000-citerule",
+   "model": "gemini-3.5-flash-lite",
+   "temperature": 0.0,
+   "tools": [
+    "dense",
+    "bm25",
+    "hybrid"
+   ],
+   "top_k": 3,
+   "budget_chars": 3000,
+   "max_searches": 4,
+   "max_steps": 8,
+   "cite_rule": true,
+   "retrieval_index": "day6 lab_B (multilingual-e5-small)"
+  },
+  "status": "answered",
+  "answer": "Việc xử lý dữ liệu cá nhân của người bị tuyên bố mất tích hoặc đã chết phải được sự đồng ý của vợ, chồng hoặc con thành niên của người đó; trường hợp không có những người này thì phải được sự đồng ý của cha, mẹ của người đó (trừ các trường hợp không cần sự đồng ý theo quy định tại Điều 17 và Điều 18 Nghị định 13/2023/NĐ-CP) [B:nd-13-2023:Điều19:0]. \n\nTrường hợp không có tất cả những người được nêu trên thì được coi là không có sự đồng ý [B:nd-13-2023:Điều19:0, B:nd-13-2023:Điều19:1].",
+  "citations": [
+   "B:nd-13-2023:Điều19:0",
+   "B:nd-13-2023:Điều19:1"
+  ],
+  "events": [
+   {
+    "event": "llm",
+    "step": 1,
+    "calls": [
+     "search_dense"
+    ],
+    "usage": {
+     "prompt_tokens": 927,
+     "output_tokens": 37,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1231,
+    "retries": []
+   },
+   {
+    "event": "search",
+    "tool": "search_dense",
+    "method": "dense",
+    "query": "xử lý dữ liệu cá nhân của người đã chết hoặc bị tuyên bố mất tích sự đồng ý của ai",
+    "filter": null,
+    "results": [
+     {
+      "rank": 1,
+      "id": "B:nd-13-2023:Điều19:0",
+      "score": 0.9366,
+      "page": 13,
+      "source_id": "nd-13-2023"
+     },
+     {
+      "rank": 2,
+      "id": "B:nd-13-2023:Điều11:1",
+      "score": 0.8839,
+      "page": 8,
+      "source_id": "nd-13-2023"
+     },
+     {
+      "rank": 3,
+      "id": "B:nd-13-2023:Điều17:0",
+      "score": 0.8836,
+      "page": 13,
+      "source_id": "nd-13-2023"
+     }
+    ],
+    "new_context_ids": [
+     "B:nd-13-2023:Điều19:0",
+     "B:nd-13-2023:Điều11:1",
+     "B:nd-13-2023:Điều17:0"
+    ],
+    "dropped_ids": [],
+    "context_ids": [
+     "B:nd-13-2023:Điều19:0",
+     "B:nd-13-2023:Điều11:1",
+     "B:nd-13-2023:Điều17:0"
+    ],
+    "elapsed_ms": 19.68
+   },
+   {
+    "event": "llm",
+    "step": 2,
+    "calls": [
+     "final_answer"
+    ],
+    "usage": {
+     "prompt_tokens": 1928,
+     "output_tokens": 237,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1616,
+    "retries": []
+   },
+   {
+    "event": "answer",
+    "enough_evidence": true,
+    "citations": [
+     "B:nd-13-2023:Điều19:0",
+     "B:nd-13-2023:Điều19:1"
+    ],
+    "citations_in_context": [
+     true,
+     false
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "context_ids": [
+   "B:nd-13-2023:Điều19:0",
+   "B:nd-13-2023:Điều11:1",
+   "B:nd-13-2023:Điều17:0"
+  ],
+  "usage": {
+   "prompt_tokens": 2855,
+   "output_tokens": 274,
+   "thought_tokens": 0
+  },
+  "elapsed_s": 2.87,
+  "inline_markers_ok": false,
+  "invalid_citation_ids": [
+   "B:nd-13-2023:Điều19:1"
+  ],
+  "resumed_after_error": true
+ },
+ {
+  "query_id": "t03",
+  "split": "dev",
+  "answerable": true,
+  "qtype": "paraphrase",
+  "question": "Để thông điệp dữ liệu chuyển đổi từ văn bản giấy được chấp nhận, cần thể hiện thông tin gì về việc chuyển đổi?",
+  "config": {
+   "name": "A3-all-tools-b3000-citerule",
+   "model": "gemini-3.5-flash-lite",
+   "temperature": 0.0,
+   "tools": [
+    "dense",
+    "bm25",
+    "hybrid"
+   ],
+   "top_k": 3,
+   "budget_chars": 3000,
+   "max_searches": 4,
+   "max_steps": 8,
+   "cite_rule": true,
+   "retrieval_index": "day6 lab_B (multilingual-e5-small)"
+  },
+  "status": "answered",
+  "answer": "Để thông điệp dữ liệu chuyển đổi từ văn bản giấy được chấp nhận (đáp ứng yêu cầu pháp luật), cần thể hiện các thông tin sau về việc chuyển đổi:\n- Có ký hiệu riêng xác nhận đã được chuyển đổi từ văn bản giấy sang thông điệp dữ liệu [B:luat-gddt-2023:Điều12:0].\n- Có thông tin của cơ quan, tổ chức, cá nhân thực hiện chuyển đổi [B:luat-gddt-2023:Điều12:0].",
+  "citations": [
+   "B:luat-gddt-2023:Điều12:0"
+  ],
+  "events": [
+   {
+    "event": "llm",
+    "step": 1,
+    "calls": [
+     "search_hybrid"
+    ],
+    "usage": {
+     "prompt_tokens": 918,
+     "output_tokens": 27,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1151,
+    "retries": []
+   },
+   {
+    "event": "search",
+    "tool": "search_hybrid",
+    "method": "hybrid",
+    "query": "thông điệp dữ liệu chuyển đổi từ văn bản giấy",
+    "filter": null,
+    "results": [
+     {
+      "rank": 1,
+      "id": "B:luat-gddt-2023:Điều12:0",
+      "score": 0.0328,
+      "page": 5,
+      "source_id": "luat-gddt-2023"
+     },
+     {
+      "rank": 2,
+      "id": "B:luat-gddt-2023:Điều12:1",
+      "score": 0.0323,
+      "page": 6,
+      "source_id": "luat-gddt-2023"
+     },
+     {
+      "rank": 3,
+      "id": "B:luat-gddt-2023:Điều7:0",
+      "score": 0.0317,
+      "page": 4,
+      "source_id": "luat-gddt-2023"
+     }
+    ],
+    "new_context_ids": [
+     "B:luat-gddt-2023:Điều12:0",
+     "B:luat-gddt-2023:Điều12:1",
+     "B:luat-gddt-2023:Điều7:0"
+    ],
+    "dropped_ids": [],
+    "context_ids": [
+     "B:luat-gddt-2023:Điều12:0",
+     "B:luat-gddt-2023:Điều12:1",
+     "B:luat-gddt-2023:Điều7:0"
+    ],
+    "elapsed_ms": 21.41
+   },
+   {
+    "event": "llm",
+    "step": 2,
+    "calls": [
+     "final_answer"
+    ],
+    "usage": {
+     "prompt_tokens": 1847,
+     "output_tokens": 163,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 2488,
+    "retries": [
+     {
+      "attempt": 1,
+      "code": 429,
+      "message": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite, description: Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 11.733809357s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'l",
+      "elapsed_ms": 348
+     },
+     {
+      "attempt": 2,
+      "code": 429,
+      "message": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite, description: Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 8.610397113s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'lo",
+      "elapsed_ms": 362
+     },
+     {
+      "attempt": 3,
+      "code": 429,
+      "message": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite, description: Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 3.705973557s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'mo",
+      "elapsed_ms": 350
+     },
+     {
+      "attempt": 4,
+      "code": 429,
+      "message": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite, description: Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 54.720688238s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'m",
+      "elapsed_ms": 631
+     }
+    ]
+   },
+   {
+    "event": "answer",
+    "enough_evidence": true,
+    "citations": [
+     "B:luat-gddt-2023:Điều12:0"
+    ],
+    "citations_in_context": [
+     true
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "context_ids": [
+   "B:luat-gddt-2023:Điều12:0",
+   "B:luat-gddt-2023:Điều12:1",
+   "B:luat-gddt-2023:Điều7:0"
+  ],
+  "usage": {
+   "prompt_tokens": 2765,
+   "output_tokens": 190,
+   "thought_tokens": 0
+  },
+  "elapsed_s": 37.97,
+  "inline_markers_ok": true,
+  "invalid_citation_ids": [],
+  "resumed_after_error": true
+ },
+ {
+  "query_id": "t04",
+  "split": "dev",
+  "answerable": true,
+  "qtype": "condition",
+  "question": "Khi xảy ra hoặc có nguy cơ xảy ra sự cố lộ, mất dữ liệu thông tin người sử dụng dịch vụ, doanh nghiệp cung cấp dịch vụ trên không gian mạng phải làm gì?",
+  "config": {
+   "name": "A3-all-tools-b3000-citerule",
+   "model": "gemini-3.5-flash-lite",
+   "temperature": 0.0,
+   "tools": [
+    "dense",
+    "bm25",
+    "hybrid"
+   ],
+   "top_k": 3,
+   "budget_chars": 3000,
+   "max_searches": 4,
+   "max_steps": 8,
+   "cite_rule": true,
+   "retrieval_index": "day6 lab_B (multilingual-e5-small)"
+  },
+  "status": "answered",
+  "answer": "Khi xảy ra hoặc có nguy cơ xảy ra sự cố lộ, lọt, tổn hại hoặc mất dữ liệu thông tin người sử dụng, doanh nghiệp cung cấp dịch vụ trên không gian mạng phải thực hiện các trách nhiệm sau:\n- Lập tức đưa ra giải pháp ứng phó [B:luat-anm-2018:Điều41:0].\n- Thông báo đến người sử dụng [B:luat-anm-2018:Điều41:0].\n- Báo cáo với lực lượng chuyên trách bảo vệ an ninh mạng theo quy định của Luật An ninh mạng [B:luat-anm-2018:Điều41:0].",
+  "citations": [
+   "B:luat-anm-2018:Điều41:0"
+  ],
+  "events": [
+   {
+    "event": "llm",
+    "step": 1,
+    "calls": [
+     "search_hybrid"
+    ],
+    "usage": {
+     "prompt_tokens": 929,
+     "output_tokens": 42,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1026,
+    "retries": []
+   },
+   {
+    "event": "search",
+    "tool": "search_hybrid",
+    "method": "hybrid",
+    "query": "sự cố lộ mất dữ liệu thông tin người sử dụng dịch vụ doanh nghiệp cung cấp dịch vụ trên không gian mạng phải làm gì",
+    "filter": null,
+    "results": [
+     {
+      "rank": 1,
+      "id": "B:luat-anm-2018:Điều41:0",
+      "score": 0.0328,
+      "page": 31,
+      "source_id": "luat-anm-2018"
+     },
+     {
+      "rank": 2,
+      "id": "B:luat-anm-2018:Điều26:3",
+      "score": 0.0315,
+      "page": 25,
+      "source_id": "luat-anm-2018"
+     },
+     {
+      "rank": 3,
+      "id": "B:luat-anm-2018:Điều41:1",
+      "score": 0.0315,
+      "page": 31,
+      "source_id": "luat-anm-2018"
+     }
+    ],
+    "new_context_ids": [
+     "B:luat-anm-2018:Điều41:0",
+     "B:luat-anm-2018:Điều26:3",
+     "B:luat-anm-2018:Điều41:1"
+    ],
+    "dropped_ids": [],
+    "context_ids": [
+     "B:luat-anm-2018:Điều41:0",
+     "B:luat-anm-2018:Điều26:3",
+     "B:luat-anm-2018:Điều41:1"
+    ],
+    "elapsed_ms": 30.25
+   },
+   {
+    "event": "llm",
+    "step": 2,
+    "calls": [
+     "search_hybrid"
+    ],
+    "usage": {
+     "prompt_tokens": 1757,
+     "output_tokens": 46,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1028,
+    "retries": []
+   },
+   {
+    "event": "search",
+    "tool": "search_hybrid",
+    "method": "hybrid",
+    "query": "lập tức đưa ra giải pháp ứng phó đồng thời thông báo đến người sử dụng và báo cáo với lực lượng chuyên trách bảo vệ an ninh mạng",
+    "filter": null,
+    "results": [
+     {
+      "rank": 1,
+      "id": "B:luat-anm-2018:Điều15:0",
+      "score": 0.0323,
+      "page": 12,
+      "source_id": "luat-anm-2018"
+     },
+     {
+      "rank": 2,
+      "id": "B:luat-anm-2018:Điều15:1",
+      "score": 0.0318,
+      "page": 13,
+      "source_id": "luat-anm-2018"
+     },
+     {
+      "rank": 3,
+      "id": "B:luat-anm-2018:Điều13:2",
+      "score": 0.0315,
+      "page": 11,
+      "source_id": "luat-anm-2018"
+     }
+    ],
+    "new_context_ids": [],
+    "dropped_ids": [
+     "B:luat-anm-2018:Điều15:0",
+     "B:luat-anm-2018:Điều15:1",
+     "B:luat-anm-2018:Điều13:2"
+    ],
+    "context_ids": [
+     "B:luat-anm-2018:Điều41:0",
+     "B:luat-anm-2018:Điều26:3",
+     "B:luat-anm-2018:Điều41:1"
+    ],
+    "elapsed_ms": 24.35
+   },
+   {
+    "event": "llm",
+    "step": 3,
+    "calls": [
+     "final_answer"
+    ],
+    "usage": {
+     "prompt_tokens": 1903,
+     "output_tokens": 193,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1482,
+    "retries": []
+   },
+   {
+    "event": "answer",
+    "enough_evidence": true,
+    "citations": [
+     "B:luat-anm-2018:Điều41:0"
+    ],
+    "citations_in_context": [
+     true
+    ]
+   }
+  ],
+  "n_searches": 2,
+  "context_ids": [
+   "B:luat-anm-2018:Điều41:0",
+   "B:luat-anm-2018:Điều26:3",
+   "B:luat-anm-2018:Điều41:1"
+  ],
+  "usage": {
+   "prompt_tokens": 4589,
+   "output_tokens": 281,
+   "thought_tokens": 0
+  },
+  "elapsed_s": 3.59,
+  "inline_markers_ok": true,
+  "invalid_citation_ids": [],
+  "resumed_after_error": true
+ },
+ {
+  "query_id": "t05",
+  "split": "dev",
+  "answerable": true,
+  "qtype": "condition",
+  "question": "Muốn dùng dữ liệu cá nhân của khách hàng để kinh doanh dịch vụ tiếp thị, giới thiệu sản phẩm quảng cáo thì cần điều kiện gì?",
+  "config": {
+   "name": "A3-all-tools-b3000-citerule",
+   "model": "gemini-3.5-flash-lite",
+   "temperature": 0.0,
+   "tools": [
+    "dense",
+    "bm25",
+    "hybrid"
+   ],
+   "top_k": 3,
+   "budget_chars": 3000,
+   "max_searches": 4,
+   "max_steps": 8,
+   "cite_rule": true,
+   "retrieval_index": "day6 lab_B (multilingual-e5-small)"
+  },
+  "status": "answered",
+  "answer": "Theo Nghị định về bảo vệ dữ liệu cá nhân, tổ chức, cá nhân kinh doanh dịch vụ tiếp thị, giới thiệu sản phẩm quảng cáo khi muốn sử dụng dữ liệu cá nhân của khách hàng (được thu thập qua hoạt động kinh doanh của mình) phải đáp ứng các điều kiện sau:\n\n1. Phải có sự đồng ý của chủ thể dữ liệu (khách hàng) [B:nd-13-2023:Điều21:0].\n2. Việc xử lý dữ liệu cá nhân của khách hàng phải được sự đồng ý của khách hàng, trên cơ sở khách hàng biết rõ nội dung, phương thức, hình thức, tần suất giới thiệu sản phẩm [B:nd-13-2023:Điều21:1, B:nd-13-2023:Điều21:2].\n3. Tổ chức, cá nhân kinh doanh dịch vụ tiếp thị, giới thiệu sản phẩm quảng cáo có trách nhiệm chứng minh việc sử dụng dữ liệu cá nhân của khách hàng được giới thiệu sản phẩm đúng với các quy định nêu trên [B:nd-13-2023:Điều21:2].",
+  "citations": [
+   "B:nd-13-2023:Điều21:0",
+   "B:nd-13-2023:Điều21:1",
+   "B:nd-13-2023:Điều21:2"
+  ],
+  "events": [
+   {
+    "event": "llm",
+    "step": 1,
+    "calls": [
+     "search_hybrid"
+    ],
+    "usage": {
+     "prompt_tokens": 921,
+     "output_tokens": 32,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1155,
+    "retries": []
+   },
+   {
+    "event": "search",
+    "tool": "search_hybrid",
+    "method": "hybrid",
+    "query": "sử dụng dữ liệu cá nhân tiếp thị giới thiệu sản phẩm quảng cáo điều kiện",
+    "filter": null,
+    "results": [
+     {
+      "rank": 1,
+      "id": "B:nd-13-2023:Điều21:0",
+      "score": 0.0328,
+      "page": 14,
+      "source_id": "nd-13-2023"
+     },
+     {
+      "rank": 2,
+      "id": "B:luat-gddt-2023:Điều10:0",
+      "score": 0.027,
+      "page": 5,
+      "source_id": "luat-gddt-2023"
+     },
+     {
+      "rank": 3,
+      "id": "B:nd-13-2023:Điều14:2",
+      "score": 0.0161,
+      "page": 10,
+      "source_id": "nd-13-2023"
+     }
+    ],
+    "new_context_ids": [
+     "B:nd-13-2023:Điều21:0",
+     "B:luat-gddt-2023:Điều10:0",
+     "B:nd-13-2023:Điều14:2"
+    ],
+    "dropped_ids": [],
+    "context_ids": [
+     "B:nd-13-2023:Điều21:0",
+     "B:luat-gddt-2023:Điều10:0",
+     "B:nd-13-2023:Điều14:2"
+    ],
+    "elapsed_ms": 24.42
+   },
+   {
+    "event": "llm",
+    "step": 2,
+    "calls": [
+     "final_answer"
+    ],
+    "usage": {
+     "prompt_tokens": 1826,
+     "output_tokens": 330,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 2106,
+    "retries": []
+   },
+   {
+    "event": "answer",
+    "enough_evidence": true,
+    "citations": [
+     "B:nd-13-2023:Điều21:0",
+     "B:nd-13-2023:Điều21:1",
+     "B:nd-13-2023:Điều21:2"
+    ],
+    "citations_in_context": [
+     true,
+     false,
+     false
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "context_ids": [
+   "B:nd-13-2023:Điều21:0",
+   "B:luat-gddt-2023:Điều10:0",
+   "B:nd-13-2023:Điều14:2"
+  ],
+  "usage": {
+   "prompt_tokens": 2747,
+   "output_tokens": 362,
+   "thought_tokens": 0
+  },
+  "elapsed_s": 3.29,
+  "inline_markers_ok": false,
+  "invalid_citation_ids": [
+   "B:nd-13-2023:Điều21:1",
+   "B:nd-13-2023:Điều21:2"
+  ],
+  "resumed_after_error": true
+ },
+ {
+  "query_id": "d16",
+  "split": "dev",
+  "answerable": true,
+  "qtype": "paraphrase",
+  "question": "Nếu tôi từng đồng ý cho một công ty dùng dữ liệu của mình rồi sau đó rút lại sự đồng ý, thì việc công ty đã xử lý trước đó có bị coi là bất hợp pháp không?",
+  "config": {
+   "name": "A3-all-tools-b3000-citerule",
+   "model": "gemini-3.5-flash-lite",
+   "temperature": 0.0,
+   "tools": [
+    "dense",
+    "bm25",
+    "hybrid"
+   ],
+   "top_k": 3,
+   "budget_chars": 3000,
+   "max_searches": 4,
+   "max_steps": 8,
+   "cite_rule": true,
+   "retrieval_index": "day6 lab_B (multilingual-e5-small)"
+  },
+  "status": "answered",
+  "answer": "Theo quy định pháp luật về bảo vệ dữ liệu cá nhân, việc bạn rút lại sự đồng ý **không ảnh hưởng đến tính hợp pháp** của việc xử lý dữ liệu đã được đồng ý thực hiện trước thời điểm bạn rút lại sự đồng ý [B:nd-13-2023:Điều12:0]. Nói cách khác, các hoạt động xử lý dữ liệu mà công ty đã thực hiện trước đó vẫn được coi là hợp pháp [B:nd-13-2023:Điều12:0].",
+  "citations": [
+   "B:nd-13-2023:Điều12:0"
+  ],
+  "events": [
+   {
+    "event": "llm",
+    "step": 1,
+    "calls": [
+     "search_hybrid"
+    ],
+    "usage": {
+     "prompt_tokens": 932,
+     "output_tokens": 35,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1151,
+    "retries": []
+   },
+   {
+    "event": "search",
+    "tool": "search_hybrid",
+    "method": "hybrid",
+    "query": "rút lại sự đồng ý dữ liệu cá nhân xử lý trước đó hợp pháp hay bất hợp pháp",
+    "filter": null,
+    "results": [
+     {
+      "rank": 1,
+      "id": "B:nd-13-2023:Điều12:0",
+      "score": 0.0328,
+      "page": 8,
+      "source_id": "nd-13-2023"
+     },
+     {
+      "rank": 2,
+      "id": "B:nd-13-2023:Điều9:0",
+      "score": 0.0313,
+      "page": 6,
+      "source_id": "nd-13-2023"
+     },
+     {
+      "rank": 3,
+      "id": "B:nd-13-2023:Điều16:0",
+      "score": 0.0306,
+      "page": 11,
+      "source_id": "nd-13-2023"
+     }
+    ],
+    "new_context_ids": [
+     "B:nd-13-2023:Điều12:0",
+     "B:nd-13-2023:Điều9:0",
+     "B:nd-13-2023:Điều16:0"
+    ],
+    "dropped_ids": [],
+    "context_ids": [
+     "B:nd-13-2023:Điều12:0",
+     "B:nd-13-2023:Điều9:0",
+     "B:nd-13-2023:Điều16:0"
+    ],
+    "elapsed_ms": 23.57
+   },
+   {
+    "event": "llm",
+    "step": 2,
+    "calls": [
+     "final_answer"
+    ],
+    "usage": {
+     "prompt_tokens": 1957,
+     "output_tokens": 156,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1376,
+    "retries": []
+   },
+   {
+    "event": "answer",
+    "enough_evidence": true,
+    "citations": [
+     "B:nd-13-2023:Điều12:0"
+    ],
+    "citations_in_context": [
+     true
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "context_ids": [
+   "B:nd-13-2023:Điều12:0",
+   "B:nd-13-2023:Điều9:0",
+   "B:nd-13-2023:Điều16:0"
+  ],
+  "usage": {
+   "prompt_tokens": 2889,
+   "output_tokens": 191,
+   "thought_tokens": 0
+  },
+  "elapsed_s": 2.55,
+  "inline_markers_ok": true,
+  "invalid_citation_ids": [],
+  "resumed_after_error": true
+ },
+ {
+  "query_id": "d17",
+  "split": "dev",
+  "answerable": true,
+  "qtype": "multihop-crossdoc",
+  "question": "Khi dữ liệu người dùng của một doanh nghiệp dịch vụ Internet bị lộ, doanh nghiệp phải thông báo cho ai, báo cáo cho lực lượng nào, và phải thông báo vi phạm bảo vệ dữ liệu cá nhân cho Bộ Công an chậm nhất bao lâu?",
+  "config": {
+   "name": "A3-all-tools-b3000-citerule",
+   "model": "gemini-3.5-flash-lite",
+   "temperature": 0.0,
+   "tools": [
+    "dense",
+    "bm25",
+    "hybrid"
+   ],
+   "top_k": 3,
+   "budget_chars": 3000,
+   "max_searches": 4,
+   "max_steps": 8,
+   "cite_rule": true,
+   "retrieval_index": "day6 lab_B (multilingual-e5-small)"
+  },
+  "status": "answered",
+  "answer": "Theo quy định tại Nghị định 13/2023/NĐ-CP về bảo vệ dữ liệu cá nhân, trường hợp phát hiện xảy ra vi phạm quy định bảo vệ dữ liệu cá nhân (như lộ dữ liệu):\n- Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân phải thông báo cho **Bộ Công an (Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao)** [B:nd-13-2023:Điều23:0].\n- Thời hạn thông báo chậm nhất là **72 giờ** sau khi xảy ra hành vi vi phạm (trường hợp thông báo sau 72 giờ thì phải kèm theo lý do thông báo chậm, muộn) [B:nd-13-2023:Điều23:0].\n- Bên Xử lý dữ liệu cá nhân phải thông báo cho Bên Kiểm soát dữ liệu cá nhân một cách nhanh nhất có thể sau khi nhận thấy có sự vi phạm [B:nd-13-2023:Điều23:0].\n\n*(Lưu ý: Kết quả tìm kiếm hiện tại chưa đủ thông tin chi tiết về việc doanh nghiệp dịch vụ Internet phải thông báo cụ thể cho những cơ quan nào khác ngoài Bộ Công an theo các quy định chuyên ngành về an toàn thông tin mạng/viễn thông).*",
+  "citations": [
+   "B:nd-13-2023:Điều23:0"
+  ],
+  "events": [
+   {
+    "event": "llm",
+    "step": 1,
+    "calls": [
+     "search_hybrid"
+    ],
+    "usage": {
+     "prompt_tokens": 942,
+     "output_tokens": 39,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1321,
+    "retries": []
+   },
+   {
+    "event": "search",
+    "tool": "search_hybrid",
+    "method": "hybrid",
+    "query": "thông báo vi phạm bảo vệ dữ liệu cá nhân cho Bộ Công an chậm nhất bao lâu lộ dữ liệu người dùng",
+    "filter": null,
+    "results": [
+     {
+      "rank": 1,
+      "id": "B:nd-13-2023:Điều23:0",
+      "score": 0.0328,
+      "page": 15,
+      "source_id": "nd-13-2023"
+     },
+     {
+      "rank": 2,
+      "id": "B:nd-13-2023:Điều23:1",
+      "score": 0.0317,
+      "page": 15,
+      "source_id": "nd-13-2023"
+     },
+     {
+      "rank": 3,
+      "id": "B:nd-13-2023:Điều23:2",
+      "score": 0.0313,
+      "page": 15,
+      "source_id": "nd-13-2023"
+     }
+    ],
+    "new_context_ids": [
+     "B:nd-13-2023:Điều23:0",
+     "B:nd-13-2023:Điều23:1",
+     "B:nd-13-2023:Điều23:2"
+    ],
+    "dropped_ids": [],
+    "context_ids": [
+     "B:nd-13-2023:Điều23:0",
+     "B:nd-13-2023:Điều23:1",
+     "B:nd-13-2023:Điều23:2"
+    ],
+    "elapsed_ms": 27.18
+   },
+   {
+    "event": "llm",
+    "step": 2,
+    "calls": [
+     "search_hybrid"
+    ],
+    "usage": {
+     "prompt_tokens": 1908,
+     "output_tokens": 29,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1328,
+    "retries": []
+   },
+   {
+    "event": "search",
+    "tool": "search_hybrid",
+    "method": "hybrid",
+    "query": "doanh nghiệp dịch vụ viễn thông Internet thông báo lộ dữ liệu",
+    "filter": null,
+    "results": [
+     {
+      "rank": 1,
+      "id": "B:luat-anm-2018:Điều26:3",
+      "score": 0.032,
+      "page": 25,
+      "source_id": "luat-anm-2018"
+     },
+     {
+      "rank": 2,
+      "id": "B:luat-anm-2018:Điều41:2",
+      "score": 0.0318,
+      "page": 31,
+      "source_id": "luat-anm-2018"
+     },
+     {
+      "rank": 3,
+      "id": "B:luat-anm-2018:Điều41:0",
+      "score": 0.0313,
+      "page": 31,
+      "source_id": "luat-anm-2018"
+     }
+    ],
+    "new_context_ids": [
+     "B:luat-anm-2018:Điều41:2"
+    ],
+    "dropped_ids": [
+     "B:luat-anm-2018:Điều26:3",
+     "B:luat-anm-2018:Điều41:0"
+    ],
+    "context_ids": [
+     "B:nd-13-2023:Điều23:0",
+     "B:nd-13-2023:Điều23:1",
+     "B:nd-13-2023:Điều23:2",
+     "B:luat-anm-2018:Điều41:2"
+    ],
+    "elapsed_ms": 20.63
+   },
+   {
+    "event": "llm",
+    "step": 3,
+    "calls": [
+     "search_hybrid"
+    ],
+    "usage": {
+     "prompt_tokens": 2172,
+     "output_tokens": 40,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1541,
+    "retries": []
+   },
+   {
+    "event": "search",
+    "tool": "search_hybrid",
+    "method": "hybrid",
+    "query": "doanh nghiệp cung cấp dịch vụ trên không gian mạng thông báo sự cố an toàn thông tin mạng lộ dữ liệu người dùng",
+    "filter": null,
+    "results": [
+     {
+      "rank": 1,
+      "id": "B:luat-anm-2018:Điều41:0",
+      "score": 0.0328,
+      "page": 31,
+      "source_id": "luat-anm-2018"
+     },
+     {
+      "rank": 2,
+      "id": "B:luat-anm-2018:Điều26:1",
+      "score": 0.032,
+      "page": 24,
+      "source_id": "luat-anm-2018"
+     },
+     {
+      "rank": 3,
+      "id": "B:luat-anm-2018:Điều41:1",
+      "score": 0.0315,
+      "page": 31,
+      "source_id": "luat-anm-2018"
+     }
+    ],
+    "new_context_ids": [],
+    "dropped_ids": [
+     "B:luat-anm-2018:Điều41:0",
+     "B:luat-anm-2018:Điều26:1",
+     "B:luat-anm-2018:Điều41:1"
+    ],
+    "context_ids": [
+     "B:nd-13-2023:Điều23:0",
+     "B:nd-13-2023:Điều23:1",
+     "B:nd-13-2023:Điều23:2",
+     "B:luat-anm-2018:Điều41:2"
+    ],
+    "elapsed_ms": 22.07
+   },
+   {
+    "event": "llm",
+    "step": 4,
+    "calls": [
+     "search_hybrid"
+    ],
+    "usage": {
+     "prompt_tokens": 2312,
+     "output_tokens": 32,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1337,
+    "retries": []
+   },
+   {
+    "event": "search",
+    "tool": "search_hybrid",
+    "method": "hybrid",
+    "query": "thông báo sự cố an toàn thông tin mạng cho ai báo cáo lực lượng nào",
+    "filter": null,
+    "results": [
+     {
+      "rank": 1,
+      "id": "B:luat-anm-2018:Điều13:2",
+      "score": 0.0323,
+      "page": 11,
+      "source_id": "luat-anm-2018"
+     },
+     {
+      "rank": 2,
+      "id": "B:luat-anm-2018:Điều15:1",
+      "score": 0.0317,
+      "page": 13,
+      "source_id": "luat-anm-2018"
+     },
+     {
+      "rank": 3,
+      "id": "B:luat-anm-2018:Điều13:1",
+      "score": 0.0311,
+      "page": 10,
+      "source_id": "luat-anm-2018"
+     }
+    ],
+    "new_context_ids": [],
+    "dropped_ids": [
+     "B:luat-anm-2018:Điều13:2",
+     "B:luat-anm-2018:Điều15:1",
+     "B:luat-anm-2018:Điều13:1"
+    ],
+    "context_ids": [
+     "B:nd-13-2023:Điều23:0",
+     "B:nd-13-2023:Điều23:1",
+     "B:nd-13-2023:Điều23:2",
+     "B:luat-anm-2018:Điều41:2"
+    ],
+    "elapsed_ms": 20.86
+   },
+   {
+    "event": "llm",
+    "step": 5,
+    "calls": [
+     "search_hybrid"
+    ],
+    "usage": {
+     "prompt_tokens": 2444,
+     "output_tokens": 36,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1222,
+    "retries": []
+   },
+   {
+    "event": "search_limit",
+    "tool": "search_hybrid",
+    "args": {
+     "query": "xử lý vi phạm quy định bảo vệ dữ liệu cá nhân Bộ Công an Cục An ninh mạng"
+    }
+   },
+   {
+    "event": "llm",
+    "step": 6,
+    "calls": [
+     "final_answer"
+    ],
+    "usage": {
+     "prompt_tokens": 2508,
+     "output_tokens": 334,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1967,
+    "retries": []
+   },
+   {
+    "event": "answer",
+    "enough_evidence": true,
+    "citations": [
+     "B:nd-13-2023:Điều23:0"
+    ],
+    "citations_in_context": [
+     true
+    ]
+   }
+  ],
+  "n_searches": 4,
+  "context_ids": [
+   "B:nd-13-2023:Điều23:0",
+   "B:nd-13-2023:Điều23:1",
+   "B:nd-13-2023:Điều23:2",
+   "B:luat-anm-2018:Điều41:2"
+  ],
+  "usage": {
+   "prompt_tokens": 12286,
+   "output_tokens": 510,
+   "thought_tokens": 0
+  },
+  "elapsed_s": 8.81,
+  "inline_markers_ok": true,
+  "invalid_citation_ids": [],
+  "resumed_after_error": true
+ },
+ {
+  "query_id": "d18",
+  "split": "dev",
+  "answerable": true,
+  "qtype": "paraphrase",
+  "question": "Nếu người nhận không chỉ định hệ thống nào để nhận, thì thông điệp điện tử được tính là đã đến tay họ vào thời điểm nào?",
+  "config": {
+   "name": "A3-all-tools-b3000-citerule",
+   "model": "gemini-3.5-flash-lite",
+   "temperature": 0.0,
+   "tools": [
+    "dense",
+    "bm25",
+    "hybrid"
+   ],
+   "top_k": 3,
+   "budget_chars": 3000,
+   "max_searches": 4,
+   "max_steps": 8,
+   "cite_rule": true,
+   "retrieval_index": "day6 lab_B (multilingual-e5-small)"
+  },
+  "status": "answered",
+  "answer": "Theo Luật Giao dịch điện tử, trường hợp các bên tham gia giao dịch không có thỏa thuận khác và người nhận không chỉ định một hệ thống thông tin để nhận thông điệp dữ liệu, thì thời điểm nhận thông điệp dữ liệu là thời điểm thông điệp dữ liệu đó nhập vào bất kỳ hệ thống thông tin nào của người nhận và có thể truy cập được [B:luat-gddt-2023:Điều17:0].",
+  "citations": [
+   "B:luat-gddt-2023:Điều17:0"
+  ],
+  "events": [
+   {
+    "event": "llm",
+    "step": 1,
+    "calls": [
+     "search_hybrid"
+    ],
+    "usage": {
+     "prompt_tokens": 921,
+     "output_tokens": 34,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1589,
+    "retries": []
+   },
+   {
+    "event": "search",
+    "tool": "search_hybrid",
+    "method": "hybrid",
+    "query": "người nhận không chỉ định hệ thống thông điệp điện tử được tính là đã đến tay",
+    "filter": null,
+    "results": [
+     {
+      "rank": 1,
+      "id": "B:luat-gddt-2023:Điều17:0",
+      "score": 0.0328,
+      "page": 9,
+      "source_id": "luat-gddt-2023"
+     },
+     {
+      "rank": 2,
+      "id": "B:luat-gddt-2023:Điều16:1",
+      "score": 0.0323,
+      "page": 8,
+      "source_id": "luat-gddt-2023"
+     },
+     {
+      "rank": 3,
+      "id": "B:luat-gddt-2023:Điều14:0",
+      "score": 0.0308,
+      "page": 7,
+      "source_id": "luat-gddt-2023"
+     }
+    ],
+    "new_context_ids": [
+     "B:luat-gddt-2023:Điều17:0",
+     "B:luat-gddt-2023:Điều16:1"
+    ],
+    "dropped_ids": [
+     "B:luat-gddt-2023:Điều14:0"
+    ],
+    "context_ids": [
+     "B:luat-gddt-2023:Điều17:0",
+     "B:luat-gddt-2023:Điều16:1"
+    ],
+    "elapsed_ms": 30.69
+   },
+   {
+    "event": "llm",
+    "step": 2,
+    "calls": [
+     "final_answer"
+    ],
+    "usage": {
+     "prompt_tokens": 1702,
+     "output_tokens": 142,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1249,
+    "retries": []
+   },
+   {
+    "event": "answer",
+    "enough_evidence": true,
+    "citations": [
+     "B:luat-gddt-2023:Điều17:0"
+    ],
+    "citations_in_context": [
+     true
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "context_ids": [
+   "B:luat-gddt-2023:Điều17:0",
+   "B:luat-gddt-2023:Điều16:1"
+  ],
+  "usage": {
+   "prompt_tokens": 2623,
+   "output_tokens": 176,
+   "thought_tokens": 0
+  },
+  "elapsed_s": 2.87,
+  "inline_markers_ok": true,
+  "invalid_citation_ids": [],
+  "resumed_after_error": true
+ },
+ {
+  "query_id": "d19",
+  "split": "dev",
+  "answerable": true,
+  "qtype": "condition",
+  "question": "Điều kiện nào để nhật ký giao dịch trên tài khoản giao dịch điện tử được dùng làm bằng chứng chứng minh giao dịch?",
+  "config": {
+   "name": "A3-all-tools-b3000-citerule",
+   "model": "gemini-3.5-flash-lite",
+   "temperature": 0.0,
+   "tools": [
+    "dense",
+    "bm25",
+    "hybrid"
+   ],
+   "top_k": 3,
+   "budget_chars": 3000,
+   "max_searches": 4,
+   "max_steps": 8,
+   "cite_rule": true,
+   "retrieval_index": "day6 lab_B (multilingual-e5-small)"
+  },
+  "status": "answered",
+  "answer": "Theo khoản 4 Điều 46 Luật Giao dịch điện tử 2023, lịch sử giao dịch (nhật ký giao dịch) của tài khoản giao dịch điện tử có giá trị pháp lý để chứng minh giao dịch khi đáp ứng đủ các yêu cầu sau đây:\n\na) Hệ thống thông tin phục vụ giao dịch điện tử phải bảo đảm an toàn theo quy định của pháp luật về an toàn thông tin mạng [B:luat-gddt-2023:Điều46:0];\nb) Gắn duy nhất với một cơ quan, tổ chức hoặc cá nhân là chủ tài khoản giao dịch điện tử [B:luat-gddt-2023:Điều46:0];\nc) Bảo đảm chính xác thời gian giao dịch từ nguồn thời gian theo quy định của pháp luật về nguồn thời gian chuẩn quốc gia [B:luat-gddt-2023:Điều46:0].",
+  "citations": [
+   "B:luat-gddt-2023:Điều46:0"
+  ],
+  "events": [
+   {
+    "event": "llm",
+    "step": 1,
+    "calls": [
+     "search_hybrid"
+    ],
+    "usage": {
+     "prompt_tokens": 916,
+     "output_tokens": 35,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 909,
+    "retries": []
+   },
+   {
+    "event": "search",
+    "tool": "search_hybrid",
+    "method": "hybrid",
+    "query": "nhật ký giao dịch trên tài khoản giao dịch điện tử bằng chứng chứng minh giao dịch điều kiện",
+    "filter": null,
+    "results": [
+     {
+      "rank": 1,
+      "id": "B:luat-gddt-2023:Điều46:0",
+      "score": 0.0328,
+      "page": 25,
+      "source_id": "luat-gddt-2023"
+     },
+     {
+      "rank": 2,
+      "id": "B:luat-gddt-2023:Điều6:0",
+      "score": 0.031,
+      "page": 3,
+      "source_id": "luat-gddt-2023"
+     },
+     {
+      "rank": 3,
+      "id": "B:luat-gddt-2023:Điều53:2",
+      "score": 0.0306,
+      "page": 30,
+      "source_id": "luat-gddt-2023"
+     }
+    ],
+    "new_context_ids": [
+     "B:luat-gddt-2023:Điều46:0",
+     "B:luat-gddt-2023:Điều6:0"
+    ],
+    "dropped_ids": [
+     "B:luat-gddt-2023:Điều53:2"
+    ],
+    "context_ids": [
+     "B:luat-gddt-2023:Điều46:0",
+     "B:luat-gddt-2023:Điều6:0"
+    ],
+    "elapsed_ms": 28.48
+   },
+   {
+    "event": "llm",
+    "step": 2,
+    "calls": [
+     "final_answer"
+    ],
+    "usage": {
+     "prompt_tokens": 1723,
+     "output_tokens": 249,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1827,
+    "retries": []
+   },
+   {
+    "event": "answer",
+    "enough_evidence": true,
+    "citations": [
+     "B:luat-gddt-2023:Điều46:0"
+    ],
+    "citations_in_context": [
+     true
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "context_ids": [
+   "B:luat-gddt-2023:Điều46:0",
+   "B:luat-gddt-2023:Điều6:0"
+  ],
+  "usage": {
+   "prompt_tokens": 2639,
+   "output_tokens": 284,
+   "thought_tokens": 0
+  },
+  "elapsed_s": 2.76,
+  "inline_markers_ok": true,
+  "invalid_citation_ids": [],
+  "resumed_after_error": true
+ },
+ {
+  "query_id": "d20",
+  "split": "dev",
+  "answerable": true,
+  "qtype": "exception",
+  "question": "Trong trường hợp nào bên kiểm soát dữ liệu không cần thông báo lại cho chủ thể dữ liệu trước khi xử lý?",
+  "config": {
+   "name": "A3-all-tools-b3000-citerule",
+   "model": "gemini-3.5-flash-lite",
+   "temperature": 0.0,
+   "tools": [
+    "dense",
+    "bm25",
+    "hybrid"
+   ],
+   "top_k": 3,
+   "budget_chars": 3000,
+   "max_searches": 4,
+   "max_steps": 8,
+   "cite_rule": true,
+   "retrieval_index": "day6 lab_B (multilingual-e5-small)"
+  },
+  "status": "answered",
+  "answer": "Theo quy định tại khoản 4 Điều 13 Nghị định 13/2023/NĐ-CP, Bên Kiểm soát dữ liệu cá nhân (và Bên Kiểm soát và xử lý dữ liệu cá nhân) không cần thực hiện việc thông báo lại cho chủ thể dữ liệu trước khi xử lý trong các trường hợp sau:\na) Chủ thể dữ liệu đã biết rõ và đồng ý toàn bộ với nội dung quy định tại khoản 1 và khoản 2 Điều này trước khi đồng ý cho Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân tiến hành thu thập dữ liệu cá nhân, phù hợp với các quy định tại Điều 9 của Nghị định này [B:nd-13-2023:Điều13:1].\nb) Dữ liệu cá nhân được xử lý bởi cơ quan nhà nước có thẩm quyền với mục đích phục vụ hoạt động của cơ quan nhà nước theo quy định của pháp luật [B:nd-13-2023:Điều13:1].",
+  "citations": [
+   "B:nd-13-2023:Điều13:1"
+  ],
+  "events": [
+   {
+    "event": "llm",
+    "step": 1,
+    "calls": [
+     "search_hybrid"
+    ],
+    "usage": {
+     "prompt_tokens": 915,
+     "output_tokens": 35,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 995,
+    "retries": []
+   },
+   {
+    "event": "search",
+    "tool": "search_hybrid",
+    "method": "hybrid",
+    "query": "bên kiểm soát dữ liệu không cần thông báo lại cho chủ thể dữ liệu trước khi xử lý",
+    "filter": null,
+    "results": [
+     {
+      "rank": 1,
+      "id": "B:nd-13-2023:Điều13:1",
+      "score": 0.0325,
+      "page": 9,
+      "source_id": "nd-13-2023"
+     },
+     {
+      "rank": 2,
+      "id": "B:nd-13-2023:Điều11:1",
+      "score": 0.0318,
+      "page": 8,
+      "source_id": "nd-13-2023"
+     },
+     {
+      "rank": 3,
+      "id": "B:nd-13-2023:Điều16:0",
+      "score": 0.0313,
+      "page": 11,
+      "source_id": "nd-13-2023"
+     }
+    ],
+    "new_context_ids": [
+     "B:nd-13-2023:Điều13:1",
+     "B:nd-13-2023:Điều11:1",
+     "B:nd-13-2023:Điều16:0"
+    ],
+    "dropped_ids": [],
+    "context_ids": [
+     "B:nd-13-2023:Điều13:1",
+     "B:nd-13-2023:Điều11:1",
+     "B:nd-13-2023:Điều16:0"
+    ],
+    "elapsed_ms": 38.81
+   },
+   {
+    "event": "llm",
+    "step": 2,
+    "calls": [
+     "search_hybrid"
+    ],
+    "usage": {
+     "prompt_tokens": 1854,
+     "output_tokens": 36,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 2047,
+    "retries": [
+     {
+      "attempt": 1,
+      "code": 429,
+      "message": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite, description: Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 10.005607298s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'m",
+      "elapsed_ms": 353
+     },
+     {
+      "attempt": 2,
+      "code": 429,
+      "message": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite, description: Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 7.347948478s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'lo",
+      "elapsed_ms": 320
+     },
+     {
+      "attempt": 3,
+      "code": 429,
+      "message": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite, description: Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 2.831168519s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'lo",
+      "elapsed_ms": 328
+     },
+     {
+      "attempt": 4,
+      "code": 429,
+      "message": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite, description: Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 53.717057644s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'m",
+      "elapsed_ms": 457
+     }
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_hybrid",
+    "method": "hybrid",
+    "query": "khoản 1 Điều 13 Nghị định 13 2023 NĐ CP",
+    "filter": null,
+    "results": [
+     {
+      "rank": 1,
+      "id": "B:nd-13-2023:preamble:0",
+      "score": 0.0328,
+      "page": 1,
+      "source_id": "nd-13-2023"
+     },
+     {
+      "rank": 2,
+      "id": "B:nd-13-2023:Điều43:0",
+      "score": 0.0315,
+      "page": 24,
+      "source_id": "nd-13-2023"
+     },
+     {
+      "rank": 3,
+      "id": "B:nd-13-2023:Điều13:1",
+      "score": 0.03,
+      "page": 9,
+      "source_id": "nd-13-2023"
+     }
+    ],
+    "new_context_ids": [
+     "B:nd-13-2023:Điều43:0"
+    ],
+    "dropped_ids": [
+     "B:nd-13-2023:preamble:0"
+    ],
+    "context_ids": [
+     "B:nd-13-2023:Điều13:1",
+     "B:nd-13-2023:Điều11:1",
+     "B:nd-13-2023:Điều16:0",
+     "B:nd-13-2023:Điều43:0"
+    ],
+    "elapsed_ms": 19.24
+   },
+   {
+    "event": "llm",
+    "step": 3,
+    "calls": [
+     "search_hybrid"
+    ],
+    "usage": {
+     "prompt_tokens": 2188,
+     "output_tokens": 30,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1348,
+    "retries": []
+   },
+   {
+    "event": "search",
+    "tool": "search_hybrid",
+    "method": "hybrid",
+    "query": "Điều 13 Thông báo xử lý dữ liệu cá nhân khoản 1",
+    "filter": null,
+    "results": [
+     {
+      "rank": 1,
+      "id": "B:nd-13-2023:Điều13:0",
+      "score": 0.0328,
+      "page": 9,
+      "source_id": "nd-13-2023"
+     },
+     {
+      "rank": 2,
+      "id": "B:nd-13-2023:Điều13:1",
+      "score": 0.0323,
+      "page": 9,
+      "source_id": "nd-13-2023"
+     },
+     {
+      "rank": 3,
+      "id": "B:nd-13-2023:Điều23:0",
+      "score": 0.0299,
+      "page": 15,
+      "source_id": "nd-13-2023"
+     }
+    ],
+    "new_context_ids": [],
+    "dropped_ids": [
+     "B:nd-13-2023:Điều13:0",
+     "B:nd-13-2023:Điều23:0"
+    ],
+    "context_ids": [
+     "B:nd-13-2023:Điều13:1",
+     "B:nd-13-2023:Điều11:1",
+     "B:nd-13-2023:Điều16:0",
+     "B:nd-13-2023:Điều43:0"
+    ],
+    "elapsed_ms": 17.55
+   },
+   {
+    "event": "llm",
+    "step": 4,
+    "calls": [
+     "search_keyword"
+    ],
+    "usage": {
+     "prompt_tokens": 2314,
+     "output_tokens": 28,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1464,
+    "retries": []
+   },
+   {
+    "event": "search",
+    "tool": "search_keyword",
+    "method": "bm25",
+    "query": "Điều 13. Thông báo xử lý dữ liệu cá nhân",
+    "filter": null,
+    "results": [
+     {
+      "rank": 1,
+      "id": "B:nd-13-2023:Điều13:0",
+      "score": 13.1117,
+      "page": 9,
+      "source_id": "nd-13-2023"
+     },
+     {
+      "rank": 2,
+      "id": "B:nd-13-2023:Điều13:1",
+      "score": 11.9346,
+      "page": 9,
+      "source_id": "nd-13-2023"
+     },
+     {
+      "rank": 3,
+      "id": "B:nd-13-2023:Điều28:0",
+      "score": 11.804,
+      "page": 20,
+      "source_id": "nd-13-2023"
+     }
+    ],
+    "new_context_ids": [],
+    "dropped_ids": [
+     "B:nd-13-2023:Điều13:0",
+     "B:nd-13-2023:Điều28:0"
+    ],
+    "context_ids": [
+     "B:nd-13-2023:Điều13:1",
+     "B:nd-13-2023:Điều11:1",
+     "B:nd-13-2023:Điều16:0",
+     "B:nd-13-2023:Điều43:0"
+    ],
+    "elapsed_ms": 3.48
+   },
+   {
+    "event": "llm",
+    "step": 5,
+    "calls": [
+     "search_dense"
+    ],
+    "usage": {
+     "prompt_tokens": 2438,
+     "output_tokens": 30,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1281,
+    "retries": []
+   },
+   {
+    "event": "search_limit",
+    "tool": "search_dense",
+    "args": {
+     "query": "Bên Kiểm soát dữ liệu cá nhân không cần thực hiện quy định lại"
+    }
+   },
+   {
+    "event": "llm",
+    "step": 6,
+    "calls": [
+     "final_answer"
+    ],
+    "usage": {
+     "prompt_tokens": 2496,
+     "output_tokens": 264,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1739,
+    "retries": []
+   },
+   {
+    "event": "answer",
+    "enough_evidence": true,
+    "citations": [
+     "B:nd-13-2023:Điều13:1"
+    ],
+    "citations_in_context": [
+     true
+    ]
+   }
+  ],
+  "n_searches": 4,
+  "context_ids": [
+   "B:nd-13-2023:Điều13:1",
+   "B:nd-13-2023:Điều11:1",
+   "B:nd-13-2023:Điều16:0",
+   "B:nd-13-2023:Điều43:0"
+  ],
+  "usage": {
+   "prompt_tokens": 12205,
+   "output_tokens": 423,
+   "thought_tokens": 0
+  },
+  "elapsed_s": 42.59,
+  "inline_markers_ok": true,
+  "invalid_citation_ids": [],
+  "resumed_after_error": true
+ },
+ {
+  "query_id": "u01",
+  "split": "dev",
+  "answerable": false,
+  "qtype": "unanswerable",
+  "question": "Theo Luật Bảo vệ dữ liệu cá nhân năm 2025, mức phạt tối đa đối với vi phạm là bao nhiêu phần trăm doanh thu?",
+  "config": {
+   "name": "A3-all-tools-b3000-citerule",
+   "model": "gemini-3.5-flash-lite",
+   "temperature": 0.0,
+   "tools": [
+    "dense",
+    "bm25",
+    "hybrid"
+   ],
+   "top_k": 3,
+   "budget_chars": 3000,
+   "max_searches": 4,
+   "max_steps": 8,
+   "cite_rule": true,
+   "retrieval_index": "day6 lab_B (multilingual-e5-small)"
+  },
+  "status": "abstain",
+  "answer": "Các văn bản pháp luật hiện hành về bảo vệ dữ liệu cá nhân trong phạm vi tra cứu (như Nghị định 13/2023/NĐ-CP) không có quy định cụ thể về mức phạt tối đa tính theo phần trăm doanh thu đối với vi phạm quy định bảo vệ dữ liệu cá nhân.",
+  "citations": [],
+  "events": [
+   {
+    "event": "llm",
+    "step": 1,
+    "calls": [
+     "search_hybrid"
+    ],
+    "usage": {
+     "prompt_tokens": 922,
+     "output_tokens": 28,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1206,
+    "retries": []
+   },
+   {
+    "event": "search",
+    "tool": "search_hybrid",
+    "method": "hybrid",
+    "query": "mức phạt phần trăm doanh thu bảo vệ dữ liệu cá nhân",
+    "filter": null,
+    "results": [
+     {
+      "rank": 1,
+      "id": "B:nd-13-2023:Điều4:0",
+      "score": 0.0328,
+      "page": 4,
+      "source_id": "nd-13-2023"
+     },
+     {
+      "rank": 2,
+      "id": "B:nd-13-2023:Điều22:0",
+      "score": 0.032,
+      "page": 15,
+      "source_id": "nd-13-2023"
+     },
+     {
+      "rank": 3,
+      "id": "B:nd-13-2023:Điều31:0",
+      "score": 0.032,
+      "page": 21,
+      "source_id": "nd-13-2023"
+     }
+    ],
+    "new_context_ids": [
+     "B:nd-13-2023:Điều4:0",
+     "B:nd-13-2023:Điều22:0",
+     "B:nd-13-2023:Điều31:0"
+    ],
+    "dropped_ids": [],
+    "context_ids": [
+     "B:nd-13-2023:Điều4:0",
+     "B:nd-13-2023:Điều22:0",
+     "B:nd-13-2023:Điều31:0"
+    ],
+    "elapsed_ms": 16.97
+   },
+   {
+    "event": "llm",
+    "step": 2,
+    "calls": [
+     "search_keyword"
+    ],
+    "usage": {
+     "prompt_tokens": 1609,
+     "output_tokens": 18,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1268,
+    "retries": []
+   },
+   {
+    "event": "search",
+    "tool": "search_keyword",
+    "method": "bm25",
+    "query": "doanh thu",
+    "filter": null,
+    "results": [
+     {
+      "rank": 1,
+      "id": "B:nd-13-2023:Điều21:0",
+      "score": 5.4825,
+      "page": 14,
+      "source_id": "nd-13-2023"
+     },
+     {
+      "rank": 2,
+      "id": "B:nd-13-2023:Điều31:0",
+      "score": 5.4343,
+      "page": 21,
+      "source_id": "nd-13-2023"
+     },
+     {
+      "rank": 3,
+      "id": "B:luat-gddt-2023:Điều28:0",
+      "score": 4.9135,
+      "page": 15,
+      "source_id": "luat-gddt-2023"
+     }
+    ],
+    "new_context_ids": [
+     "B:nd-13-2023:Điều21:0"
+    ],
+    "dropped_ids": [
+     "B:luat-gddt-2023:Điều28:0"
+    ],
+    "context_ids": [
+     "B:nd-13-2023:Điều4:0",
+     "B:nd-13-2023:Điều22:0",
+     "B:nd-13-2023:Điều31:0",
+     "B:nd-13-2023:Điều21:0"
+    ],
+    "elapsed_ms": 1.16
+   },
+   {
+    "event": "llm",
+    "step": 3,
+    "calls": [
+     "search_keyword"
+    ],
+    "usage": {
+     "prompt_tokens": 1995,
+     "output_tokens": 17,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1600,
+    "retries": []
+   },
+   {
+    "event": "search",
+    "tool": "search_keyword",
+    "method": "bm25",
+    "query": "phạt",
+    "filter": null,
+    "results": [
+     {
+      "rank": 1,
+      "id": "B:nd-13-2023:Điều4:0",
+      "score": 7.2998,
+      "page": 4,
+      "source_id": "nd-13-2023"
+     }
+    ],
+    "new_context_ids": [],
+    "dropped_ids": [],
+    "context_ids": [
+     "B:nd-13-2023:Điều4:0",
+     "B:nd-13-2023:Điều22:0",
+     "B:nd-13-2023:Điều31:0",
+     "B:nd-13-2023:Điều21:0"
+    ],
+    "elapsed_ms": 0.89
+   },
+   {
+    "event": "llm",
+    "step": 4,
+    "calls": [
+     "search_dense"
+    ],
+    "usage": {
+     "prompt_tokens": 2068,
+     "output_tokens": 29,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1112,
+    "retries": []
+   },
+   {
+    "event": "search",
+    "tool": "search_dense",
+    "method": "dense",
+    "query": "mức xử phạt vi phạm quy định bảo vệ dữ liệu cá nhân",
+    "filter": null,
+    "results": [
+     {
+      "rank": 1,
+      "id": "B:nd-13-2023:Điều4:0",
+      "score": 0.9238,
+      "page": 4,
+      "source_id": "nd-13-2023"
+     },
+     {
+      "rank": 2,
+      "id": "B:nd-13-2023:Điều23:0",
+      "score": 0.911,
+      "page": 15,
+      "source_id": "nd-13-2023"
+     },
+     {
+      "rank": 3,
+      "id": "B:nd-13-2023:Điều23:1",
+      "score": 0.9026,
+      "page": 15,
+      "source_id": "nd-13-2023"
+     }
+    ],
+    "new_context_ids": [],
+    "dropped_ids": [
+     "B:nd-13-2023:Điều23:0",
+     "B:nd-13-2023:Điều23:1"
+    ],
+    "context_ids": [
+     "B:nd-13-2023:Điều4:0",
+     "B:nd-13-2023:Điều22:0",
+     "B:nd-13-2023:Điều31:0",
+     "B:nd-13-2023:Điều21:0"
+    ],
+    "elapsed_ms": 21.34
+   },
+   {
+    "event": "llm",
+    "step": 5,
+    "calls": [
+     "search_keyword"
+    ],
+    "usage": {
+     "prompt_tokens": 2192,
+     "output_tokens": 18,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1936,
+    "retries": []
+   },
+   {
+    "event": "search_limit",
+    "tool": "search_keyword",
+    "args": {
+     "query": "phần trăm"
+    }
+   },
+   {
+    "event": "llm",
+    "step": 6,
+    "calls": [
+     "final_answer"
+    ],
+    "usage": {
+     "prompt_tokens": 2238,
+     "output_tokens": 92,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1279,
+    "retries": []
+   },
+   {
+    "event": "answer",
+    "enough_evidence": false,
+    "citations": [],
+    "citations_in_context": []
+   }
+  ],
+  "n_searches": 4,
+  "context_ids": [
+   "B:nd-13-2023:Điều4:0",
+   "B:nd-13-2023:Điều22:0",
+   "B:nd-13-2023:Điều31:0",
+   "B:nd-13-2023:Điều21:0"
+  ],
+  "usage": {
+   "prompt_tokens": 11024,
+   "output_tokens": 202,
+   "thought_tokens": 0
+  },
+  "elapsed_s": 8.44,
+  "reason": "model_declined",
+  "raw_citations": [],
+  "resumed_after_error": true
+ },
+ {
+  "query_id": "u02",
+  "split": "dev",
+  "answerable": false,
+  "qtype": "unanswerable",
+  "question": "Doanh nghiệp cung cấp dịch vụ trên không gian mạng phải lưu nhật ký hệ thống trong bao nhiêu tháng?",
+  "config": {
+   "name": "A3-all-tools-b3000-citerule",
+   "model": "gemini-3.5-flash-lite",
+   "temperature": 0.0,
+   "tools": [
+    "dense",
+    "bm25",
+    "hybrid"
+   ],
+   "top_k": 3,
+   "budget_chars": 3000,
+   "max_searches": 4,
+   "max_steps": 8,
+   "cite_rule": true,
+   "retrieval_index": "day6 lab_B (multilingual-e5-small)"
+  },
+  "status": "abstain",
+  "answer": "Theo Luật An ninh mạng, doanh nghiệp cung cấp dịch vụ trên mạng viễn thông, mạng Internet, các dịch vụ gia tăng trên không gian mạng tại Việt Nam có trách nhiệm lưu nhật ký hệ thống để phục vụ điều tra, xử lý hành vi vi phạm pháp luật về an ninh mạng trong thời gian theo quy định của Chính phủ [B:luat-anm-2018:Điều26:1]. Tuy nhiên, dữ liệu tìm kiếm hiện tại chưa nêu cụ thể số tháng quy định chi tiết của Chính phủ.",
+  "citations": [],
+  "events": [
+   {
+    "event": "llm",
+    "step": 1,
+    "calls": [
+     "search_hybrid"
+    ],
+    "usage": {
+     "prompt_tokens": 913,
+     "output_tokens": 35,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1239,
+    "retries": []
+   },
+   {
+    "event": "search",
+    "tool": "search_hybrid",
+    "method": "hybrid",
+    "query": "doanh nghiệp cung cấp dịch vụ trên không gian mạng lưu nhật ký hệ thống trong bao nhiêu tháng",
+    "filter": null,
+    "results": [
+     {
+      "rank": 1,
+      "id": "B:luat-anm-2018:Điều26:1",
+      "score": 0.0325,
+      "page": 24,
+      "source_id": "luat-anm-2018"
+     },
+     {
+      "rank": 2,
+      "id": "B:luat-anm-2018:Điều2:1",
+      "score": 0.0318,
+      "page": 1,
+      "source_id": "luat-anm-2018"
+     },
+     {
+      "rank": 3,
+      "id": "B:luat-anm-2018:Điều41:1",
+      "score": 0.0317,
+      "page": 31,
+      "source_id": "luat-anm-2018"
+     }
+    ],
+    "new_context_ids": [
+     "B:luat-anm-2018:Điều26:1",
+     "B:luat-anm-2018:Điều2:1",
+     "B:luat-anm-2018:Điều41:1"
+    ],
+    "dropped_ids": [],
+    "context_ids": [
+     "B:luat-anm-2018:Điều26:1",
+     "B:luat-anm-2018:Điều2:1",
+     "B:luat-anm-2018:Điều41:1"
+    ],
+    "elapsed_ms": 23.31
+   },
+   {
+    "event": "llm",
+    "step": 2,
+    "calls": [
+     "search_hybrid"
+    ],
+    "usage": {
+     "prompt_tokens": 1856,
+     "output_tokens": 38,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1093,
+    "retries": []
+   },
+   {
+    "event": "search",
+    "tool": "search_hybrid",
+    "method": "hybrid",
+    "query": "lưu nhật ký hệ thống trong thời gian theo quy định của Chính phủ Nghị định hướng dẫn Luật An ninh mạng",
+    "filter": null,
+    "results": [
+     {
+      "rank": 1,
+      "id": "B:luat-anm-2018:Điều24:1",
+      "score": 0.0325,
+      "page": 23,
+      "source_id": "luat-anm-2018"
+     },
+     {
+      "rank": 2,
+      "id": "B:luat-anm-2018:Điều43:0",
+      "score": 0.0313,
+      "page": 32,
+      "source_id": "luat-anm-2018"
+     },
+     {
+      "rank": 3,
+      "id": "B:luat-anm-2018:Điều26:1",
+      "score": 0.0313,
+      "page": 24,
+      "source_id": "luat-anm-2018"
+     }
+    ],
+    "new_context_ids": [],
+    "dropped_ids": [
+     "B:luat-anm-2018:Điều24:1",
+     "B:luat-anm-2018:Điều43:0"
+    ],
+    "context_ids": [
+     "B:luat-anm-2018:Điều26:1",
+     "B:luat-anm-2018:Điều2:1",
+     "B:luat-anm-2018:Điều41:1"
+    ],
+    "elapsed_ms": 20.98
+   },
+   {
+    "event": "llm",
+    "step": 3,
+    "calls": [
+     "search_keyword"
+    ],
+    "usage": {
+     "prompt_tokens": 1993,
+     "output_tokens": 20,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1921,
+    "retries": []
+   },
+   {
+    "event": "search",
+    "tool": "search_keyword",
+    "method": "bm25",
+    "query": "nhật ký hệ thống",
+    "filter": null,
+    "results": [
+     {
+      "rank": 1,
+      "id": "B:luat-gddt-2023:Điều26:1",
+      "score": 9.4994,
+      "page": 14,
+      "source_id": "luat-gddt-2023"
+     },
+     {
+      "rank": 2,
+      "id": "B:luat-anm-2018:Điều26:1",
+      "score": 7.221,
+      "page": 24,
+      "source_id": "luat-anm-2018"
+     },
+     {
+      "rank": 3,
+      "id": "B:nd-13-2023:Điều38:0",
+      "score": 6.6296,
+      "page": 23,
+      "source_id": "nd-13-2023"
+     }
+    ],
+    "new_context_ids": [],
+    "dropped_ids": [
+     "B:luat-gddt-2023:Điều26:1",
+     "B:nd-13-2023:Điều38:0"
+    ],
+    "context_ids": [
+     "B:luat-anm-2018:Điều26:1",
+     "B:luat-anm-2018:Điều2:1",
+     "B:luat-anm-2018:Điều41:1"
+    ],
+    "elapsed_ms": 2.21
+   },
+   {
+    "event": "llm",
+    "step": 4,
+    "calls": [
+     "search_dense"
+    ],
+    "usage": {
+     "prompt_tokens": 2112,
+     "output_tokens": 35,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1113,
+    "retries": []
+   },
+   {
+    "event": "search",
+    "tool": "search_dense",
+    "method": "dense",
+    "query": "thời gian lưu trữ nhật ký hệ thống của doanh nghiệp cung cấp dịch vụ trên không gian mạng",
+    "filter": null,
+    "results": [
+     {
+      "rank": 1,
+      "id": "B:luat-anm-2018:Điều26:1",
+      "score": 0.8906,
+      "page": 24,
+      "source_id": "luat-anm-2018"
+     },
+     {
+      "rank": 2,
+      "id": "B:luat-anm-2018:Điều26:3",
+      "score": 0.8862,
+      "page": 25,
+      "source_id": "luat-anm-2018"
+     },
+     {
+      "rank": 3,
+      "id": "B:luat-anm-2018:Điều41:1",
+      "score": 0.8766,
+      "page": 31,
+      "source_id": "luat-anm-2018"
+     }
+    ],
+    "new_context_ids": [],
+    "dropped_ids": [
+     "B:luat-anm-2018:Điều26:3"
+    ],
+    "context_ids": [
+     "B:luat-anm-2018:Điều26:1",
+     "B:luat-anm-2018:Điều2:1",
+     "B:luat-anm-2018:Điều41:1"
+    ],
+    "elapsed_ms": 21.05
+   },
+   {
+    "event": "llm",
+    "step": 5,
+    "calls": [
+     "search_keyword"
+    ],
+    "usage": {
+     "prompt_tokens": 2246,
+     "output_tokens": 19,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1292,
+    "retries": []
+   },
+   {
+    "event": "search_limit",
+    "tool": "search_keyword",
+    "args": {
+     "query": "lưu nhật ký"
+    }
+   },
+   {
+    "event": "llm",
+    "step": 6,
+    "calls": [
+     "final_answer"
+    ],
+    "usage": {
+     "prompt_tokens": 2293,
+     "output_tokens": 155,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1331,
+    "retries": [
+     {
+      "attempt": 1,
+      "code": 429,
+      "message": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite, description: Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 13.25993294s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'mo",
+      "elapsed_ms": 391
+     }
+    ]
+   },
+   {
+    "event": "answer",
+    "enough_evidence": false,
+    "citations": [
+     "B:luat-anm-2018:Điều26:1"
+    ],
+    "citations_in_context": [
+     true
+    ]
+   }
+  ],
+  "n_searches": 4,
+  "context_ids": [
+   "B:luat-anm-2018:Điều26:1",
+   "B:luat-anm-2018:Điều2:1",
+   "B:luat-anm-2018:Điều41:1"
+  ],
+  "usage": {
+   "prompt_tokens": 11413,
+   "output_tokens": 302,
+   "thought_tokens": 0
+  },
+  "elapsed_s": 10.92,
+  "reason": "model_declined",
+  "raw_citations": [
+   "B:luat-anm-2018:Điều26:1"
+  ],
+  "resumed_after_error": true
+ },
+ {
+  "query_id": "u03",
+  "split": "dev",
+  "answerable": false,
+  "qtype": "unanswerable",
+  "question": "Hành vi mua bán trái phép dữ liệu cá nhân bị phạt bao nhiêu triệu đồng?",
+  "config": {
+   "name": "A3-all-tools-b3000-citerule",
+   "model": "gemini-3.5-flash-lite",
+   "temperature": 0.0,
+   "tools": [
+    "dense",
+    "bm25",
+    "hybrid"
+   ],
+   "top_k": 3,
+   "budget_chars": 3000,
+   "max_searches": 4,
+   "max_steps": 8,
+   "cite_rule": true,
+   "retrieval_index": "day6 lab_B (multilingual-e5-small)"
+  },
+  "status": "abstain",
+  "answer": "Các văn bản pháp luật hiện tại (Luật An ninh mạng, Nghị định 13/2023/NĐ-CP về bảo vệ dữ liệu cá nhân) quy định hành vi mua, bán trái phép dữ liệu cá nhân là vi phạm pháp luật [B:nd-13-2023:Điều22:2, B:nd-13-2023:Điều3:4], tuy nhiên kết quả tìm kiếm chưa cung cấp thông tin chi tiết về mức phạt cụ thể bao nhiêu triệu đồng.",
+  "citations": [],
+  "events": [
+   {
+    "event": "llm",
+    "step": 1,
+    "calls": [
+     "search_hybrid"
+    ],
+    "usage": {
+     "prompt_tokens": 909,
+     "output_tokens": 29,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1037,
+    "retries": []
+   },
+   {
+    "event": "search",
+    "tool": "search_hybrid",
+    "method": "hybrid",
+    "query": "mua bán trái phép dữ liệu cá nhân phạt bao nhiêu triệu đồng",
+    "filter": null,
+    "results": [
+     {
+      "rank": 1,
+      "id": "B:nd-13-2023:Điều22:0",
+      "score": 0.0328,
+      "page": 15,
+      "source_id": "nd-13-2023"
+     },
+     {
+      "rank": 2,
+      "id": "B:luat-anm-2018:Điều18:0",
+      "score": 0.0306,
+      "page": 17,
+      "source_id": "luat-anm-2018"
+     },
+     {
+      "rank": 3,
+      "id": "B:nd-13-2023:Điều3:0",
+      "score": 0.0295,
+      "page": 4,
+      "source_id": "nd-13-2023"
+     }
+    ],
+    "new_context_ids": [
+     "B:nd-13-2023:Điều22:0",
+     "B:luat-anm-2018:Điều18:0",
+     "B:nd-13-2023:Điều3:0"
+    ],
+    "dropped_ids": [],
+    "context_ids": [
+     "B:nd-13-2023:Điều22:0",
+     "B:luat-anm-2018:Điều18:0",
+     "B:nd-13-2023:Điều3:0"
+    ],
+    "elapsed_ms": 21.88
+   },
+   {
+    "event": "llm",
+    "step": 2,
+    "calls": [
+     "search_keyword"
+    ],
+    "usage": {
+     "prompt_tokens": 1960,
+     "output_tokens": 26,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1606,
+    "retries": [
+     {
+      "attempt": 1,
+      "code": 429,
+      "message": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite, description: Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 8.081400324s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'lo",
+      "elapsed_ms": 301
+     },
+     {
+      "attempt": 2,
+      "code": 429,
+      "message": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite, description: Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 4.92367957s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'mod",
+      "elapsed_ms": 394
+     },
+     {
+      "attempt": 3,
+      "code": 429,
+      "message": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite, description: Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 264.856687ms.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'lo",
+      "elapsed_ms": 345
+     },
+     {
+      "attempt": 4,
+      "code": 429,
+      "message": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite, description: Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 50.91790101s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per minute limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'lo",
+      "elapsed_ms": 501
+     }
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_keyword",
+    "method": "bm25",
+    "query": "phạt tiền mua bán trái phép dữ liệu cá nhân",
+    "filter": null,
+    "results": [
+     {
+      "rank": 1,
+      "id": "B:nd-13-2023:Điều22:0",
+      "score": 24.4432,
+      "page": 15,
+      "source_id": "nd-13-2023"
+     },
+     {
+      "rank": 2,
+      "id": "B:luat-anm-2018:Điều18:0",
+      "score": 16.5175,
+      "page": 17,
+      "source_id": "luat-anm-2018"
+     },
+     {
+      "rank": 3,
+      "id": "B:luat-anm-2018:Điều19:0",
+      "score": 13.4319,
+      "page": 18,
+      "source_id": "luat-anm-2018"
+     }
+    ],
+    "new_context_ids": [],
+    "dropped_ids": [
+     "B:luat-anm-2018:Điều19:0"
+    ],
+    "context_ids": [
+     "B:nd-13-2023:Điều22:0",
+     "B:luat-anm-2018:Điều18:0",
+     "B:nd-13-2023:Điều3:0"
+    ],
+    "elapsed_ms": 2.35
+   },
+   {
+    "event": "llm",
+    "step": 3,
+    "calls": [
+     "search_dense"
+    ],
+    "usage": {
+     "prompt_tokens": 2084,
+     "output_tokens": 30,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1397,
+    "retries": []
+   },
+   {
+    "event": "search",
+    "tool": "search_dense",
+    "method": "dense",
+    "query": "mức phạt tiền vi phạm quy định về bảo vệ dữ liệu cá nhân",
+    "filter": null,
+    "results": [
+     {
+      "rank": 1,
+      "id": "B:nd-13-2023:Điều4:0",
+      "score": 0.9174,
+      "page": 4,
+      "source_id": "nd-13-2023"
+     },
+     {
+      "rank": 2,
+      "id": "B:nd-13-2023:Điều23:0",
+      "score": 0.907,
+      "page": 15,
+      "source_id": "nd-13-2023"
+     },
+     {
+      "rank": 3,
+      "id": "B:nd-13-2023:Điều23:1",
+      "score": 0.9024,
+      "page": 15,
+      "source_id": "nd-13-2023"
+     }
+    ],
+    "new_context_ids": [],
+    "dropped_ids": [
+     "B:nd-13-2023:Điều4:0",
+     "B:nd-13-2023:Điều23:0",
+     "B:nd-13-2023:Điều23:1"
+    ],
+    "context_ids": [
+     "B:nd-13-2023:Điều22:0",
+     "B:luat-anm-2018:Điều18:0",
+     "B:nd-13-2023:Điều3:0"
+    ],
+    "elapsed_ms": 16.02
+   },
+   {
+    "event": "llm",
+    "step": 4,
+    "calls": [
+     "search_keyword"
+    ],
+    "usage": {
+     "prompt_tokens": 2210,
+     "output_tokens": 22,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1550,
+    "retries": []
+   },
+   {
+    "event": "search",
+    "tool": "search_keyword",
+    "method": "bm25",
+    "query": "triệu đồng dữ liệu cá nhân",
+    "filter": null,
+    "results": [
+     {
+      "rank": 1,
+      "id": "B:nd-13-2023:Điều11:0",
+      "score": 8.0999,
+      "page": 7,
+      "source_id": "nd-13-2023"
+     },
+     {
+      "rank": 2,
+      "id": "B:nd-13-2023:Điều11:1",
+      "score": 7.8517,
+      "page": 8,
+      "source_id": "nd-13-2023"
+     },
+     {
+      "rank": 3,
+      "id": "B:nd-13-2023:Điều12:0",
+      "score": 7.7741,
+      "page": 8,
+      "source_id": "nd-13-2023"
+     }
+    ],
+    "new_context_ids": [],
+    "dropped_ids": [
+     "B:nd-13-2023:Điều11:0",
+     "B:nd-13-2023:Điều11:1",
+     "B:nd-13-2023:Điều12:0"
+    ],
+    "context_ids": [
+     "B:nd-13-2023:Điều22:0",
+     "B:luat-anm-2018:Điều18:0",
+     "B:nd-13-2023:Điều3:0"
+    ],
+    "elapsed_ms": 2.24
+   },
+   {
+    "event": "llm",
+    "step": 5,
+    "calls": [
+     "search_keyword"
+    ],
+    "usage": {
+     "prompt_tokens": 2329,
+     "output_tokens": 26,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1311,
+    "retries": []
+   },
+   {
+    "event": "search_limit",
+    "tool": "search_keyword",
+    "args": {
+     "query": "xử phạt vi phạm hành chính dữ liệu cá nhân"
+    }
+   },
+   {
+    "event": "llm",
+    "step": 6,
+    "calls": [
+     "final_answer"
+    ],
+    "usage": {
+     "prompt_tokens": 2383,
+     "output_tokens": 176,
+     "thought_tokens": 0
+    },
+    "elapsed_ms": 1854,
+    "retries": []
+   },
+   {
+    "event": "answer",
+    "enough_evidence": false,
+    "citations": [
+     "B:nd-13-2023:Điều22:2",
+     "B:nd-13-2023:Điều3:4"
+    ],
+    "citations_in_context": [
+     false,
+     false
+    ]
+   }
+  ],
+  "n_searches": 4,
+  "context_ids": [
+   "B:nd-13-2023:Điều22:0",
+   "B:luat-anm-2018:Điều18:0",
+   "B:nd-13-2023:Điều3:0"
+  ],
+  "usage": {
+   "prompt_tokens": 11875,
+   "output_tokens": 309,
+   "thought_tokens": 0
+  },
+  "elapsed_s": 42.77,
+  "reason": "model_declined",
+  "raw_citations": [
+   "B:nd-13-2023:Điều22:2",
+   "B:nd-13-2023:Điều3:4"
+  ],
+  "resumed_after_error": true
+ }
+]

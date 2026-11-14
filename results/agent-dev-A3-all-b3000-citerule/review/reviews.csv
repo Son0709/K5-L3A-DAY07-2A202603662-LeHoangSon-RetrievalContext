@@ -1,0 +1,29 @@
+﻿query_id,kind,status,citations,answer_grade,citation_support,abstention_correct,context_score,note
+d01,answerable,answered,B:nd-13-2023:Điều11:0,2,1,,,"kế thừa nhãn A1 (cùng câu trả lời về nội dung, cùng trích dẫn, đoạn trích dẫn chứa gold)."
+d02,answerable,answered,B:nd-13-2023:Điều16:2,2,1,,,"kế thừa nhãn A1 (cùng câu trả lời về nội dung, cùng trích dẫn, đoạn trích dẫn chứa gold)."
+d03,answerable,answered,B:nd-13-2023:Điều16:1,2,1,,,Liệt kê các trường hợp khớp Điều 16 khoản 2.
+d04,answerable,answered,B:nd-13-2023:Điều24:3,2,1,,,"kế thừa nhãn A1 (cùng câu trả lời về nội dung, cùng trích dẫn, đoạn trích dẫn chứa gold)."
+d05,answerable,answered,B:nd-13-2023:Điều20:0,2,1,,,"kế thừa nhãn A1 (cùng câu trả lời về nội dung, cùng trích dẫn, đoạn trích dẫn chứa gold)."
+d06,answerable,answered,B:nd-13-2023:Điều23:0,2,1,,,"kế thừa nhãn A1 (cùng câu trả lời về nội dung, cùng trích dẫn, đoạn trích dẫn chứa gold)."
+d07,answerable,answered,B:luat-anm-2018:Điều26:3,2,1,,,"Đủ, 4 lượt tìm."
+d08,answerable,answered,B:luat-anm-2018:Điều26:1,2,1,,,"24 giờ, đúng."
+d09,answerable,answered,B:luat-gddt-2023:Điều10:0,2,1,,,"kế thừa nhãn A1 (cùng câu trả lời về nội dung, cùng trích dẫn, đoạn trích dẫn chứa gold)."
+d10,answerable,answered,B:luat-gddt-2023:Điều9:0,2,1,,,Đúng.
+d11,answerable,answered,B:luat-gddt-2023:Điều38:0,2,1,,,"kế thừa nhãn A1 (cùng câu trả lời về nội dung, cùng trích dẫn, đoạn trích dẫn chứa gold)."
+d12,answerable,answered,B:luat-gddt-2023:Điều6:0,2,1,,,"kế thừa nhãn A1 (cùng câu trả lời về nội dung, cùng trích dẫn, đoạn trích dẫn chứa gold)."
+d13,answerable,answered,B:luat-anm-2018:Điều13:2 | B:luat-anm-2018:Điều24:1,2,1 1,,,"Câu trả lời chính đúng (Điều 24:1: 12 giờ, 30 ngày) kèm ghi chú phạm vi riêng về hệ thống quan trọng (Điều 13:2, đúng và tách bạch). (A1 chấm 1)"
+d14,answerable,answered,B:nd-13-2023:Điều15:0,1,1,,,"như A1, ""trong thời hạn 72 giờ"" so với nguồn ""sau 72 giờ""."
+d15,answerable,answered,B:nd-13-2023:Điều9:1,2,1,,,"kế thừa nhãn A1 (cùng câu trả lời về nội dung, cùng trích dẫn, đoạn trích dẫn chứa gold)."
+t01,answerable,answered,B:luat-anm-2018:Điều29:0,2,1,,,"kế thừa nhãn A1 (cùng câu trả lời về nội dung, cùng trích dẫn, đoạn trích dẫn chứa gold)."
+t02,answerable,answered,B:nd-13-2023:Điều19:0 | B:nd-13-2023:Điều19:1,2,1 0,,,Nội dung đủ; id Điều19:1 không tồn tại -> 0 (quy tắc id không ngăn được).
+t03,answerable,answered,B:luat-gddt-2023:Điều12:0,2,1,,,Lấy đúng Điều 12:0 trong 1 lượt tìm; đủ 2 ý. (A1 chấm 0)
+t04,answerable,answered,B:luat-anm-2018:Điều41:0,2,1,,,Đủ 3 ý.
+t05,answerable,answered,B:nd-13-2023:Điều21:0 | B:nd-13-2023:Điều21:1 | B:nd-13-2023:Điều21:2,2,1 0 0,,,"Nội dung đủ nhưng vẫn bịa 2 id (Điều21:1, :2) dù đã có quy tắc id. Giả thuyết A3 không đúng."
+d16,answerable,answered,B:nd-13-2023:Điều12:0,2,1,,,"kế thừa nhãn A1 (cùng câu trả lời về nội dung, cùng trích dẫn, đoạn trích dẫn chứa gold)."
+d17,answerable,answered,B:nd-13-2023:Điều23:0,1,1,,,"như A1, chỉ nửa Nghị định 13 (72 giờ), tự nêu thiếu phần còn lại; chunk Điều41:0 không vào context."
+d18,answerable,answered,B:luat-gddt-2023:Điều17:0,2,1,,,Đúng (Điều 17 khoản 1).
+d19,answerable,answered,B:luat-gddt-2023:Điều46:0,2,1,,,"kế thừa nhãn A1 (cùng câu trả lời về nội dung, cùng trích dẫn, đoạn trích dẫn chứa gold)."
+d20,answerable,answered,B:nd-13-2023:Điều13:1,2,1,,,"kế thừa nhãn A1 (cùng câu trả lời về nội dung, cùng trích dẫn, đoạn trích dẫn chứa gold)."
+u01,unanswerable,abstain,,,,1,,Từ chối đúng.
+u02,unanswerable,abstain,,,,1,,"Nêu ""theo quy định của Chính phủ"" và nói rõ chưa có số tháng."
+u03,unanswerable,abstain,,,,1,,"từ chối mức phạt đúng, nhưng câu trả lời trích dẫn 2 id không tồn tại (Điều22:2, Điều3:4). Id bịa nằm trong câu từ chối nên không vào chỉ số citation_validity; nếu bạn coi là thêm khẳng định vô căn cứ thì chấm 0."
