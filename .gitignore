@@ -9,3 +9,6 @@ __pycache__/
 # Local datasets and generated output; share permitted artifacts deliberately
 starter/data/
 starter/results/
+
+# Day 6 repo is a separate git repo (own remote); Day 7 reads it via DAY6_DIR, see README
+K5-L3A-Day06-*/
