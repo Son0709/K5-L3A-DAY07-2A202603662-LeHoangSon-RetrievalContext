@@ -1,19 +1,19 @@
 """Convert Day 6 chunks (strategy B) and benchmark into the Day 7 schema (data/README.md).
 
 Run from the repo root:  python scripts/export_day6.py
-Outputs data/chunks.json and data/questions.json. Only field renames and a split of
+Outputs data/chunks.json and data/questions_day6.json (merged into data/questions.json by build_benchmark.py). Only field renames and a split of
 `evidence_quotes` into `gold` entries happen here; nothing is guessed or regenerated.
 
 Multi-quote questions (d06, d09, t02) need ALL their quotes: `gold_mode` is "all" for them
 (a single-quote question has "any"). Evaluation code must honour `gold_mode`.
-Day 6 had no unanswerable questions; those are added later in data/questions_extra.json.
+Day 6 had no unanswerable questions; new questions live in data/questions_new.json.
 """
 import json
 import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-from rag.config import CHUNKS_JSON, DAY6_DIR, DAY6_RESULTS, QUESTIONS_JSON  # noqa: E402
+from rag.config import CHUNKS_JSON, DAY6_DIR, DAY6_RESULTS, QUESTIONS_DAY6_JSON  # noqa: E402
 
 
 def read_jsonl(path: Path) -> list[dict]:
@@ -44,8 +44,8 @@ def main() -> None:
         raise SystemExit("duplicate chunk ids")
     CHUNKS_JSON.parent.mkdir(exist_ok=True)
     CHUNKS_JSON.write_text(json.dumps(chunks, ensure_ascii=False, indent=1), encoding="utf-8")
-    QUESTIONS_JSON.write_text(json.dumps(questions, ensure_ascii=False, indent=1), encoding="utf-8")
-    print(f"{len(chunks)} chunks -> {CHUNKS_JSON}\n{len(questions)} questions -> {QUESTIONS_JSON}")
+    QUESTIONS_DAY6_JSON.write_text(json.dumps(questions, ensure_ascii=False, indent=1), encoding="utf-8")
+    print(f"{len(chunks)} chunks -> {CHUNKS_JSON}\n{len(questions)} questions -> {QUESTIONS_DAY6_JSON}")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,392 @@
+{
+  "counts": {
+    "dev/answerable": 25,
+    "dev/unanswerable": 3,
+    "test/answerable": 9,
+    "test/unanswerable": 3
+  },
+  "origin": {
+    "day6": 15,
+    "day6-test-seen": 5,
+    "day7-new": 20
+  },
+  "qtype": {
+    "direct": 3,
+    "exception": 3,
+    "paraphrase": 10,
+    "filter": 4,
+    "condition": 12,
+    "multihop-crossdoc": 1,
+    "unanswerable": 6,
+    "multihop": 1
+  },
+  "multi_evidence": 8,
+  "meets_minimums_BENCHMARK_md": true,
+  "meets_SUBMISSION_md": true,
+  "problems": [],
+  "rows": [
+    {
+      "id": "d01",
+      "split": "dev",
+      "kind": "answerable",
+      "evidence_ok": true,
+      "pages": [
+        8
+      ]
+    },
+    {
+      "id": "d02",
+      "split": "dev",
+      "kind": "answerable",
+      "evidence_ok": true,
+      "pages": [
+        12
+      ]
+    },
+    {
+      "id": "d03",
+      "split": "dev",
+      "kind": "answerable",
+      "evidence_ok": true,
+      "pages": [
+        12
+      ]
+    },
+    {
+      "id": "d04",
+      "split": "dev",
+      "kind": "answerable",
+      "evidence_ok": true,
+      "pages": [
+        17
+      ]
+    },
+    {
+      "id": "d05",
+      "split": "dev",
+      "kind": "answerable",
+      "evidence_ok": true,
+      "pages": [
+        14
+      ]
+    },
+    {
+      "id": "d06",
+      "split": "dev",
+      "kind": "answerable",
+      "evidence_ok": true,
+      "pages": [
+        15
+      ]
+    },
+    {
+      "id": "d07",
+      "split": "dev",
+      "kind": "answerable",
+      "evidence_ok": true,
+      "pages": [
+        25
+      ]
+    },
+    {
+      "id": "d08",
+      "split": "dev",
+      "kind": "answerable",
+      "evidence_ok": true,
+      "pages": [
+        25
+      ]
+    },
+    {
+      "id": "d09",
+      "split": "dev",
+      "kind": "answerable",
+      "evidence_ok": true,
+      "pages": [
+        5
+      ]
+    },
+    {
+      "id": "d10",
+      "split": "dev",
+      "kind": "answerable",
+      "evidence_ok": true,
+      "pages": [
+        4
+      ]
+    },
+    {
+      "id": "d11",
+      "split": "dev",
+      "kind": "answerable",
+      "evidence_ok": true,
+      "pages": [
+        19
+      ]
+    },
+    {
+      "id": "d12",
+      "split": "dev",
+      "kind": "answerable",
+      "evidence_ok": true,
+      "pages": [
+        4
+      ]
+    },
+    {
+      "id": "d13",
+      "split": "dev",
+      "kind": "answerable",
+      "evidence_ok": true,
+      "pages": [
+        24
+      ]
+    },
+    {
+      "id": "d14",
+      "split": "dev",
+      "kind": "answerable",
+      "evidence_ok": true,
+      "pages": [
+        11
+      ]
+    },
+    {
+      "id": "d15",
+      "split": "dev",
+      "kind": "answerable",
+      "evidence_ok": true,
+      "pages": [
+        7
+      ]
+    },
+    {
+      "id": "t01",
+      "split": "dev",
+      "kind": "answerable",
+      "evidence_ok": true,
+      "pages": [
+        26
+      ]
+    },
+    {
+      "id": "t02",
+      "split": "dev",
+      "kind": "answerable",
+      "evidence_ok": true,
+      "pages": [
+        14
+      ]
+    },
+    {
+      "id": "t03",
+      "split": "dev",
+      "kind": "answerable",
+      "evidence_ok": true,
+      "pages": [
+        5
+      ]
+    },
+    {
+      "id": "t04",
+      "split": "dev",
+      "kind": "answerable",
+      "evidence_ok": true,
+      "pages": [
+        31
+      ]
+    },
+    {
+      "id": "t05",
+      "split": "dev",
+      "kind": "answerable",
+      "evidence_ok": true,
+      "pages": [
+        14
+      ]
+    },
+    {
+      "id": "d16",
+      "split": "dev",
+      "kind": "answerable",
+      "evidence_ok": true,
+      "pages": [
+        8
+      ]
+    },
+    {
+      "id": "d17",
+      "split": "dev",
+      "kind": "answerable",
+      "evidence_ok": true,
+      "pages": [
+        15,
+        31
+      ]
+    },
+    {
+      "id": "d18",
+      "split": "dev",
+      "kind": "answerable",
+      "evidence_ok": true,
+      "pages": [
+        9
+      ]
+    },
+    {
+      "id": "d19",
+      "split": "dev",
+      "kind": "answerable",
+      "evidence_ok": true,
+      "pages": [
+        25
+      ]
+    },
+    {
+      "id": "d20",
+      "split": "dev",
+      "kind": "answerable",
+      "evidence_ok": true,
+      "pages": [
+        9
+      ]
+    },
+    {
+      "id": "u01",
+      "split": "dev",
+      "kind": "unanswerable",
+      "absence_pattern_matches": {
+        "Luật\\s+Bảo vệ dữ liệu cá nhân": 0,
+        "(phần trăm|%)\\s*(trên\\s*)?(tổng\\s*)?doanh thu": 0
+      }
+    },
+    {
+      "id": "u02",
+      "split": "dev",
+      "kind": "unanswerable",
+      "absence_pattern_matches": {
+        "nhật ký hệ thống[^.;]{0,160}\\d+\\s*(tháng|năm|ngày)": 0
+      }
+    },
+    {
+      "id": "u03",
+      "split": "dev",
+      "kind": "unanswerable",
+      "absence_pattern_matches": {
+        "(triệu|tỷ|nghìn)\\s+đồng": 0,
+        "\\d[\\d.,]*\\s*(đồng|VNĐ|VND)": 0,
+        "(phạt tù|năm tù|tù giam)": 0
+      }
+    },
+    {
+      "id": "t06",
+      "split": "test",
+      "kind": "answerable",
+      "evidence_ok": true,
+      "pages": [
+        7
+      ]
+    },
+    {
+      "id": "t07",
+      "split": "test",
+      "kind": "answerable",
+      "evidence_ok": true,
+      "pages": [
+        6
+      ]
+    },
+    {
+      "id": "t08",
+      "split": "test",
+      "kind": "answerable",
+      "evidence_ok": true,
+      "pages": [
+        9
+      ]
+    },
+    {
+      "id": "t09",
+      "split": "test",
+      "kind": "answerable",
+      "evidence_ok": true,
+      "pages": [
+        18,
+        19
+      ]
+    },
+    {
+      "id": "t10",
+      "split": "test",
+      "kind": "answerable",
+      "evidence_ok": true,
+      "pages": [
+        9
+      ]
+    },
+    {
+      "id": "t11",
+      "split": "test",
+      "kind": "answerable",
+      "evidence_ok": true,
+      "pages": [
+        8
+      ]
+    },
+    {
+      "id": "t12",
+      "split": "test",
+      "kind": "answerable",
+      "evidence_ok": true,
+      "pages": [
+        13
+      ]
+    },
+    {
+      "id": "t13",
+      "split": "test",
+      "kind": "answerable",
+      "evidence_ok": true,
+      "pages": [
+        13
+      ]
+    },
+    {
+      "id": "t14",
+      "split": "test",
+      "kind": "answerable",
+      "evidence_ok": true,
+      "pages": [
+        31
+      ]
+    },
+    {
+      "id": "u04",
+      "split": "test",
+      "kind": "unanswerable",
+      "absence_pattern_matches": {
+        "lưu trữ[^.;]{0,120}\\d+\\s*(năm|tháng)": 0,
+        "hợp đồng điện tử[^.;]{0,120}lưu trữ[^.;]{0,120}\\d+": 0
+      }
+    },
+    {
+      "id": "u05",
+      "split": "test",
+      "kind": "unanswerable",
+      "absence_pattern_matches": {
+        "xếp hạng": 0,
+        "bảng xếp hạng": 0
+      }
+    },
+    {
+      "id": "u06",
+      "split": "test",
+      "kind": "unanswerable",
+      "absence_pattern_matches": {
+        "DPO": 0,
+        "Data Protection Officer": 0,
+        "chứng chỉ quốc tế": 0
+      }
+    }
+  ]
+}

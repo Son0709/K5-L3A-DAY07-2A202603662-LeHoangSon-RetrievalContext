@@ -16,4 +16,6 @@ MAX_TOKENS = 512
 
 DATA_DIR = ROOT / "data"
 CHUNKS_JSON = DATA_DIR / "chunks.json"
-QUESTIONS_JSON = DATA_DIR / "questions.json"
+QUESTIONS_DAY6_JSON = DATA_DIR / "questions_day6.json"   # converted Day 6 questions (export_day6.py)
+QUESTIONS_NEW_JSON = DATA_DIR / "questions_new.json"      # newly written Day 7 questions (source)
+QUESTIONS_JSON = DATA_DIR / "questions.json"              # final merged benchmark (build_benchmark.py)
