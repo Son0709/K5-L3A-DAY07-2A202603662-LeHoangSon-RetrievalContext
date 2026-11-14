@@ -2,8 +2,9 @@
 
 Stop conditions: final_answer called, step limit reached, or LLM failure after retries.
 Statuses (compatible with starter/agent_metrics.py):
-  answered : enough_evidence=true and every citation is an id in the final context
-  abstain  : model declined, cited ids outside the context, or the step limit was hit
+  answered : enough_evidence=true with >=1 citation; ids outside the final context are listed in
+             invalid_citation_ids (the model may fabricate ids) and judged by the metrics/review
+  abstain  : model declined, gave no citation, or the step limit was hit
   error    : the LLM/retriever failed; recorded, never replaced by a fake answer
 Citation-id validity is only a mechanical check; whether a source SUPPORTS the answer is
 decided by manual review (BENCHMARK.md).
@@ -73,10 +74,13 @@ def run_agent(question: str, llm, session: SearchSession, *, tool_keys: list[str
                            "citations_in_context": [c in in_ctx for c in cites]})
             if not enough:
                 return finish("abstain", ans, [], reason="model_declined", raw_citations=cites)
-            if not ans.strip() or not cites or any(c not in in_ctx for c in cites):
-                return finish("abstain", ans, [], reason="invalid_citations", raw_citations=cites)
+            if not ans.strip() or not cites:
+                return finish("abstain", ans, [], reason="no_citations", raw_citations=cites)
+            # Ids outside the context are kept and flagged (not turned into an abstention), so the
+            # citation-validity metric sees fabricated ids instead of hiding them as refusals.
+            invalid = [c for c in cites if c not in in_ctx]
             inline = all(f"[{c}]" in ans for c in cites)
-            return finish("answered", ans, cites, inline_markers_ok=inline)
+            return finish("answered", ans, cites, inline_markers_ok=inline, invalid_citation_ids=invalid)
         parts = []
         for name, args in resp["calls"]:
             if name not in session.tool_names:

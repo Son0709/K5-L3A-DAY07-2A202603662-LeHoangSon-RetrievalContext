@@ -46,11 +46,16 @@ class AgentTests(unittest.TestCase):
         self.assertEqual((r["status"], r["citations"], r["n_searches"]), ("answered", ["c0"], 1))
         self.assertEqual(llm.seen, [1, 3])  # history grows: question, model call, tool response
 
-    def test_citation_outside_context_abstains(self):
+    def test_citation_outside_context_is_flagged_not_hidden(self):
         llm = FakeLLM([reply(("search_keyword", {"query": "72 giờ"})),
-                       reply((FINAL_NAME, {"answer": "x [c2]", "citations": ["c2"], "enough_evidence": True}))])
+                       reply((FINAL_NAME, {"answer": "x [c0] [c9]", "citations": ["c0", "c9"], "enough_evidence": True}))])
         r = run_agent("q", llm, session(), tool_keys=["bm25"])
-        self.assertEqual((r["status"], r["reason"], r["citations"]), ("abstain", "invalid_citations", []))
+        self.assertEqual((r["status"], r["citations"], r["invalid_citation_ids"]), ("answered", ["c0", "c9"], ["c9"]))
+
+    def test_no_citation_abstains(self):
+        llm = FakeLLM([reply(("search_keyword", {"query": "72 giờ"})),
+                       reply((FINAL_NAME, {"answer": "x", "citations": [], "enough_evidence": True}))])
+        self.assertEqual(run_agent("q", llm, session(), tool_keys=["bm25"])["reason"], "no_citations")
 
     def test_model_declines(self):
         llm = FakeLLM([reply(("search_keyword", {"query": "72 giờ"})),
